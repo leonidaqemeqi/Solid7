@@ -1,1 +1,1 @@
-# Backend - Qui inizializzeremo il progetto Laravel.
+# Backend - Qui inizializzeremo il progetto Python.
