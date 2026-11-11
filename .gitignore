@@ -1,0 +1,31 @@
+# ---- Buby Solidale ----
+
+# database
+*.db
+*.sqlite
+*.sqlite3
+
+# segreti
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / React
+node_modules/
+dist/
+build/
+
+# editor e sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# log
+*.log
