@@ -1,1 +1,1 @@
-# Frontend - Qui inizializzeremo il progetto React.
+# Frontend - Qui inizializzeremo il progetto Angular.

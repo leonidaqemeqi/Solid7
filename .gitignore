@@ -16,7 +16,7 @@ __pycache__/
 .venv/
 venv/
 
-# Node / React
+# Node / Angular
 node_modules/
 dist/
 build/
