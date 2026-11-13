@@ -7,6 +7,24 @@
 
 Questo piano è pensato per essere convertito in issue. Ogni riga corrisponde a una issue con un solo risultato principale; le attività che richiedono più risultati sono separate. Stime indicative: 0,5–1,5 giorni per issue. Se una issue richiede più tempo, va spezzata prima di assegnarla. I giorni sono finestre di calendario, non stime cumulative: attività diverse procedono in parallelo.
 
+## Legenda dei codici, delle etichette e degli assegnatari
+
+Il prefisso nel titolo dell'issue identifica **l'area responsabile**, non l'ordine di esecuzione:
+
+| Prefisso | Area | Etichetta GitHub | Assegnatario |
+|---|---|---|---|
+| `TL` | Coordinamento / team leader | `area:coordinamento` | `leonidaqemeqi` |
+| `API`, `BE` | Contratto API e backend | `area:backend` (anche `area:api` per `API`) | `mouadronix` |
+| `DB` | Database e import SQLite | `area:database` | `leonidaqemeqi` |
+| `FE` | Frontend Angular | `area:frontend` | `federicodincecco-star` |
+| `DA-S` | Data Analyst — dati strutturati | `area:dati-strutturati` | Da assegnare dopo aver ricevuto gli username |
+| `DA-A` | Data Analyst — AI/NLP e testi | `area:ai-nlp` | Da assegnare dopo aver ricevuto gli username |
+| `INT` | Integrazione e collaudo | `area:integrazione` | Assegnare ai referenti nominati nella singola issue |
+| `DOC` | Documentazione e repository | `area:documentazione` | In base al lavoro indicato nell'issue |
+| `DEMO` | Preparazione e prova demo | `area:demo` | Assegnare al gruppo indicato nell'issue |
+
+Le issue ricevono inoltre l'etichetta `settimana:1`, `settimana:2`, `settimana:3` o `settimana:4`. Per capire l'ordine, seguire settimana/giorno, dipendenze esplicite e collegamenti alle issue: i numeri nel codice sono identificativi per area e **non** una sequenza globale. GitHub mostra i responsabili tramite il campo Assignees; i nomi degli analisti strutturati e AI/NLP vanno aggiunti appena il team conferma i rispettivi username.
+
 ## Regole e perimetro
 
 - Board: `Todo` → `In Progress` → `In Review` → `Done`; una persona lavora su non più di 1–2 issue per volta.
