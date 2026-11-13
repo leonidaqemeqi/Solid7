@@ -63,8 +63,22 @@ Archivia i dati non strutturati (email, messaggi, note sociali) anonimizzati e i
 
 ## 2. Specifiche API ed Esempi JSON
 
+Gli endpoint da 1 a 5 erano presenti nel contratto iniziale. Gli endpoint da 6 a 10 sono stati aggiunti per completare i flussi descritti e approvati per il perimetro della demo. Il Backend li implementa secondo queste specifiche; il Frontend li usa per le schermate e il Team Leader verifica la compatibilità con schema e stati del database. Ogni modifica successiva va concordata e aggiornata qui prima dell'implementazione.
+
+**Formato errori comune:**
+```json
+{
+  "errore": {
+    "codice": "VALIDATION_ERROR",
+    "messaggio": "La quantità deve essere maggiore di zero."
+  }
+}
+```
+Usare `400` per request/filtri non validi, `404` per risorse inesistenti, `409` per conflitti di stato e `500` per errori interni. Non includere stack trace, request body grezzi o dati personali nei messaggi/log.
+
 ### Endpoint 1: Dashboard KPI e Alert Squilibri
 * **Metodo:** `GET /api/v1/kpi`
+* **Risposta:** `200 OK`; in caso di errore interno `500`.
 * **Esempio Risposta (`200 OK`):**
 ```json
 {
@@ -89,21 +103,23 @@ Archivia i dati non strutturati (email, messaggi, note sociali) anonimizzati e i
 
 ### Endpoint 2: Analisi Testi Non Strutturati (Motore AI/NLP)
 * **Metodo:** `POST /api/v1/ai/analizza-testo`
+* **Risposta:** `200 OK`; `400` per fonte/testo non validi; `503` se il servizio AI interno non è disponibile.
 * **Request Body (JSON):**
 ```json
 {
   "fonte": "EMAIL_DONATORE",
-  "testo_grezzo": "Buongiorno, siamo il Panificio Rossi. Oggi alle 18:30 abbiamo 15 kg di pane invenduto da ritirare."
+  "testo_grezzo": "Buongiorno, abbiamo 15 kg di pane invenduto da ritirare oggi entro le 18:30."
 }
 ```
+* **Regole privacy:** il testo grezzo può contenere dati personali e viene inviato esclusivamente al backend del progetto. Il backend lo inoltra al servizio AI interno, che lo anonimizza prima di qualsiasi elaborazione affidata a un modello esterno. Il testo grezzo non deve essere salvato né scritto nei log applicativi. Risposta e dati persistiti contengono solo testo anonimizzato e risultati senza dati personali identificativi.
 * **Esempio Risposta (`200 OK`):**
 ```json
 {
+  "id_comunicazione": "CM_001",
   "categoria_rilevata": "OFFERTA_DONAZIONE",
   "urgenza": "ALTA",
-  "sintesi_ai": "Ritiro urgente di 15 kg di pane presso Panificio Rossi entro le 18:30.",
+  "sintesi_ai": "Ritiro urgente di 15 kg di pane entro le 18:30.",
   "dati_estratti": {
-    "donatore": "Panificio Rossi",
     "categoria": "ALIMENTARI_FRESCHI",
     "descrizione_prodotto": "Pane",
     "quantita_kg": 15.0
@@ -111,9 +127,11 @@ Archivia i dati non strutturati (email, messaggi, note sociali) anonimizzati e i
   "id_punto_consigliato": "PR_01"
 }
 ```
+* **Persistenza:** il backend salva in `comunicazioni_ai` solo `testo_anonimizzato` e i risultati dell'analisi; non salva il request body grezzo. `id_comunicazione` identifica il record creato.
 
 ### Endpoint 3: Inserimento Donazione (Area Donatore)
 * **Metodo:** `POST /api/v1/donazioni`
+* **Risposta in caso di successo:** `201 Created`.
 * **Request Body (JSON):**
 ```json
 {
@@ -124,24 +142,147 @@ Archivia i dati non strutturati (email, messaggi, note sociali) anonimizzati e i
   "data_scadenza": "2027-05-20"
 }
 ```
+* **Corpo risposta:** oggetto `donazione` con `id_donazione`, i campi ricevuti, `id_punto_destinazione: null` e `stato: "IN_ATTESA"`.
+* **Errori:** `400` per campi/categoria/quantità/data non validi.
 
 ### Endpoint 4: Assegnazione Donazione a Punto di Ritiro (Area Coordinatore)
 * **Metodo:** `PATCH /api/v1/donazioni/{id_donazione}/assegna`
+* **Risposta in caso di successo:** `200 OK`.
 * **Request Body (JSON):**
 ```json
 {
   "id_punto_destinazione": "PR_01"
 }
 ```
+* **Corpo risposta:** oggetto `donazione` aggiornato con `id_punto_destinazione` e `stato: "ASSEGNATA"`.
+* **Errori:** `400` per body non valido; `404` se donazione o punto non esistono; `409` se la donazione non è `IN_ATTESA`.
 
 ### Endpoint 5: Prenotazione Turno (Area Volontario)
 * **Metodo:** `POST /api/v1/turni/{id_turno}/prenota`
+* **Risposta in caso di successo:** `200 OK`.
 * **Request Body (JSON):**
 ```json
 {
   "volontario_id": "VOL_04"
 }
 ```
+* **Corpo risposta:** oggetto `turno` aggiornato con `volontario_id` e `stato: "COPERTO"`.
+* **Errori:** `400` per body non valido; `404` se il turno non esiste; `409` se non è `SCOPERTO`.
+
+### Endpoint 6: Elenco punti di ritiro e giacenze
+* **Metodo:** `GET /api/v1/punti-ritiro`
+* **Uso:** popolare dashboard e selettore del punto di destinazione durante l'assegnazione. Le giacenze annidate permettono di evidenziare i punti sotto soglia senza una chiamata per punto.
+* **Query opzionale:** `id_punto` per richiedere un singolo punto.
+* **Esempio risposta (`200 OK`):**
+```json
+{
+  "punti_ritiro": [
+    {
+      "id_punto": "PR_01",
+      "nome": "Emporio Aurora",
+      "zona": "Torino Nord",
+      "capacita_max_kg": 500.0,
+      "famiglie_assistite": 40,
+      "giacenze": [
+        {
+          "categoria": "ALIMENTARI_FRESCHI",
+          "quantita_attuale_kg": 8.5,
+          "soglia_min_kg": 30.0
+        }
+      ]
+    }
+  ]
+}
+```
+* **Comportamento:** includere le giacenze per categoria; `id_punto` inesistente restituisce `404`.
+
+### Endpoint 7: Elenco turni
+* **Metodo:** `GET /api/v1/turni`
+* **Query opzionali:** `data_da`, `data_a` (`YYYY-MM-DD`), `stato`, `id_punto`.
+* **Esempio risposta (`200 OK`):**
+```json
+{
+  "turni": [
+    {
+      "id_turno": "TR_001",
+      "id_punto": "PR_01",
+      "nome_punto": "Emporio Aurora",
+      "data_turno": "2026-11-20",
+      "fascia_oraria": "17:00-19:00",
+      "ore_durata": 2.0,
+      "volontario_id": null,
+      "stato": "SCOPERTO"
+    }
+  ]
+}
+```
+* **Comportamento:** intervallo date inclusivo; `data_da` successiva a `data_a` o stato non ammesso restituiscono `400`; senza risultati restituisce `200` con array vuoto.
+
+### Endpoint 8: Elenco donazioni
+* **Metodo:** `GET /api/v1/donazioni`
+* **Query opzionali:** `stato`, `id_punto_destinazione`.
+* **Esempio risposta (`200 OK`):**
+```json
+{
+  "donazioni": [
+    {
+      "id_donazione": "DN_001",
+      "donatore": "Panificio Rossi",
+      "id_punto_destinazione": null,
+      "categoria": "ALIMENTARI_FRESCHI",
+      "descrizione_prodotto": "Pane",
+      "quantita_kg": 15.0,
+      "data_scadenza": "2026-11-21",
+      "stato": "IN_ATTESA"
+    }
+  ]
+}
+```
+* **Comportamento:** filtri validi si combinano; stato o punto non validi restituiscono `400`; nessun risultato restituisce `200` con array vuoto. Nel prototipo senza autenticazione si usano esclusivamente dati sintetici.
+
+### Endpoint 9: Disdetta prenotazione
+* **Metodo:** `POST /api/v1/turni/{id_turno}/disdici`
+* **Motivazione:** mantenere l'identificativo volontario nel body è necessario perché il prototipo non ha autenticazione; il backend può verificare che la prenotazione appartenga al volontario indicato.
+* **Request body:**
+```json
+{
+  "volontario_id": "VOL_04"
+}
+```
+* **Esempio risposta (`200 OK`):**
+```json
+{
+  "id_turno": "TR_001",
+  "volontario_id": null,
+  "stato": "SCOPERTO"
+}
+```
+* **Comportamento:** riporta a `SCOPERTO` solo il turno prenotato dallo stesso `volontario_id`; turno inesistente restituisce `404`, prenotazione assente o appartenente a un altro ID restituisce `409`. L'ID è dimostrativo e non costituisce autenticazione.
+
+### Endpoint 10: Elenco comunicazioni analizzate
+* **Metodo:** `GET /api/v1/comunicazioni`
+* **Query opzionali:** `fonte`, `urgenza`.
+* **Esempio risposta (`200 OK`):**
+```json
+{
+  "comunicazioni": [
+    {
+      "id_comunicazione": "CM_001",
+      "fonte": "EMAIL_DONATORE",
+      "testo_anonimizzato": "Abbiamo 15 kg di pane da ritirare entro le 18:30.",
+      "categoria_rilevata": "OFFERTA_DONAZIONE",
+      "urgenza": "ALTA",
+      "sintesi_ai": "Ritiro di 15 kg di pane entro le 18:30.",
+      "dati_estratti": {
+        "categoria": "ALIMENTARI_FRESCHI",
+        "descrizione_prodotto": "Pane",
+        "quantita_kg": 15.0
+      }
+    }
+  ]
+}
+```
+* **Comportamento:** la risposta non include testo grezzo; valori di filtro non ammessi restituiscono `400`; nessun risultato restituisce `200` con array vuoto.
 
 ---
 
