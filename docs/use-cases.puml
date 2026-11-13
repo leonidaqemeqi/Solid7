@@ -1,0 +1,32 @@
+@startuml use_cases_buby
+left to right direction
+title Use Case Diagram – Buby Solidale
+
+actor "Coordinatore" as Coord
+actor "Donatore / Azienda" as Don
+actor "Volontario" as Vol
+
+rectangle "Piattaforma Buby Solidale" {
+  usecase "UC1: Monitorare dashboard KPI" as UC1
+  usecase "UC2: Visualizzare giacenze e alert squilibri" as UC2
+  usecase "UC3: Analizzare email e note con AI" as UC3
+  usecase "UC4: Assegnare donazione a punto di ritiro" as UC4
+  usecase "UC5: Inserire offerta donazione" as UC5
+  usecase "UC6: Visualizzare donazioni e kg salvati" as UC6
+  usecase "UC7: Consultare e prenotare turni" as UC7
+  usecase "UC8: Disdire turno prenotato" as UC8
+}
+
+Coord --> UC1
+Coord --> UC2
+Coord --> UC3
+Coord --> UC4
+
+Don --> UC5
+Don --> UC6
+
+Vol --> UC7
+Vol --> UC8
+
+UC3 ..> UC4 : <<extend>>
+@enduml

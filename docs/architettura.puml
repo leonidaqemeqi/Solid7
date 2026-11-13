@@ -1,0 +1,26 @@
+@startuml architettura_buby
+!include <C4/C4_Container>
+
+title C4 Container Diagram – Piattaforma Buby Solidale
+
+Person(coordinatore, "Coordinatore", "Monitora KPI, gestisce squilibri, assegna donazioni e verifica testi AI")
+Person(donatore, "Donatore / Azienda", "Segnala eccedenze alimentari e beni di prima necessità")
+Person(volontario, "Volontario", "Consulta i turni scoperti e prenota ritiri/consegne")
+
+System_Boundary(buby, "Sistema Buby Solidale") {
+    Container(webapp, "Frontend Web App", "React / HTML-JS", "Dashboard KPI, form donazioni, calendario turni e pannello AI")
+    Container(api, "Backend API", "Python FastAPI / Node", "Gestisce logica operativa, autenticazione ruoli e chiamate AI")
+    Container(ai_engine, "Motore Data & AI", "Python (Pandas, NLP/LLM)", "Anonimizzazione GDPR, estrazione dati da email/note e calcolo fabbisogni")
+    ContainerDb(db, "Database SQLite", "SQLite (buby_solidale.db)", "Archivia punti ritiro, giacenze, donazioni, distribuzioni e turni")
+}
+
+Rel(coordinatore, webapp, "Visualizza KPI, assegna donazioni, analizza testi", "HTTPS")
+Rel(donatore, webapp, "Inserisce offerte di donazione", "HTTPS")
+Rel(volontario, webapp, "Prenota e gestisce turni", "HTTPS")
+
+Rel(webapp, api, "Scambia dati in formato JSON (Contratto Dati)", "REST API")
+Rel(api, db, "Legge e scrive dati strutturati", "SQL")
+Rel(api, ai_engine, "Invia testi grezzi per classificazione ed estrazione", "HTTP / JSON")
+Rel(ai_engine, db, "Carica dataset puliti e normalizzati", "Python sqlite3")
+
+@enduml

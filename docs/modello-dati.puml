@@ -1,0 +1,59 @@
+@startuml modello_dati_buby
+title Modello Dati SQLite (5 Tabelle) – Buby Solidale
+
+class PuntiRitiro {
+  +id_punto: TEXT <<PK>>
+  +nome: TEXT
+  +zona: TEXT
+  +capacita_max_kg: REAL
+  +famiglie_assistite: INTEGER
+}
+
+class Giacenze {
+  +id_giacenza: TEXT <<PK>>
+  +id_punto: TEXT <<FK>>
+  +categoria: TEXT <<CHECK>>
+  +quantita_attuale_kg: REAL
+  +soglia_min_kg: REAL
+}
+
+class Donazioni {
+  +id_donazione: TEXT <<PK>>
+  +donatore: TEXT
+  +id_punto_destinazione: TEXT <<FK, nullable>>
+  +categoria: TEXT <<CHECK>>
+  +descrizione_prodotto: TEXT
+  +quantita_kg: REAL
+  +data_scadenza: TEXT
+  +stato: TEXT <<CHECK>>
+}
+
+class TurniVolontari {
+  +id_turno: TEXT <<PK>>
+  +id_punto: TEXT <<FK>>
+  +data_turno: TEXT
+  +fascia_oraria: TEXT
+  +ore_durata: REAL
+  +volontario_id: TEXT <<nullable>>
+  +stato: TEXT <<CHECK>>
+}
+
+class ComunicazioniAI {
+  +id_comunicazione: TEXT <<PK>>
+  +id_punto_riferimento: TEXT <<FK, nullable>>
+  +id_donazione_generata: TEXT <<FK, nullable>>
+  +fonte: TEXT <<CHECK>>
+  +testo_anonimizzato: TEXT
+  +categoria_rilevata: TEXT
+  +urgenza: TEXT <<CHECK>>
+  +sintesi_ai: TEXT
+  +dati_estratti_json: TEXT
+}
+
+PuntiRitiro "1" -- "0..*" Giacenze : monitora
+PuntiRitiro "1" -- "0..*" Donazioni : riceve / distribuisce
+PuntiRitiro "1" -- "0..*" TurniVolontari : pianifica
+PuntiRitiro "0..1" -- "0..*" ComunicazioniAI : riguarda
+Donazioni "0..1" -- "0..1" ComunicazioniAI : origina da
+
+@enduml
