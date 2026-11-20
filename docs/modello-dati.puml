@@ -1,59 +1,95 @@
-@startuml modello_dati_buby
-title Modello Dati SQLite (5 Tabelle) – Buby Solidale
+@startuml modello_dati_buby_v3
+title Modello Dati SQLite (11 Tabelle Normalizzate) – Buby Solidale
 
-class PuntiRitiro {
-  +id_punto: TEXT <<PK>>
-  +nome: TEXT
-  +zona: TEXT
-  +capacita_max_kg: REAL
-  +famiglie_assistite: INTEGER
+skinparam packageStyle rectangle
+
+package "1. Anagrafiche" {
+  class PuntiRitiro {
+    +id_punto: TEXT <<PK>>
+    +nome: TEXT
+    +zona: TEXT
+    +capacita_max_kg: REAL
+    +famiglie_assistite: INTEGER
+  }
+  class Donatori {
+    +id_donatore: TEXT <<PK>>
+    +nome_donatore: TEXT
+    +tipologia_donatore: TEXT
+  }
+  class Volontari {
+    +id_volontario: TEXT <<PK, HMAC>>
+    +data_registrazione: TEXT
+  }
+  class Beneficiari {
+    +id_beneficiario_anonimo: TEXT <<PK, HMAC>>
+    +quartiere_riferimento: TEXT
+  }
 }
 
-class Giacenze {
-  +id_giacenza: TEXT <<PK>>
-  +id_punto: TEXT <<FK>>
-  +categoria: TEXT <<CHECK>>
-  +quantita_attuale_kg: REAL
-  +soglia_min_kg: REAL
+package "2. Operatività" {
+  class Giacenze {
+    +id_giacenza: TEXT <<PK>>
+    +id_punto: TEXT <<FK>>
+    +categoria: TEXT
+    +quantita_attuale_kg: REAL
+    +soglia_min_kg: REAL
+  }
+  class Donazioni {
+    +id_donazione: TEXT <<PK>>
+    +id_donatore: TEXT <<FK>>
+    +id_punto_destinazione: TEXT <<FK>>
+    +categoria: TEXT
+    +quantita_kg: REAL
+    +stato: TEXT
+  }
+  class Distribuzioni {
+    +id_distribuzione: TEXT <<PK>>
+    +id_punto: TEXT <<FK>>
+    +id_beneficiario_anonimo: TEXT <<FK>>
+    +kg_consegnati: REAL
+  }
+  class Turni {
+    +id_turno: TEXT <<PK>>
+    +id_punto: TEXT <<FK>>
+    +id_volontario: TEXT <<FK, nullable>>
+    +data_turno: TEXT
+    +fascia_oraria: TEXT
+    +stato: TEXT
+  }
 }
 
-class Donazioni {
-  +id_donazione: TEXT <<PK>>
-  +donatore: TEXT
-  +id_punto_destinazione: TEXT <<FK, nullable>>
-  +categoria: TEXT <<CHECK>>
-  +descrizione_prodotto: TEXT
-  +quantita_kg: REAL
-  +data_scadenza: TEXT
-  +stato: TEXT <<CHECK>>
+package "3. Comunicazioni AI" {
+  class EmailDonatori {
+    +id_email: TEXT <<PK>>
+    +id_donatore: TEXT <<FK>>
+    +urgenza: TEXT
+    +nlp_intent: TEXT
+  }
+  class MessaggiVolontari {
+    +id_messaggio: TEXT <<PK>>
+    +id_volontario: TEXT <<FK>>
+    +nlp_intent: TEXT
+  }
+  class NoteOperatori {
+    +id_nota: TEXT <<PK>>
+    +id_punto: TEXT <<FK>>
+    +nlp_intent: TEXT
+  }
 }
 
-class TurniVolontari {
-  +id_turno: TEXT <<PK>>
-  +id_punto: TEXT <<FK>>
-  +data_turno: TEXT
-  +fascia_oraria: TEXT
-  +ore_durata: REAL
-  +volontario_id: TEXT <<nullable>>
-  +stato: TEXT <<CHECK>>
-}
+' Relazioni Anagrafiche -> Operatività
+PuntiRitiro "1" -- "0..*" Giacenze
+PuntiRitiro "1" -- "0..*" Donazioni
+PuntiRitiro "1" -- "0..*" Distribuzioni
+PuntiRitiro "1" -- "0..*" Turni
 
-class ComunicazioniAI {
-  +id_comunicazione: TEXT <<PK>>
-  +id_punto_riferimento: TEXT <<FK, nullable>>
-  +id_donazione_generata: TEXT <<FK, nullable>>
-  +fonte: TEXT <<CHECK>>
-  +testo_anonimizzato: TEXT
-  +categoria_rilevata: TEXT
-  +urgenza: TEXT <<CHECK>>
-  +sintesi_ai: TEXT
-  +dati_estratti_json: TEXT
-}
+Donatori "1" -- "0..*" Donazioni
+Volontari "1" -- "0..*" Turni
+Beneficiari "1" -- "0..*" Distribuzioni
 
-PuntiRitiro "1" -- "0..*" Giacenze : monitora
-PuntiRitiro "1" -- "0..*" Donazioni : riceve / distribuisce
-PuntiRitiro "1" -- "0..*" TurniVolontari : pianifica
-PuntiRitiro "0..1" -- "0..*" ComunicazioniAI : riguarda
-Donazioni "0..1" -- "0..1" ComunicazioniAI : origina da
+' Relazioni Anagrafiche -> Comunicazioni
+Donatori "1" -- "0..*" EmailDonatori
+Volontari "1" -- "0..*" MessaggiVolontari
+PuntiRitiro "1" -- "0..*" NoteOperatori
 
 @enduml
