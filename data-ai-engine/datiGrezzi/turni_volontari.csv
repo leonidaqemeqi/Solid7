@@ -1,0 +1,121 @@
+id_turno,id_punto_ritiro,nome_punto_ritiro,data_turno,fascia_oraria,mansione,id_volontario,stato_copertura
+TRN_0001,PR_03,Punto Amico Mirafiori,2026-11-16,08:30 - 12:30,Smistamento Alimenti,VOL_105,Coperto
+TRN_0002,PR_02,Emporio Barriera,2026-11-06,08:30 - 12:30,Distribuzione al Banco,VOL_110,Completato
+TRN_0003,PR_01,Centro Solidale Porta Palazzo,2026-11-07,14:00 - 18:00,Logistica e Ritiro Furgone,VOL_108,Completato
+TRN_0004,PR_04,Rete San Salvario,2026-11-05,14:00 - 18:00,Distribuzione al Banco,VOL_109,Completato
+TRN_0005,PR_04,Rete San Salvario,2026-11-11,14:00 - 18:00,Smistamento Alimenti,VOL_108,Completato
+TRN_0006,PR_01,Centro Solidale Porta Palazzo,2026-11-07,14:00 - 18:00,Smistamento Alimenti,,Scoperto
+TRN_0007,PR_02,Emporio Barriera,2026-11-12,08:30 - 12:30,Distribuzione al Banco,VOL_103,Coperto
+TRN_0008,PR_03,Punto Amico Mirafiori,2026-11-14,08:30 - 12:30,Logistica e Ritiro Furgone,VOL_109,Coperto
+TRN_0009,PR_03,Punto Amico Mirafiori,2026-11-07,14:00 - 18:00,Accoglienza Beneficiari,VOL_101,Completato
+TRN_0010,PR_05,Hub San Paolo,2026-11-25,08:30 - 12:30,Smistamento Alimenti,VOL_109,Coperto
+TRN_0011,PR_04,Rete San Salvario,2026-11-05,08:30 - 12:30,Smistamento Alimenti,VOL_103,Completato
+TRN_0012,PR_01,Centro Solidale Porta Palazzo,2026-11-26,08:30 - 12:30,Distribuzione al Banco,VOL_104,Coperto
+TRN_0013,PR_04,Rete San Salvario,2026-11-13,17:30 - 20:30,Smistamento Alimenti,,Scoperto
+TRN_0014,PR_05,Hub San Paolo,2026-11-20,08:30 - 12:30,Smistamento Alimenti,VOL_105,Coperto
+TRN_0015,PR_01,Centro Solidale Porta Palazzo,2026-11-08,14:00 - 18:00,Distribuzione al Banco,,Scoperto
+TRN_0016,PR_01,Centro Solidale Porta Palazzo,2026-11-12,08:30 - 12:30,Accoglienza Beneficiari,VOL_102,Coperto
+TRN_0017,PR_01,Centro Solidale Porta Palazzo,2026-11-07,14:00 - 18:00,Accoglienza Beneficiari,VOL_110,Completato
+TRN_0018,PR_04,Rete San Salvario,2026-11-02,17:30 - 20:30,Accoglienza Beneficiari,VOL_107,Completato
+TRN_0019,PR_02,Emporio Barriera,2026-11-13,08:30 - 12:30,Logistica e Ritiro Furgone,VOL_104,Coperto
+TRN_0020,PR_03,Punto Amico Mirafiori,2026-11-16,08:30 - 12:30,Distribuzione al Banco,VOL_103,Coperto
+TRN_0021,PR_03,Punto Amico Mirafiori,2026-11-17,17:30 - 20:30,Accoglienza Beneficiari,VOL_107,Coperto
+TRN_0022,PR_01,Centro Solidale Porta Palazzo,2026-11-04,14:00 - 18:00,Distribuzione al Banco,VOL_105,Completato
+TRN_0023,PR_04,Rete San Salvario,2026-11-08,17:30 - 20:30,Distribuzione al Banco,,Scoperto
+TRN_0024,PR_05,Hub San Paolo,2026-11-02,17:30 - 20:30,Logistica e Ritiro Furgone,VOL_107,Completato
+TRN_0025,PR_04,Rete San Salvario,2026-11-19,14:00 - 18:00,Logistica e Ritiro Furgone,VOL_108,Coperto
+TRN_0026,PR_04,Rete San Salvario,2026-11-10,08:30 - 12:30,Logistica e Ritiro Furgone,VOL_103,Completato
+TRN_0027,PR_05,Hub San Paolo,2026-11-09,14:00 - 18:00,Smistamento Alimenti,VOL_101,Completato
+TRN_0028,PR_04,Rete San Salvario,2026-11-18,17:30 - 20:30,Distribuzione al Banco,VOL_106,Coperto
+TRN_0029,PR_02,Emporio Barriera,2026-11-05,17:30 - 20:30,Distribuzione al Banco,VOL_104,Completato
+TRN_0030,PR_03,Punto Amico Mirafiori,2026-11-19,08:30 - 12:30,Accoglienza Beneficiari,VOL_101,Coperto
+TRN_0031,PR_03,Punto Amico Mirafiori,2026-11-07,08:30 - 12:30,Logistica e Ritiro Furgone,VOL_103,Completato
+TRN_0032,PR_03,Punto Amico Mirafiori,2026-11-20,17:30 - 20:30,Logistica e Ritiro Furgone,VOL_101,Coperto
+TRN_0033,PR_05,Hub San Paolo,2026-11-20,17:30 - 20:30,Distribuzione al Banco,VOL_103,Coperto
+TRN_0034,PR_04,Rete San Salvario,2026-11-19,08:30 - 12:30,Accoglienza Beneficiari,VOL_105,Coperto
+TRN_0035,PR_01,Centro Solidale Porta Palazzo,2026-11-04,08:30 - 12:30,Distribuzione al Banco,VOL_101,Completato
+TRN_0036,PR_01,Centro Solidale Porta Palazzo,2026-11-18,08:30 - 12:30,Logistica e Ritiro Furgone,VOL_108,Coperto
+TRN_0037,PR_05,Hub San Paolo,2026-11-08,14:00 - 18:00,Distribuzione al Banco,VOL_103,Completato
+TRN_0038,PR_03,Punto Amico Mirafiori,2026-11-03,08:30 - 12:30,Distribuzione al Banco,VOL_101,Completato
+TRN_0039,PR_01,Centro Solidale Porta Palazzo,2026-11-18,08:30 - 12:30,Logistica e Ritiro Furgone,VOL_106,Coperto
+TRN_0040,PR_04,Rete San Salvario,2026-11-20,14:00 - 18:00,Logistica e Ritiro Furgone,VOL_102,Coperto
+TRN_0041,PR_03,Punto Amico Mirafiori,2026-11-06,17:30 - 20:30,Accoglienza Beneficiari,VOL_103,Completato
+TRN_0042,PR_04,Rete San Salvario,2026-11-22,08:30 - 12:30,Logistica e Ritiro Furgone,VOL_106,Coperto
+TRN_0043,PR_02,Emporio Barriera,2026-11-23,08:30 - 12:30,Accoglienza Beneficiari,VOL_110,Coperto
+TRN_0044,PR_03,Punto Amico Mirafiori,2026-11-25,08:30 - 12:30,Distribuzione al Banco,VOL_105,Coperto
+TRN_0045,PR_01,Centro Solidale Porta Palazzo,2026-11-24,14:00 - 18:00,Smistamento Alimenti,VOL_110,Coperto
+TRN_0046,PR_02,Emporio Barriera,2026-11-21,17:30 - 20:30,Distribuzione al Banco,VOL_106,Coperto
+TRN_0047,PR_05,Hub San Paolo,2026-11-05,08:30 - 12:30,Logistica e Ritiro Furgone,VOL_108,Completato
+TRN_0048,PR_01,Centro Solidale Porta Palazzo,2026-11-09,14:00 - 18:00,Distribuzione al Banco,VOL_106,Completato
+TRN_0049,PR_01,Centro Solidale Porta Palazzo,2026-11-24,17:30 - 20:30,Logistica e Ritiro Furgone,,Scoperto
+TRN_0050,PR_04,Rete San Salvario,2026-11-02,08:30 - 12:30,Distribuzione al Banco,VOL_105,Completato
+TRN_0051,PR_01,Centro Solidale Porta Palazzo,2026-11-13,08:30 - 12:30,Smistamento Alimenti,VOL_105,Coperto
+TRN_0052,PR_01,Centro Solidale Porta Palazzo,2026-11-14,17:30 - 20:30,Accoglienza Beneficiari,VOL_108,Coperto
+TRN_0053,PR_02,Emporio Barriera,2026-11-15,14:00 - 18:00,Logistica e Ritiro Furgone,VOL_108,Coperto
+TRN_0054,PR_05,Hub San Paolo,2026-11-14,14:00 - 18:00,Distribuzione al Banco,VOL_102,Coperto
+TRN_0055,PR_02,Emporio Barriera,2026-11-16,08:30 - 12:30,Logistica e Ritiro Furgone,VOL_102,Coperto
+TRN_0056,PR_01,Centro Solidale Porta Palazzo,2026-11-12,08:30 - 12:30,Smistamento Alimenti,VOL_105,Coperto
+TRN_0057,PR_03,Punto Amico Mirafiori,2026-11-07,08:30 - 12:30,Smistamento Alimenti,VOL_107,Completato
+TRN_0058,PR_05,Hub San Paolo,2026-11-04,17:30 - 20:30,Accoglienza Beneficiari,VOL_106,Completato
+TRN_0059,PR_01,Centro Solidale Porta Palazzo,2026-11-15,08:30 - 12:30,Accoglienza Beneficiari,,Scoperto
+TRN_0060,PR_02,Emporio Barriera,2026-11-03,14:00 - 18:00,Distribuzione al Banco,VOL_102,Completato
+TRN_0061,PR_02,Emporio Barriera,2026-11-15,17:30 - 20:30,Logistica e Ritiro Furgone,VOL_109,Coperto
+TRN_0062,PR_03,Punto Amico Mirafiori,2026-11-11,08:30 - 12:30,Smistamento Alimenti,VOL_104,Completato
+TRN_0063,PR_04,Rete San Salvario,2026-11-20,14:00 - 18:00,Distribuzione al Banco,VOL_109,Coperto
+TRN_0064,PR_01,Centro Solidale Porta Palazzo,2026-11-13,14:00 - 18:00,Smistamento Alimenti,VOL_101,Coperto
+TRN_0065,PR_03,Punto Amico Mirafiori,2026-11-23,17:30 - 20:30,Accoglienza Beneficiari,,Scoperto
+TRN_0066,PR_02,Emporio Barriera,2026-11-05,08:30 - 12:30,Distribuzione al Banco,VOL_101,Completato
+TRN_0067,PR_03,Punto Amico Mirafiori,2026-11-04,08:30 - 12:30,Logistica e Ritiro Furgone,VOL_108,Completato
+TRN_0068,PR_04,Rete San Salvario,2026-11-17,17:30 - 20:30,Logistica e Ritiro Furgone,VOL_108,Coperto
+TRN_0069,PR_01,Centro Solidale Porta Palazzo,2026-11-22,14:00 - 18:00,Distribuzione al Banco,VOL_109,Coperto
+TRN_0070,PR_03,Punto Amico Mirafiori,2026-11-14,08:30 - 12:30,Accoglienza Beneficiari,VOL_106,Coperto
+TRN_0071,PR_01,Centro Solidale Porta Palazzo,2026-11-10,14:00 - 18:00,Logistica e Ritiro Furgone,VOL_108,Completato
+TRN_0072,PR_02,Emporio Barriera,2026-11-10,08:30 - 12:30,Distribuzione al Banco,VOL_110,Completato
+TRN_0073,PR_01,Centro Solidale Porta Palazzo,2026-11-04,14:00 - 18:00,Accoglienza Beneficiari,,Scoperto
+TRN_0074,PR_05,Hub San Paolo,2026-11-09,08:30 - 12:30,Accoglienza Beneficiari,VOL_109,Completato
+TRN_0075,PR_05,Hub San Paolo,2026-11-15,17:30 - 20:30,Accoglienza Beneficiari,VOL_109,Coperto
+TRN_0076,PR_05,Hub San Paolo,2026-11-09,14:00 - 18:00,Smistamento Alimenti,VOL_108,Completato
+TRN_0077,PR_04,Rete San Salvario,2026-11-24,17:30 - 20:30,Distribuzione al Banco,VOL_101,Coperto
+TRN_0078,PR_01,Centro Solidale Porta Palazzo,2026-11-26,08:30 - 12:30,Distribuzione al Banco,VOL_108,Coperto
+TRN_0079,PR_02,Emporio Barriera,2026-11-08,08:30 - 12:30,Accoglienza Beneficiari,VOL_103,Completato
+TRN_0080,PR_01,Centro Solidale Porta Palazzo,2026-11-23,08:30 - 12:30,Distribuzione al Banco,VOL_107,Coperto
+TRN_0081,PR_05,Hub San Paolo,2026-11-10,17:30 - 20:30,Smistamento Alimenti,VOL_106,Completato
+TRN_0082,PR_01,Centro Solidale Porta Palazzo,2026-11-14,14:00 - 18:00,Logistica e Ritiro Furgone,VOL_109,Coperto
+TRN_0083,PR_03,Punto Amico Mirafiori,2026-11-18,08:30 - 12:30,Accoglienza Beneficiari,VOL_108,Coperto
+TRN_0084,PR_01,Centro Solidale Porta Palazzo,2026-11-15,08:30 - 12:30,Smistamento Alimenti,VOL_103,Coperto
+TRN_0085,PR_01,Centro Solidale Porta Palazzo,2026-11-20,14:00 - 18:00,Logistica e Ritiro Furgone,VOL_102,Coperto
+TRN_0086,PR_04,Rete San Salvario,2026-11-10,17:30 - 20:30,Accoglienza Beneficiari,VOL_107,Completato
+TRN_0087,PR_05,Hub San Paolo,2026-11-21,08:30 - 12:30,Distribuzione al Banco,VOL_108,Coperto
+TRN_0088,PR_03,Punto Amico Mirafiori,2026-11-14,17:30 - 20:30,Accoglienza Beneficiari,VOL_103,Coperto
+TRN_0089,PR_01,Centro Solidale Porta Palazzo,2026-11-14,17:30 - 20:30,Distribuzione al Banco,VOL_106,Coperto
+TRN_0090,PR_01,Centro Solidale Porta Palazzo,2026-11-25,14:00 - 18:00,Logistica e Ritiro Furgone,VOL_108,Coperto
+TRN_0091,PR_01,Centro Solidale Porta Palazzo,2026-11-12,14:00 - 18:00,Logistica e Ritiro Furgone,VOL_105,Coperto
+TRN_0092,PR_04,Rete San Salvario,2026-11-24,08:30 - 12:30,Distribuzione al Banco,,Scoperto
+TRN_0093,PR_02,Emporio Barriera,2026-11-11,14:00 - 18:00,Logistica e Ritiro Furgone,VOL_108,Completato
+TRN_0094,PR_04,Rete San Salvario,2026-11-21,08:30 - 12:30,Distribuzione al Banco,,Scoperto
+TRN_0095,PR_04,Rete San Salvario,2026-11-08,17:30 - 20:30,Accoglienza Beneficiari,VOL_107,Completato
+TRN_0096,PR_05,Hub San Paolo,2026-11-13,17:30 - 20:30,Distribuzione al Banco,VOL_101,Coperto
+TRN_0097,PR_01,Centro Solidale Porta Palazzo,2026-11-11,14:00 - 18:00,Distribuzione al Banco,VOL_109,Completato
+TRN_0098,PR_05,Hub San Paolo,2026-11-20,08:30 - 12:30,Distribuzione al Banco,VOL_101,Coperto
+TRN_0099,PR_02,Emporio Barriera,2026-11-03,08:30 - 12:30,Accoglienza Beneficiari,VOL_104,Completato
+TRN_0100,PR_01,Centro Solidale Porta Palazzo,2026-11-13,14:00 - 18:00,Logistica e Ritiro Furgone,VOL_104,Coperto
+TRN_0101,PR_04,Rete San Salvario,2026-11-18,17:30 - 20:30,Smistamento Alimenti,VOL_107,Coperto
+TRN_0102,PR_01,Centro Solidale Porta Palazzo,2026-11-09,14:00 - 18:00,Accoglienza Beneficiari,VOL_106,Completato
+TRN_0103,PR_02,Emporio Barriera,2026-11-17,17:30 - 20:30,Logistica e Ritiro Furgone,VOL_110,Coperto
+TRN_0104,PR_03,Punto Amico Mirafiori,2026-11-07,17:30 - 20:30,Smistamento Alimenti,VOL_105,Completato
+TRN_0105,PR_03,Punto Amico Mirafiori,2026-11-02,08:30 - 12:30,Distribuzione al Banco,VOL_107,Completato
+TRN_0106,PR_05,Hub San Paolo,2026-11-26,08:30 - 12:30,Distribuzione al Banco,VOL_104,Coperto
+TRN_0107,PR_02,Emporio Barriera,2026-11-10,14:00 - 18:00,Smistamento Alimenti,,Scoperto
+TRN_0108,PR_01,Centro Solidale Porta Palazzo,2026-11-17,17:30 - 20:30,Distribuzione al Banco,VOL_103,Coperto
+TRN_0109,PR_05,Hub San Paolo,2026-11-02,14:00 - 18:00,Logistica e Ritiro Furgone,VOL_104,Completato
+TRN_0110,PR_03,Punto Amico Mirafiori,2026-11-15,14:00 - 18:00,Accoglienza Beneficiari,VOL_107,Coperto
+TRN_0111,PR_03,Punto Amico Mirafiori,2026-11-08,14:00 - 18:00,Accoglienza Beneficiari,VOL_108,Completato
+TRN_0112,PR_05,Hub San Paolo,2026-11-05,17:30 - 20:30,Logistica e Ritiro Furgone,VOL_101,Completato
+TRN_0113,PR_05,Hub San Paolo,2026-11-22,17:30 - 20:30,Logistica e Ritiro Furgone,VOL_110,Coperto
+TRN_0114,PR_03,Punto Amico Mirafiori,2026-11-23,14:00 - 18:00,Smistamento Alimenti,VOL_102,Coperto
+TRN_0115,PR_03,Punto Amico Mirafiori,2026-11-10,14:00 - 18:00,Logistica e Ritiro Furgone,,Scoperto
+TRN_0116,PR_03,Punto Amico Mirafiori,2026-11-22,14:00 - 18:00,Distribuzione al Banco,,Scoperto
+TRN_0117,PR_02,Emporio Barriera,2026-11-18,08:30 - 12:30,Accoglienza Beneficiari,VOL_104,Coperto
+TRN_0118,PR_03,Punto Amico Mirafiori,2026-11-23,17:30 - 20:30,Smistamento Alimenti,VOL_103,Coperto
+TRN_0119,PR_04,Rete San Salvario,2026-11-11,14:00 - 18:00,Accoglienza Beneficiari,VOL_105,Completato
+TRN_0120,PR_04,Rete San Salvario,2026-11-25,17:30 - 20:30,Distribuzione al Banco,VOL_101,Coperto

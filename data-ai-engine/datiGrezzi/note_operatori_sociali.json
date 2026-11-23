@@ -1,0 +1,23 @@
+[
+  {
+    "id_nota": "NOT_001",
+    "id_punto_ritiro": "PR_02",
+    "data": "2026-11-11",
+    "operatore": "OP_04",
+    "testo_nota": "Nell'ultima settimana abbiamo registrato un aumento del 20% di famiglie con bambini piccoli in Barriera di Milano. Mancano completamente omogeneizzati, latte per infanzia e pannolini. La signora Fatima Zahra (tel. 333-1234567) ha segnalato che altre 4 famiglie del palazzo hanno bisogno di supporto."
+  },
+  {
+    "id_nota": "NOT_002",
+    "id_punto_ritiro": "PR_01",
+    "data": "2026-11-12",
+    "operatore": "OP_01",
+    "testo_nota": "Troppa verdura fresca arrivata martedì dal mercato, rischiamo di dover buttare circa 40 kg di insalata e pomodori entro domani se non li spostiamo verso Mirafiori o San Paolo dove hanno celle frigorifere più grandi."
+  },
+  {
+    "id_nota": "NOT_003",
+    "id_punto_ritiro": "PR_03",
+    "data": "2026-11-10",
+    "operatore": "OP_07",
+    "testo_nota": "Richiesta crescente di alimenti senza glutine e senza lattosio per tre nuovi nuclei familiari segnalati dai servizi sociali (tra cui il sig. Mario Rossi, CF RSSMRA80A01L219K). Scorte di pasta e legumi attualmente sotto la soglia minima."
+  }
+]

@@ -1,0 +1,301 @@
+id_distribuzione,id_beneficiario_anonimo,fascia_eta_richiedente,componenti_nucleo_familiare,quartiere_residenza,id_punto_ritiro,categoria_ritirata,kg_distribuiti,pasti_equivalenti,data_distribuzione
+DIST_0001,BEN_29AF9F1F49,18-30,3,Aurora / Centro,PR_01,Latticini e Formaggi,10.9,22,2026-10-15
+DIST_0002,BEN_7C4E4AF786,46-64,2,Mirafiori Sud,PR_03,Latticini e Formaggi,11.5,23,2026-10-17
+DIST_0003,BEN_A7B489D23D,18-30,1,Borgo San Paolo,PR_05,Scatolame e Legumi,13.6,27,2026-10-26
+DIST_0004,BEN_60E55B0910,31-45,1,Aurora / Centro,PR_03,Beni Prima Necessità (Igiene),11.2,22,2026-11-05
+DIST_0005,BEN_BB6026DA1D,18-30,4,San Salvario,PR_04,Beni Prima Necessità (Igiene),2.7,5,2026-10-08
+DIST_0006,BEN_8241CD7899,46-64,4,San Salvario,PR_04,Latticini e Formaggi,12.0,24,2026-09-30
+DIST_0007,BEN_F58202F71C,46-64,5,Aurora / Centro,PR_01,Prodotti Infanzia,12.7,25,2026-10-29
+DIST_0008,BEN_9D6264D61D,46-64,4,Borgo San Paolo,PR_05,Frutta e Verdura,13.0,26,2026-10-02
+DIST_0009,BEN_A4528A9F7F,18-30,3,San Salvario,PR_04,Pasta e Cereali,14.0,28,2026-11-04
+DIST_0010,BEN_7583F6D1CA,18-30,3,Barriera di Milano,PR_01,Frutta e Verdura,6.8,14,2026-10-09
+DIST_0011,BEN_AC1192A436,31-45,4,Aurora / Centro,PR_05,Prodotti Infanzia,12.1,24,2026-11-03
+DIST_0012,BEN_F16576B280,31-45,4,Mirafiori Sud,PR_03,Pasta e Cereali,7.6,15,2026-09-29
+DIST_0013,BEN_C4B722307F,65+,6,Mirafiori Sud,PR_03,Pasta e Cereali,6.6,13,2026-09-30
+DIST_0014,BEN_D12D394AD5,18-30,6,Mirafiori Sud,PR_03,Frutta e Verdura,4.9,10,2026-11-05
+DIST_0015,BEN_402665ADA7,31-45,5,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),4.9,10,2026-10-22
+DIST_0016,BEN_DEB5FB1073,31-45,5,Borgo San Paolo,PR_05,Frutta e Verdura,2.5,5,2026-10-29
+DIST_0017,BEN_AC649A3AC1,31-45,6,Barriera di Milano,PR_02,Scatolame e Legumi,12.5,25,2026-10-27
+DIST_0018,BEN_0DA07AE3BB,65+,6,Borgo San Paolo,PR_01,Latticini e Formaggi,4.5,9,2026-10-28
+DIST_0019,BEN_517F904FFB,65+,6,Barriera di Milano,PR_02,Prodotti Infanzia,3.2,6,2026-10-17
+DIST_0020,BEN_82FE80079A,18-30,5,Mirafiori Sud,PR_03,Scatolame e Legumi,5.0,10,2026-10-06
+DIST_0021,BEN_B035D04673,65+,4,Borgo San Paolo,PR_05,Latticini e Formaggi,12.2,24,2026-10-14
+DIST_0022,BEN_60E55B0910,31-45,1,Aurora / Centro,PR_01,Prodotti da Forno,6.2,12,2026-09-28
+DIST_0023,BEN_6B6A5E9B80,46-64,5,Aurora / Centro,PR_01,Frutta e Verdura,8.8,18,2026-10-26
+DIST_0024,BEN_B275915A13,18-30,5,San Salvario,PR_04,Scatolame e Legumi,9.5,19,2026-10-10
+DIST_0025,BEN_0F9746A41E,31-45,4,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),7.7,15,2026-10-02
+DIST_0026,BEN_6B7DE70F00,65+,5,San Salvario,PR_04,Latticini e Formaggi,3.6,7,2026-10-14
+DIST_0027,BEN_7CE92F1F96,18-30,6,Mirafiori Sud,PR_03,Prodotti Infanzia,13.1,26,2026-10-27
+DIST_0028,BEN_5DDDF36FC4,46-64,1,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),11.1,22,2026-11-07
+DIST_0029,BEN_0B46291549,18-30,5,Barriera di Milano,PR_02,Scatolame e Legumi,6.3,13,2026-11-09
+DIST_0030,BEN_E64B51691B,46-64,3,San Salvario,PR_04,Latticini e Formaggi,9.4,19,2026-10-01
+DIST_0031,BEN_EFFAFFD61F,18-30,6,Aurora / Centro,PR_01,Scatolame e Legumi,8.0,16,2026-10-11
+DIST_0032,BEN_1586D8F1BA,65+,3,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),9.1,18,2026-10-08
+DIST_0033,BEN_A66BCF8C78,46-64,6,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),8.9,18,2026-10-04
+DIST_0034,BEN_8E60798B0E,31-45,3,Aurora / Centro,PR_01,Frutta e Verdura,2.6,5,2026-10-26
+DIST_0035,BEN_F02D636093,18-30,6,Borgo San Paolo,PR_05,Prodotti Infanzia,9.8,20,2026-10-18
+DIST_0036,BEN_1B72BBDBEC,31-45,4,Aurora / Centro,PR_01,Prodotti Infanzia,7.7,15,2026-10-10
+DIST_0037,BEN_3ED0C71D14,31-45,1,Mirafiori Sud,PR_03,Latticini e Formaggi,12.7,25,2026-10-23
+DIST_0038,BEN_433C3766EA,65+,1,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),5.6,11,2026-10-04
+DIST_0039,BEN_DA1AD6B143,18-30,2,San Salvario,PR_04,Scatolame e Legumi,11.2,22,2026-10-15
+DIST_0040,BEN_10E7339E07,46-64,6,Mirafiori Sud,PR_03,Prodotti da Forno,9.3,19,2026-11-05
+DIST_0041,BEN_D9191A6A44,31-45,3,Aurora / Centro,PR_01,Frutta e Verdura,4.9,10,2026-10-18
+DIST_0042,BEN_4B052B7004,65+,1,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),2.6,5,2026-10-27
+DIST_0043,BEN_57FC27E706,46-64,5,Barriera di Milano,PR_02,Frutta e Verdura,8.9,18,2026-10-19
+DIST_0044,BEN_1E177F6166,46-64,4,Aurora / Centro,PR_01,Prodotti da Forno,13.1,26,2026-11-10
+DIST_0045,BEN_4FCE7B0B7F,65+,4,Borgo San Paolo,PR_05,Prodotti da Forno,5.8,12,2026-10-07
+DIST_0046,BEN_FD8ED8CDAE,18-30,6,Aurora / Centro,PR_01,Latticini e Formaggi,13.1,26,2026-11-02
+DIST_0047,BEN_EAE4F2A942,18-30,5,San Salvario,PR_04,Beni Prima Necessità (Igiene),7.1,14,2026-11-06
+DIST_0048,BEN_0D1D6CA2DD,18-30,3,San Salvario,PR_04,Beni Prima Necessità (Igiene),11.5,23,2026-10-24
+DIST_0049,BEN_EEBBBD4518,18-30,4,San Salvario,PR_05,Prodotti Infanzia,12.9,26,2026-11-05
+DIST_0050,BEN_CB59B82336,31-45,1,Mirafiori Sud,PR_03,Prodotti Infanzia,4.2,8,2026-10-02
+DIST_0051,BEN_4844787431,65+,6,Barriera di Milano,PR_02,Scatolame e Legumi,8.2,16,2026-11-03
+DIST_0052,BEN_0DA07AE3BB,65+,6,Borgo San Paolo,PR_05,Prodotti Infanzia,6.1,12,2026-10-03
+DIST_0053,BEN_523117C4F9,18-30,5,Aurora / Centro,PR_01,Prodotti da Forno,3.1,6,2026-10-15
+DIST_0054,BEN_B035D04673,65+,4,Borgo San Paolo,PR_03,Prodotti da Forno,12.1,24,2026-10-15
+DIST_0055,BEN_4CF17D6A3F,18-30,4,Aurora / Centro,PR_01,Scatolame e Legumi,9.2,18,2026-10-05
+DIST_0056,BEN_84EE8597BF,31-45,5,San Salvario,PR_04,Beni Prima Necessità (Igiene),8.0,16,2026-10-07
+DIST_0057,BEN_8998B5A99E,18-30,5,Aurora / Centro,PR_01,Prodotti da Forno,9.9,20,2026-11-06
+DIST_0058,BEN_A1155BDD97,31-45,4,Borgo San Paolo,PR_02,Prodotti Infanzia,9.5,19,2026-10-15
+DIST_0059,BEN_88E3F25B9E,65+,2,San Salvario,PR_03,Latticini e Formaggi,9.4,19,2026-10-19
+DIST_0060,BEN_F1CDC8AA19,31-45,4,Aurora / Centro,PR_01,Latticini e Formaggi,5.8,12,2026-11-06
+DIST_0061,BEN_1DA2453680,65+,3,Mirafiori Sud,PR_03,Pasta e Cereali,13.6,27,2026-10-06
+DIST_0062,BEN_2C1B57B607,46-64,5,Barriera di Milano,PR_02,Scatolame e Legumi,6.8,14,2026-09-28
+DIST_0063,BEN_A44F992DFE,46-64,6,Barriera di Milano,PR_02,Prodotti Infanzia,10.2,20,2026-09-29
+DIST_0064,BEN_A8CE5E3460,65+,3,Aurora / Centro,PR_01,Latticini e Formaggi,13.4,27,2026-10-24
+DIST_0065,BEN_DD0019DFBD,18-30,3,Barriera di Milano,PR_02,Frutta e Verdura,12.2,24,2026-11-04
+DIST_0066,BEN_E5B06EFA05,31-45,6,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),6.4,13,2026-10-09
+DIST_0067,BEN_DADD9632E5,65+,6,San Salvario,PR_05,Prodotti da Forno,11.4,23,2026-11-03
+DIST_0068,BEN_DC35A68AA0,65+,6,San Salvario,PR_04,Pasta e Cereali,5.2,10,2026-10-17
+DIST_0069,BEN_A3D4F1EE65,65+,2,Borgo San Paolo,PR_05,Latticini e Formaggi,6.1,12,2026-10-15
+DIST_0070,BEN_844FD1AC4A,65+,4,Barriera di Milano,PR_02,Latticini e Formaggi,11.3,23,2026-09-30
+DIST_0071,BEN_7C4E4AF786,46-64,2,Mirafiori Sud,PR_05,Scatolame e Legumi,4.1,8,2026-10-17
+DIST_0072,BEN_11217993A7,18-30,1,Aurora / Centro,PR_01,Prodotti Infanzia,10.7,21,2026-10-13
+DIST_0073,BEN_3FA3C81FBF,65+,5,Mirafiori Sud,PR_03,Pasta e Cereali,4.2,8,2026-11-02
+DIST_0074,BEN_56298689EA,46-64,4,Aurora / Centro,PR_01,Frutta e Verdura,3.1,6,2026-10-15
+DIST_0075,BEN_0D1D6CA2DD,18-30,3,San Salvario,PR_02,Prodotti da Forno,6.2,12,2026-11-07
+DIST_0076,BEN_F379D38CA7,65+,3,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),13.1,26,2026-11-03
+DIST_0077,BEN_6AB50D071B,18-30,5,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),2.6,5,2026-09-28
+DIST_0078,BEN_496AF527D9,65+,6,Aurora / Centro,PR_01,Latticini e Formaggi,9.5,19,2026-10-30
+DIST_0079,BEN_D075411CD2,65+,1,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),3.0,6,2026-10-25
+DIST_0080,BEN_4AC0460AEE,31-45,5,Borgo San Paolo,PR_05,Prodotti da Forno,8.7,17,2026-11-08
+DIST_0081,BEN_016D488DB7,65+,3,Barriera di Milano,PR_02,Latticini e Formaggi,5.3,11,2026-10-16
+DIST_0082,BEN_9E6A379A63,18-30,3,Barriera di Milano,PR_02,Prodotti Infanzia,3.3,7,2026-10-01
+DIST_0083,BEN_975C26C58B,46-64,4,San Salvario,PR_04,Beni Prima Necessità (Igiene),13.8,28,2026-10-13
+DIST_0084,BEN_CB9FD429D5,65+,4,Borgo San Paolo,PR_01,Latticini e Formaggi,10.1,20,2026-11-08
+DIST_0085,BEN_0E4F7962D4,31-45,3,Borgo San Paolo,PR_05,Prodotti Infanzia,8.8,18,2026-10-22
+DIST_0086,BEN_9345D7CD71,65+,1,San Salvario,PR_04,Prodotti Infanzia,10.7,21,2026-10-13
+DIST_0087,BEN_38B96D013C,46-64,1,Aurora / Centro,PR_01,Latticini e Formaggi,6.1,12,2026-10-31
+DIST_0088,BEN_F8140D145D,31-45,1,Borgo San Paolo,PR_05,Prodotti da Forno,11.2,22,2026-10-09
+DIST_0089,BEN_462C993CB4,31-45,1,Aurora / Centro,PR_03,Latticini e Formaggi,11.7,23,2026-11-09
+DIST_0090,BEN_88E3F25B9E,65+,2,San Salvario,PR_04,Prodotti Infanzia,8.2,16,2026-10-15
+DIST_0091,BEN_006B06D477,65+,6,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),7.4,15,2026-10-10
+DIST_0092,BEN_BDCD1DA6A1,46-64,3,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),3.7,7,2026-11-01
+DIST_0093,BEN_F60D002516,46-64,2,Mirafiori Sud,PR_03,Latticini e Formaggi,10.4,21,2026-10-15
+DIST_0094,BEN_93CFB325B3,18-30,3,San Salvario,PR_04,Pasta e Cereali,9.9,20,2026-10-21
+DIST_0095,BEN_7FFB3917F3,31-45,5,Aurora / Centro,PR_01,Prodotti Infanzia,11.7,23,2026-10-03
+DIST_0096,BEN_9D3056C4AD,46-64,2,Aurora / Centro,PR_01,Frutta e Verdura,3.3,7,2026-10-05
+DIST_0097,BEN_95A9198319,46-64,2,Mirafiori Sud,PR_03,Prodotti da Forno,10.3,21,2026-10-07
+DIST_0098,BEN_CE78E12730,31-45,3,San Salvario,PR_03,Prodotti da Forno,6.7,13,2026-11-08
+DIST_0099,BEN_F791B779F0,18-30,4,Mirafiori Sud,PR_03,Frutta e Verdura,8.5,17,2026-11-05
+DIST_0100,BEN_73AA65D53F,65+,5,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),5.8,12,2026-10-27
+DIST_0101,BEN_82FE80079A,18-30,5,Mirafiori Sud,PR_02,Pasta e Cereali,12.8,26,2026-11-04
+DIST_0102,BEN_9EAE32DC11,46-64,3,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),10.7,21,2026-09-30
+DIST_0103,BEN_E79B3B5159,31-45,5,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),5.1,10,2026-11-02
+DIST_0104,BEN_25463750F6,65+,5,Barriera di Milano,PR_02,Frutta e Verdura,9.1,18,2026-10-12
+DIST_0105,BEN_0CCF1F9743,65+,3,Borgo San Paolo,PR_05,Frutta e Verdura,7.1,14,2026-10-04
+DIST_0106,BEN_E1B7950740,18-30,2,Borgo San Paolo,PR_05,Prodotti da Forno,13.7,27,2026-10-17
+DIST_0107,BEN_69CDD2DB02,31-45,2,San Salvario,PR_04,Prodotti da Forno,12.6,25,2026-09-30
+DIST_0108,BEN_6C00A51C18,31-45,5,Barriera di Milano,PR_02,Prodotti da Forno,4.3,9,2026-10-11
+DIST_0109,BEN_E3FCBDC8C1,18-30,5,Barriera di Milano,PR_02,Latticini e Formaggi,12.8,26,2026-09-28
+DIST_0110,BEN_DE08F6AC12,18-30,2,Mirafiori Sud,PR_03,Frutta e Verdura,9.7,19,2026-10-03
+DIST_0111,BEN_CE02C6F0BE,46-64,2,Borgo San Paolo,PR_05,Prodotti Infanzia,4.5,9,2026-11-02
+DIST_0112,BEN_E8DADABA76,46-64,6,Borgo San Paolo,PR_05,Pasta e Cereali,11.4,23,2026-11-11
+DIST_0113,BEN_4536992142,46-64,6,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),2.8,6,2026-10-07
+DIST_0114,BEN_E5C5ED1260,46-64,4,Barriera di Milano,PR_03,Prodotti da Forno,3.3,7,2026-10-28
+DIST_0115,BEN_1DBEE0B5AA,31-45,2,Barriera di Milano,PR_02,Prodotti da Forno,6.4,13,2026-10-17
+DIST_0116,BEN_21B5CEBC7C,46-64,4,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),4.0,8,2026-09-28
+DIST_0117,BEN_CB9FD429D5,65+,4,Borgo San Paolo,PR_05,Scatolame e Legumi,3.9,8,2026-11-06
+DIST_0118,BEN_60FD7B5597,65+,4,Barriera di Milano,PR_02,Frutta e Verdura,12.4,25,2026-11-06
+DIST_0119,BEN_BD08B81998,31-45,6,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),6.1,12,2026-11-02
+DIST_0120,BEN_34ABEEE0A1,65+,4,San Salvario,PR_04,Scatolame e Legumi,2.8,6,2026-10-14
+DIST_0121,BEN_914C469FEC,46-64,3,Borgo San Paolo,PR_05,Prodotti da Forno,3.1,6,2026-10-28
+DIST_0122,BEN_C563E76D12,18-30,5,San Salvario,PR_04,Scatolame e Legumi,2.6,5,2026-10-02
+DIST_0123,BEN_E96C2E3FD3,18-30,3,San Salvario,PR_04,Frutta e Verdura,3.0,6,2026-10-27
+DIST_0124,BEN_11217993A7,18-30,1,Aurora / Centro,PR_05,Scatolame e Legumi,3.3,7,2026-10-31
+DIST_0125,BEN_1B06994473,65+,2,Borgo San Paolo,PR_05,Latticini e Formaggi,13.7,27,2026-10-04
+DIST_0126,BEN_104BE378DA,65+,2,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),4.8,10,2026-10-22
+DIST_0127,BEN_0126C29427,65+,6,Borgo San Paolo,PR_05,Pasta e Cereali,6.3,13,2026-11-10
+DIST_0128,BEN_A79A094BBC,46-64,2,Borgo San Paolo,PR_05,Prodotti da Forno,6.3,13,2026-11-03
+DIST_0129,BEN_EF7BD4176F,65+,3,Barriera di Milano,PR_02,Prodotti da Forno,8.3,17,2026-10-04
+DIST_0130,BEN_240A32DE7F,65+,3,Borgo San Paolo,PR_05,Latticini e Formaggi,10.2,20,2026-10-13
+DIST_0131,BEN_079C249041,31-45,4,Borgo San Paolo,PR_05,Latticini e Formaggi,5.6,11,2026-09-29
+DIST_0132,BEN_51D8922E94,65+,6,Aurora / Centro,PR_01,Scatolame e Legumi,10.8,22,2026-10-13
+DIST_0133,BEN_CACFA0A567,18-30,5,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),13.4,27,2026-09-30
+DIST_0134,BEN_EBCEE142AC,31-45,2,Barriera di Milano,PR_02,Pasta e Cereali,7.2,14,2026-10-15
+DIST_0135,BEN_D986491B18,31-45,6,San Salvario,PR_04,Scatolame e Legumi,4.1,8,2026-10-04
+DIST_0136,BEN_A1155BDD97,31-45,4,Borgo San Paolo,PR_05,Latticini e Formaggi,6.1,12,2026-10-01
+DIST_0137,BEN_FD8E8B7239,46-64,6,San Salvario,PR_04,Scatolame e Legumi,11.4,23,2026-10-22
+DIST_0138,BEN_F14B6E270F,46-64,5,Borgo San Paolo,PR_05,Prodotti da Forno,5.9,12,2026-10-31
+DIST_0139,BEN_F66CFC1898,46-64,4,Mirafiori Sud,PR_03,Prodotti Infanzia,6.5,13,2026-10-30
+DIST_0140,BEN_28D447411C,31-45,4,Mirafiori Sud,PR_03,Pasta e Cereali,11.9,24,2026-10-07
+DIST_0141,BEN_E790190783,65+,4,Mirafiori Sud,PR_03,Pasta e Cereali,10.0,20,2026-10-25
+DIST_0142,BEN_CA4AD041E5,18-30,6,Barriera di Milano,PR_02,Frutta e Verdura,5.6,11,2026-10-09
+DIST_0143,BEN_680B95C6EA,31-45,1,Borgo San Paolo,PR_05,Prodotti Infanzia,10.2,20,2026-10-06
+DIST_0144,BEN_CA8F0A6CEC,31-45,6,Barriera di Milano,PR_02,Pasta e Cereali,7.9,16,2026-11-06
+DIST_0145,BEN_AC1192A436,31-45,4,Aurora / Centro,PR_01,Scatolame e Legumi,8.0,16,2026-11-02
+DIST_0146,BEN_0C00FCD4DD,18-30,6,Mirafiori Sud,PR_03,Latticini e Formaggi,9.1,18,2026-10-25
+DIST_0147,BEN_39865B5100,46-64,4,Barriera di Milano,PR_02,Prodotti da Forno,4.6,9,2026-11-01
+DIST_0148,BEN_C6732CCF0D,46-64,1,Aurora / Centro,PR_01,Pasta e Cereali,13.2,26,2026-10-24
+DIST_0149,BEN_0E28F5DA80,31-45,4,Mirafiori Sud,PR_03,Prodotti da Forno,12.7,25,2026-10-02
+DIST_0150,BEN_D1ACBD0F7C,65+,3,Borgo San Paolo,PR_05,Prodotti da Forno,4.4,9,2026-10-26
+DIST_0151,BEN_6944715969,31-45,3,Mirafiori Sud,PR_03,Prodotti Infanzia,9.0,18,2026-11-01
+DIST_0152,BEN_B67A812FD9,65+,5,Barriera di Milano,PR_02,Scatolame e Legumi,6.3,13,2026-10-03
+DIST_0153,BEN_FE1258D985,65+,2,Aurora / Centro,PR_01,Frutta e Verdura,2.6,5,2026-11-04
+DIST_0154,BEN_85062F0C1B,18-30,5,Barriera di Milano,PR_02,Prodotti da Forno,10.8,22,2026-10-26
+DIST_0155,BEN_5D1E4F30B8,65+,2,Mirafiori Sud,PR_03,Prodotti Infanzia,3.9,8,2026-10-20
+DIST_0156,BEN_7A7C2F56E2,46-64,6,Barriera di Milano,PR_02,Prodotti da Forno,3.9,8,2026-09-30
+DIST_0157,BEN_AAB9C114F7,46-64,4,Mirafiori Sud,PR_03,Scatolame e Legumi,4.3,9,2026-10-29
+DIST_0158,BEN_8BEDC812DE,31-45,6,San Salvario,PR_04,Prodotti Infanzia,12.0,24,2026-10-08
+DIST_0159,BEN_7A3DEF8941,18-30,5,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),10.6,21,2026-11-07
+DIST_0160,BEN_024E314386,31-45,2,Borgo San Paolo,PR_05,Pasta e Cereali,9.1,18,2026-11-09
+DIST_0161,BEN_619F0F601C,65+,6,Barriera di Milano,PR_02,Latticini e Formaggi,4.9,10,2026-10-10
+DIST_0162,BEN_0EB99AC056,65+,2,Aurora / Centro,PR_01,Scatolame e Legumi,8.4,17,2026-10-15
+DIST_0163,BEN_F27F832C10,65+,3,Borgo San Paolo,PR_05,Pasta e Cereali,10.8,22,2026-10-08
+DIST_0164,BEN_914C469FEC,46-64,3,Borgo San Paolo,PR_03,Beni Prima Necessità (Igiene),3.0,6,2026-11-12
+DIST_0165,BEN_A060BC88EC,31-45,1,Aurora / Centro,PR_01,Scatolame e Legumi,5.8,12,2026-11-09
+DIST_0166,BEN_5BDF811381,65+,4,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),7.7,15,2026-10-02
+DIST_0167,BEN_A30081F363,18-30,6,San Salvario,PR_04,Pasta e Cereali,12.4,25,2026-09-30
+DIST_0168,BEN_32500A90DD,18-30,6,Barriera di Milano,PR_02,Scatolame e Legumi,13.8,28,2026-10-18
+DIST_0169,BEN_4E6C09C9A0,31-45,5,Aurora / Centro,PR_01,Latticini e Formaggi,6.9,14,2026-10-14
+DIST_0170,BEN_621CD41C03,31-45,1,Borgo San Paolo,PR_02,Prodotti da Forno,13.3,27,2026-10-21
+DIST_0171,BEN_8D54749BEB,18-30,1,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),5.3,11,2026-10-01
+DIST_0172,BEN_1495BFC293,18-30,5,Mirafiori Sud,PR_01,Scatolame e Legumi,10.6,21,2026-11-10
+DIST_0173,BEN_A5A64608B7,18-30,2,Barriera di Milano,PR_02,Prodotti Infanzia,8.7,17,2026-11-10
+DIST_0174,BEN_7F75BA47A3,46-64,3,Barriera di Milano,PR_02,Scatolame e Legumi,9.1,18,2026-10-25
+DIST_0175,BEN_E7DFE1D9EB,18-30,4,Barriera di Milano,PR_02,Latticini e Formaggi,6.0,12,2026-11-03
+DIST_0176,BEN_E98A62CB1A,46-64,4,Borgo San Paolo,PR_05,Scatolame e Legumi,3.0,6,2026-11-01
+DIST_0177,BEN_F8E58A6217,46-64,4,San Salvario,PR_04,Beni Prima Necessità (Igiene),7.2,14,2026-10-10
+DIST_0178,BEN_65270BEFB0,31-45,2,San Salvario,PR_04,Frutta e Verdura,6.0,12,2026-10-09
+DIST_0179,BEN_6B7DE70F00,65+,5,San Salvario,PR_04,Pasta e Cereali,8.6,17,2026-10-08
+DIST_0180,BEN_D05B200844,46-64,1,Barriera di Milano,PR_02,Latticini e Formaggi,13.1,26,2026-10-30
+DIST_0181,BEN_18468E4F99,18-30,4,Aurora / Centro,PR_01,Scatolame e Legumi,10.2,20,2026-10-31
+DIST_0182,BEN_0F9746A41E,31-45,4,Aurora / Centro,PR_01,Frutta e Verdura,4.9,10,2026-10-06
+DIST_0183,BEN_1A7FB22CCA,65+,6,Mirafiori Sud,PR_03,Pasta e Cereali,14.0,28,2026-10-30
+DIST_0184,BEN_30F6608488,46-64,2,Barriera di Milano,PR_02,Prodotti Infanzia,8.8,18,2026-10-05
+DIST_0185,BEN_BCF1B56DBC,65+,3,San Salvario,PR_04,Prodotti da Forno,6.6,13,2026-10-09
+DIST_0186,BEN_C7168B2F5A,18-30,3,San Salvario,PR_04,Pasta e Cereali,6.1,12,2026-10-13
+DIST_0187,BEN_D2F86CD685,65+,3,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),8.9,18,2026-10-29
+DIST_0188,BEN_8772EA880E,31-45,4,Mirafiori Sud,PR_03,Frutta e Verdura,9.1,18,2026-10-31
+DIST_0189,BEN_62CC9E7E9B,65+,4,San Salvario,PR_04,Scatolame e Legumi,13.6,27,2026-10-02
+DIST_0190,BEN_9345D7CD71,65+,1,San Salvario,PR_04,Frutta e Verdura,8.8,18,2026-10-21
+DIST_0191,BEN_E5B06EFA05,31-45,6,Borgo San Paolo,PR_05,Prodotti Infanzia,13.4,27,2026-11-09
+DIST_0192,BEN_CD0C78CBF4,31-45,6,Aurora / Centro,PR_01,Prodotti da Forno,4.2,8,2026-11-04
+DIST_0193,BEN_051C3C72EB,65+,6,Borgo San Paolo,PR_05,Prodotti da Forno,10.2,20,2026-10-20
+DIST_0194,BEN_A1EA228BA3,46-64,4,San Salvario,PR_04,Pasta e Cereali,2.6,5,2026-11-12
+DIST_0195,BEN_8C949B9AAE,31-45,6,Borgo San Paolo,PR_05,Latticini e Formaggi,7.5,15,2026-11-11
+DIST_0196,BEN_CB59B82336,31-45,1,Mirafiori Sud,PR_01,Pasta e Cereali,9.6,19,2026-10-10
+DIST_0197,BEN_1FDE1845AF,31-45,4,Mirafiori Sud,PR_03,Latticini e Formaggi,7.8,16,2026-10-18
+DIST_0198,BEN_5817CDC4A7,18-30,6,Barriera di Milano,PR_02,Latticini e Formaggi,11.2,22,2026-09-30
+DIST_0199,BEN_AC3481FC37,31-45,1,San Salvario,PR_04,Prodotti da Forno,9.8,20,2026-10-19
+DIST_0200,BEN_4E47D27D9F,18-30,1,Aurora / Centro,PR_01,Prodotti da Forno,12.8,26,2026-10-16
+DIST_0201,BEN_4482588084,18-30,3,Barriera di Milano,PR_02,Frutta e Verdura,3.0,6,2026-09-29
+DIST_0202,BEN_49FDE1E298,18-30,2,Aurora / Centro,PR_03,Scatolame e Legumi,2.7,5,2026-10-07
+DIST_0203,BEN_420BA1E2FD,31-45,3,Borgo San Paolo,PR_05,Frutta e Verdura,4.4,9,2026-09-28
+DIST_0204,BEN_09731697D0,31-45,4,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),11.2,22,2026-10-19
+DIST_0205,BEN_B8DC769DF9,18-30,4,Aurora / Centro,PR_01,Scatolame e Legumi,5.2,10,2026-10-21
+DIST_0206,BEN_403CE0A9A4,46-64,3,Mirafiori Sud,PR_03,Scatolame e Legumi,2.8,6,2026-10-04
+DIST_0207,BEN_11217993A7,18-30,1,Aurora / Centro,PR_04,Prodotti da Forno,7.5,15,2026-10-29
+DIST_0208,BEN_CA3EE49E86,46-64,6,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),3.3,7,2026-10-04
+DIST_0209,BEN_7583F6D1CA,18-30,3,Barriera di Milano,PR_02,Prodotti da Forno,6.6,13,2026-09-28
+DIST_0210,BEN_462C993CB4,31-45,1,Aurora / Centro,PR_01,Latticini e Formaggi,4.0,8,2026-10-15
+DIST_0211,BEN_EEBBBD4518,18-30,4,San Salvario,PR_04,Prodotti da Forno,3.7,7,2026-10-08
+DIST_0212,BEN_3ED0C71D14,31-45,1,Mirafiori Sud,PR_03,Scatolame e Legumi,12.4,25,2026-11-07
+DIST_0213,BEN_53C6541754,31-45,2,Mirafiori Sud,PR_03,Prodotti da Forno,9.1,18,2026-10-19
+DIST_0214,BEN_668347BA5C,18-30,3,San Salvario,PR_04,Frutta e Verdura,8.2,16,2026-11-04
+DIST_0215,BEN_E5C5ED1260,46-64,4,Barriera di Milano,PR_02,Prodotti da Forno,11.5,23,2026-10-26
+DIST_0216,BEN_1495BFC293,18-30,5,Mirafiori Sud,PR_03,Frutta e Verdura,4.7,9,2026-10-03
+DIST_0217,BEN_CA8F0A6CEC,31-45,6,Barriera di Milano,PR_02,Latticini e Formaggi,6.9,14,2026-11-12
+DIST_0218,BEN_CE78E12730,31-45,3,San Salvario,PR_04,Latticini e Formaggi,6.2,12,2026-10-16
+DIST_0219,BEN_FD0DB472AD,46-64,3,Barriera di Milano,PR_04,Latticini e Formaggi,11.0,22,2026-11-01
+DIST_0220,BEN_E38AA5E108,65+,3,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),11.9,24,2026-10-28
+DIST_0221,BEN_A80525F86D,18-30,5,Mirafiori Sud,PR_03,Pasta e Cereali,4.6,9,2026-10-07
+DIST_0222,BEN_E25A3E8745,65+,6,San Salvario,PR_04,Prodotti Infanzia,3.3,7,2026-10-30
+DIST_0223,BEN_01335D4EBF,65+,3,San Salvario,PR_04,Frutta e Verdura,10.1,20,2026-10-03
+DIST_0224,BEN_A58902128C,65+,5,San Salvario,PR_04,Pasta e Cereali,7.1,14,2026-10-15
+DIST_0225,BEN_142B909655,18-30,6,Borgo San Paolo,PR_05,Pasta e Cereali,13.0,26,2026-10-20
+DIST_0226,BEN_C9E780CE42,65+,6,Barriera di Milano,PR_02,Prodotti Infanzia,9.5,19,2026-10-01
+DIST_0227,BEN_89254EE126,18-30,3,Aurora / Centro,PR_03,Beni Prima Necessità (Igiene),5.5,11,2026-10-16
+DIST_0228,BEN_F27F832C10,65+,3,Borgo San Paolo,PR_04,Latticini e Formaggi,10.4,21,2026-10-18
+DIST_0229,BEN_308D24C1AF,18-30,4,Mirafiori Sud,PR_03,Pasta e Cereali,13.1,26,2026-10-13
+DIST_0230,BEN_BCF1B56DBC,65+,3,San Salvario,PR_01,Beni Prima Necessità (Igiene),7.7,15,2026-11-03
+DIST_0231,BEN_5B45ABA516,65+,4,Borgo San Paolo,PR_05,Prodotti da Forno,10.8,22,2026-10-21
+DIST_0232,BEN_9A8F91ADAA,18-30,1,Mirafiori Sud,PR_03,Pasta e Cereali,12.3,25,2026-10-24
+DIST_0233,BEN_B23CF2B4CA,65+,5,Barriera di Milano,PR_02,Prodotti Infanzia,4.3,9,2026-10-28
+DIST_0234,BEN_DADD9632E5,65+,6,San Salvario,PR_04,Frutta e Verdura,10.1,20,2026-10-18
+DIST_0235,BEN_A2A3283887,18-30,5,Aurora / Centro,PR_01,Prodotti Infanzia,7.4,15,2026-10-04
+DIST_0236,BEN_E03E267800,31-45,1,Barriera di Milano,PR_02,Frutta e Verdura,11.7,23,2026-10-26
+DIST_0237,BEN_619F0F601C,65+,6,Barriera di Milano,PR_03,Latticini e Formaggi,10.2,20,2026-10-31
+DIST_0238,BEN_4FBB194679,18-30,5,Borgo San Paolo,PR_05,Prodotti Infanzia,7.0,14,2026-10-23
+DIST_0239,BEN_8FC2C3FA75,46-64,6,Mirafiori Sud,PR_03,Latticini e Formaggi,10.6,21,2026-10-14
+DIST_0240,BEN_8089400F5C,18-30,1,Borgo San Paolo,PR_05,Scatolame e Legumi,5.2,10,2026-11-07
+DIST_0241,BEN_F91D61DD80,31-45,4,Barriera di Milano,PR_02,Latticini e Formaggi,7.3,15,2026-09-29
+DIST_0242,BEN_EB5DF63A93,31-45,6,Borgo San Paolo,PR_05,Prodotti da Forno,8.7,17,2026-10-16
+DIST_0243,BEN_D1DC050BA1,65+,2,Borgo San Paolo,PR_05,Frutta e Verdura,6.1,12,2026-10-12
+DIST_0244,BEN_2988E8C2F8,65+,2,Borgo San Paolo,PR_05,Pasta e Cereali,4.7,9,2026-10-21
+DIST_0245,BEN_D6F11DC2FD,65+,6,Borgo San Paolo,PR_05,Scatolame e Legumi,8.2,16,2026-10-02
+DIST_0246,BEN_5C9FB6ACAA,46-64,2,San Salvario,PR_04,Frutta e Verdura,5.9,12,2026-11-07
+DIST_0247,BEN_D73D7F2910,65+,5,Barriera di Milano,PR_02,Scatolame e Legumi,11.0,22,2026-10-25
+DIST_0248,BEN_C1811E95A6,46-64,3,Borgo San Paolo,PR_05,Scatolame e Legumi,11.4,23,2026-11-05
+DIST_0249,BEN_847930FCB0,18-30,2,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),13.9,28,2026-11-10
+DIST_0250,BEN_1FA577DF41,18-30,3,Barriera di Milano,PR_02,Latticini e Formaggi,12.4,25,2026-11-10
+DIST_0251,BEN_2DB951D389,46-64,6,San Salvario,PR_04,Beni Prima Necessità (Igiene),9.3,19,2026-11-05
+DIST_0252,BEN_9D752B8430,31-45,2,Borgo San Paolo,PR_05,Prodotti Infanzia,11.5,23,2026-10-16
+DIST_0253,BEN_DE08F6AC12,18-30,2,Mirafiori Sud,PR_01,Scatolame e Legumi,8.7,17,2026-10-21
+DIST_0254,BEN_5406E5B381,31-45,6,Mirafiori Sud,PR_03,Latticini e Formaggi,11.9,24,2026-10-07
+DIST_0255,BEN_A7260F880A,46-64,1,Aurora / Centro,PR_04,Pasta e Cereali,5.4,11,2026-10-26
+DIST_0256,BEN_17A194A62D,46-64,2,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),9.1,18,2026-09-30
+DIST_0257,BEN_9D6264D61D,46-64,4,Borgo San Paolo,PR_04,Prodotti da Forno,7.1,14,2026-10-15
+DIST_0258,BEN_0E7AE4C45C,18-30,1,Mirafiori Sud,PR_03,Prodotti da Forno,12.5,25,2026-10-12
+DIST_0259,BEN_7629E15558,65+,5,San Salvario,PR_04,Prodotti Infanzia,7.1,14,2026-10-01
+DIST_0260,BEN_20EA5D084E,31-45,3,Barriera di Milano,PR_02,Prodotti da Forno,8.8,18,2026-10-26
+DIST_0261,BEN_07DDFE092B,65+,1,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),3.0,6,2026-10-12
+DIST_0262,BEN_1CDBF9676C,65+,1,Aurora / Centro,PR_01,Pasta e Cereali,13.9,28,2026-11-02
+DIST_0263,BEN_4C0170908B,46-64,3,Barriera di Milano,PR_02,Prodotti Infanzia,3.6,7,2026-11-04
+DIST_0264,BEN_3AA76799EA,31-45,4,Mirafiori Sud,PR_03,Pasta e Cereali,9.7,19,2026-10-20
+DIST_0265,BEN_66B5969D1D,31-45,2,San Salvario,PR_04,Prodotti Infanzia,8.0,16,2026-11-07
+DIST_0266,BEN_41C53C53FC,18-30,1,Borgo San Paolo,PR_05,Frutta e Verdura,10.5,21,2026-10-10
+DIST_0267,BEN_60E55B0910,31-45,1,Aurora / Centro,PR_04,Prodotti Infanzia,6.9,14,2026-11-04
+DIST_0268,BEN_D1DC050BA1,65+,2,Borgo San Paolo,PR_01,Latticini e Formaggi,11.4,23,2026-10-20
+DIST_0269,BEN_675E560FF2,65+,5,Barriera di Milano,PR_02,Pasta e Cereali,10.0,20,2026-10-10
+DIST_0270,BEN_FE957A102C,31-45,5,Mirafiori Sud,PR_03,Prodotti Infanzia,10.4,21,2026-10-30
+DIST_0271,BEN_EF200A1DCA,65+,6,Aurora / Centro,PR_01,Pasta e Cereali,6.9,14,2026-11-04
+DIST_0272,BEN_F14B6E270F,46-64,5,Borgo San Paolo,PR_03,Beni Prima Necessità (Igiene),3.5,7,2026-11-04
+DIST_0273,BEN_2D2820B4D8,31-45,5,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),9.5,19,2026-10-01
+DIST_0274,BEN_CC6DE662C8,31-45,4,San Salvario,PR_04,Latticini e Formaggi,6.9,14,2026-10-02
+DIST_0275,BEN_9E6A379A63,18-30,3,Barriera di Milano,PR_04,Prodotti Infanzia,13.8,28,2026-10-05
+DIST_0276,BEN_7FFB3917F3,31-45,5,Aurora / Centro,PR_02,Prodotti da Forno,10.4,21,2026-10-07
+DIST_0277,BEN_89254EE126,18-30,3,Aurora / Centro,PR_01,Pasta e Cereali,5.0,10,2026-10-06
+DIST_0278,BEN_E73DA3889F,18-30,4,San Salvario,PR_04,Scatolame e Legumi,10.6,21,2026-10-25
+DIST_0279,BEN_621CD41C03,31-45,1,Borgo San Paolo,PR_05,Scatolame e Legumi,6.1,12,2026-10-04
+DIST_0280,BEN_E782A75446,18-30,6,Barriera di Milano,PR_02,Scatolame e Legumi,11.3,23,2026-10-23
+DIST_0281,BEN_5D1E4F30B8,65+,2,Mirafiori Sud,PR_03,Prodotti Infanzia,3.5,7,2026-10-16
+DIST_0282,BEN_D9191A6A44,31-45,3,Aurora / Centro,PR_01,Prodotti da Forno,10.2,20,2026-10-04
+DIST_0283,BEN_A7260F880A,46-64,1,Aurora / Centro,PR_01,Pasta e Cereali,4.4,9,2026-09-28
+DIST_0284,BEN_17E2500E5D,46-64,2,Borgo San Paolo,PR_05,Scatolame e Legumi,11.1,22,2026-10-27
+DIST_0285,BEN_214886670E,46-64,3,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),8.5,17,2026-11-11
+DIST_0286,BEN_1CDBF9676C,65+,1,Aurora / Centro,PR_05,Prodotti Infanzia,6.6,13,2026-11-08
+DIST_0287,BEN_A7B489D23D,18-30,1,Borgo San Paolo,PR_05,Frutta e Verdura,12.8,26,2026-10-20
+DIST_0288,BEN_8FD6B17EE5,65+,1,Barriera di Milano,PR_02,Prodotti Infanzia,5.3,11,2026-10-11
+DIST_0289,BEN_F379D38CA7,65+,3,Mirafiori Sud,PR_03,Prodotti da Forno,11.7,23,2026-11-03
+DIST_0290,BEN_FD0DB472AD,46-64,3,Barriera di Milano,PR_02,Latticini e Formaggi,12.0,24,2026-10-28
+DIST_0291,BEN_49FDE1E298,18-30,2,Aurora / Centro,PR_01,Scatolame e Legumi,11.7,23,2026-09-30
+DIST_0292,BEN_44D58C693F,65+,3,San Salvario,PR_04,Pasta e Cereali,3.5,7,2026-10-14
+DIST_0293,BEN_A5634E2A8B,31-45,3,Aurora / Centro,PR_01,Latticini e Formaggi,11.0,22,2026-10-31
+DIST_0294,BEN_D0EFBB551F,31-45,6,San Salvario,PR_04,Latticini e Formaggi,12.9,26,2026-10-06
+DIST_0295,BEN_82DDD2486D,18-30,5,Barriera di Milano,PR_02,Pasta e Cereali,6.5,13,2026-10-17
+DIST_0296,BEN_5299D39BA7,31-45,1,Mirafiori Sud,PR_03,Pasta e Cereali,4.9,10,2026-10-01
+DIST_0297,BEN_621CD41C03,31-45,1,Borgo San Paolo,PR_04,Prodotti da Forno,3.0,6,2026-11-09
+DIST_0298,BEN_E10113F342,18-30,6,Borgo San Paolo,PR_05,Prodotti da Forno,3.5,7,2026-09-29
+DIST_0299,BEN_420BA1E2FD,31-45,3,Borgo San Paolo,PR_05,Frutta e Verdura,9.0,18,2026-10-03
+DIST_0300,BEN_BB0BA215E8,46-64,4,Barriera di Milano,PR_02,Frutta e Verdura,10.6,21,2026-10-25

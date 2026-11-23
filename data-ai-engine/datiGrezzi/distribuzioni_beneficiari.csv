@@ -1,0 +1,301 @@
+id_distribuzione,id_beneficiario_anonimo,campo_raw_da_anonimizzare_nome,fascia_eta_richiedente,componenti_nucleo_familiare,quartiere_residenza,id_punto_ritiro,categoria_ritirata,kg_distribuiti,pasti_equivalenti,data_distribuzione
+DIST_0001,BEN_2C5B579850,Mario Rossi #84,18-30,3,Aurora / Centro,PR_01,Latticini e Formaggi,10.9,22,2026-10-15
+DIST_0002,BEN_39F56BC9D4,Ahmed Mansour #35,46-64,2,Mirafiori Sud,PR_03,Latticini e Formaggi,11.5,23,2026-10-17
+DIST_0003,BEN_5E2589E031,Ahmed Mansour #42,46-64,4,Borgo San Paolo,PR_05,Scatolame e Legumi,13.6,27,2026-10-26
+DIST_0004,BEN_05BAD0589D,Ibrahim Diallo #19,31-45,2,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),11.2,22,2026-11-05
+DIST_0005,BEN_3D574AC0EF,Luca Ferri #21,18-30,4,San Salvario,PR_04,Beni Prima Necessità (Igiene),2.7,5,2026-10-08
+DIST_0006,BEN_0365A2B0C4,Giulia Conti #84,46-64,4,San Salvario,PR_04,Latticini e Formaggi,12.0,24,2026-09-30
+DIST_0007,BEN_12EB046391,Ibrahim Diallo #13,46-64,5,Aurora / Centro,PR_01,Prodotti Infanzia,12.7,25,2026-10-29
+DIST_0008,BEN_D5B444D6B7,Elena Bianchi #91,46-64,4,Borgo San Paolo,PR_05,Frutta e Verdura,13.0,26,2026-10-02
+DIST_0009,BEN_F897DA67AF,Mario Rossi #14,18-30,3,San Salvario,PR_04,Pasta e Cereali,14.0,28,2026-11-04
+DIST_0010,BEN_2FC325E69A,Ahmed Mansour #59,65+,4,Aurora / Centro,PR_01,Frutta e Verdura,6.8,14,2026-10-09
+DIST_0011,BEN_773E53EDEE,Sofia Romano #93,65+,1,Borgo San Paolo,PR_05,Prodotti Infanzia,12.1,24,2026-11-03
+DIST_0012,BEN_4E13011134,Luca Ferri #37,31-45,4,Mirafiori Sud,PR_03,Pasta e Cereali,7.6,15,2026-09-29
+DIST_0013,BEN_1BFF5C85B7,Luca Ferri #79,65+,6,Mirafiori Sud,PR_03,Pasta e Cereali,6.6,13,2026-09-30
+DIST_0014,BEN_7E376F4025,Ibrahim Diallo #21,18-30,6,Mirafiori Sud,PR_03,Frutta e Verdura,4.9,10,2026-11-05
+DIST_0015,BEN_608971A1A9,Fatima Zahra #26,31-45,5,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),4.9,10,2026-10-22
+DIST_0016,BEN_53F3FF022A,Luca Ferri #28,31-45,5,Borgo San Paolo,PR_05,Frutta e Verdura,2.5,5,2026-10-29
+DIST_0017,BEN_EADBB30C7E,Ahmed Mansour #24,31-45,6,Barriera di Milano,PR_02,Scatolame e Legumi,12.5,25,2026-10-27
+DIST_0018,BEN_544DC8CA97,Nicola Russo #51,18-30,1,Aurora / Centro,PR_01,Latticini e Formaggi,4.5,9,2026-10-28
+DIST_0019,BEN_DE604C1396,Chiara Gallo #24,65+,6,Barriera di Milano,PR_02,Prodotti Infanzia,3.2,6,2026-10-17
+DIST_0020,BEN_999881038C,Elena Bianchi #67,18-30,5,Mirafiori Sud,PR_03,Scatolame e Legumi,5.0,10,2026-10-06
+DIST_0021,BEN_0D5E7590D6,Mario Rossi #17,65+,4,Borgo San Paolo,PR_05,Latticini e Formaggi,12.2,24,2026-10-14
+DIST_0022,BEN_05BAD0589D,Ibrahim Diallo #19,31-45,1,Aurora / Centro,PR_01,Prodotti da Forno,6.2,12,2026-09-28
+DIST_0023,BEN_54686C6CBE,Nicola Russo #91,46-64,5,Aurora / Centro,PR_01,Frutta e Verdura,8.8,18,2026-10-26
+DIST_0024,BEN_A88EFD3B3D,Giulia Conti #68,18-30,5,San Salvario,PR_04,Scatolame e Legumi,9.5,19,2026-10-10
+DIST_0025,BEN_2B3FFB3EF9,Chiara Gallo #37,31-45,4,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),7.7,15,2026-10-02
+DIST_0026,BEN_CBA8BC6490,Sofia Romano #63,65+,6,San Salvario,PR_04,Latticini e Formaggi,3.6,7,2026-10-14
+DIST_0027,BEN_16C02A47AD,Luca Ferri #29,18-30,6,Mirafiori Sud,PR_03,Prodotti Infanzia,13.1,26,2026-10-27
+DIST_0028,BEN_329D6A1B96,Elena Bianchi #65,46-64,1,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),11.1,22,2026-11-07
+DIST_0029,BEN_15A67A8C7A,Nicola Russo #81,18-30,5,Barriera di Milano,PR_02,Scatolame e Legumi,6.3,13,2026-11-09
+DIST_0030,BEN_0ECF48D965,Sofia Romano #16,46-64,3,San Salvario,PR_04,Latticini e Formaggi,9.4,19,2026-10-01
+DIST_0031,BEN_DBE051E561,Fatima Zahra #29,18-30,6,Aurora / Centro,PR_01,Scatolame e Legumi,8.0,16,2026-10-11
+DIST_0032,BEN_BCEA01805D,Luca Ferri #24,65+,3,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),9.1,18,2026-10-08
+DIST_0033,BEN_CD2C469F33,Nicola Russo #96,46-64,6,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),8.9,18,2026-10-04
+DIST_0034,BEN_F6A23E1D04,Giulia Conti #53,31-45,3,Aurora / Centro,PR_01,Frutta e Verdura,2.6,5,2026-10-26
+DIST_0035,BEN_81D43552FE,Elena Bianchi #28,18-30,6,Borgo San Paolo,PR_05,Prodotti Infanzia,9.8,20,2026-10-18
+DIST_0036,BEN_818ED15117,Fatima Zahra #58,31-45,4,Aurora / Centro,PR_01,Prodotti Infanzia,7.7,15,2026-10-10
+DIST_0037,BEN_49B4FA9A08,Nicola Russo #86,31-45,1,Mirafiori Sud,PR_03,Latticini e Formaggi,12.7,25,2026-10-23
+DIST_0038,BEN_923A6E170D,Mario Rossi #96,65+,1,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),5.6,11,2026-10-04
+DIST_0039,BEN_7DDF55CCD8,Sofia Romano #44,18-30,2,San Salvario,PR_04,Scatolame e Legumi,11.2,22,2026-10-15
+DIST_0040,BEN_046D06D5AB,Giulia Conti #96,46-64,6,Mirafiori Sud,PR_03,Prodotti da Forno,9.3,19,2026-11-05
+DIST_0041,BEN_CD1CD4B9FA,Nicola Russo #17,31-45,1,Aurora / Centro,PR_01,Frutta e Verdura,4.9,10,2026-10-18
+DIST_0042,BEN_3F411AA853,Giulia Conti #51,65+,1,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),2.6,5,2026-10-27
+DIST_0043,BEN_A06FF1BEAC,Chiara Gallo #39,46-64,5,Barriera di Milano,PR_02,Frutta e Verdura,8.9,18,2026-10-19
+DIST_0044,BEN_4DFBE6CAA8,Sofia Romano #12,46-64,4,Aurora / Centro,PR_01,Prodotti da Forno,13.1,26,2026-11-10
+DIST_0045,BEN_59F1C7C7D7,Sofia Romano #91,65+,4,Borgo San Paolo,PR_05,Prodotti da Forno,5.8,12,2026-10-07
+DIST_0046,BEN_0C79F03F43,Nicola Russo #68,18-30,6,Aurora / Centro,PR_01,Latticini e Formaggi,13.1,26,2026-11-02
+DIST_0047,BEN_EEBD5805C7,Fatima Zahra #65,18-30,5,San Salvario,PR_04,Beni Prima Necessità (Igiene),7.1,14,2026-11-06
+DIST_0048,BEN_F8F21A8B13,Luca Ferri #38,18-30,3,San Salvario,PR_04,Beni Prima Necessità (Igiene),11.5,23,2026-10-24
+DIST_0049,BEN_0AF89B2846,Chiara Gallo #75,46-64,2,Borgo San Paolo,PR_05,Prodotti Infanzia,12.9,26,2026-11-05
+DIST_0050,BEN_52FFC0662D,Ahmed Mansour #40,31-45,1,Mirafiori Sud,PR_03,Prodotti Infanzia,4.2,8,2026-10-02
+DIST_0051,BEN_535671B9F2,Elena Bianchi #32,65+,6,Barriera di Milano,PR_02,Scatolame e Legumi,8.2,16,2026-11-03
+DIST_0052,BEN_544DC8CA97,Nicola Russo #51,65+,6,Borgo San Paolo,PR_05,Prodotti Infanzia,6.1,12,2026-10-03
+DIST_0053,BEN_2E23C5F5D8,Giulia Conti #45,18-30,5,Aurora / Centro,PR_01,Prodotti da Forno,3.1,6,2026-10-15
+DIST_0054,BEN_0D5E7590D6,Mario Rossi #17,18-30,3,Mirafiori Sud,PR_03,Prodotti da Forno,12.1,24,2026-10-15
+DIST_0055,BEN_F3342EB933,Chiara Gallo #59,18-30,4,Aurora / Centro,PR_01,Scatolame e Legumi,9.2,18,2026-10-05
+DIST_0056,BEN_FE609D1BFF,Fatima Zahra #51,31-45,5,San Salvario,PR_04,Beni Prima Necessità (Igiene),8.0,16,2026-10-07
+DIST_0057,BEN_C0F26A36BF,Luca Ferri #20,18-30,5,Aurora / Centro,PR_01,Prodotti da Forno,9.9,20,2026-11-06
+DIST_0058,BEN_687C448BEB,Ibrahim Diallo #77,46-64,5,Barriera di Milano,PR_02,Prodotti Infanzia,9.5,19,2026-10-15
+DIST_0059,BEN_4A7814116B,Sofia Romano #53,46-64,6,Mirafiori Sud,PR_03,Latticini e Formaggi,9.4,19,2026-10-19
+DIST_0060,BEN_80D770E16B,Chiara Gallo #96,31-45,4,Aurora / Centro,PR_01,Latticini e Formaggi,5.8,12,2026-11-06
+DIST_0061,BEN_D858B87CD1,Ahmed Mansour #54,65+,3,Mirafiori Sud,PR_03,Pasta e Cereali,13.6,27,2026-10-06
+DIST_0062,BEN_3E5ED6495A,Elena Bianchi #49,46-64,5,Barriera di Milano,PR_02,Scatolame e Legumi,6.8,14,2026-09-28
+DIST_0063,BEN_3FC1ED55ED,Chiara Gallo #21,46-64,6,Barriera di Milano,PR_02,Prodotti Infanzia,10.2,20,2026-09-29
+DIST_0064,BEN_90279F3745,Ahmed Mansour #37,65+,3,Aurora / Centro,PR_01,Latticini e Formaggi,13.4,27,2026-10-24
+DIST_0065,BEN_642E09BDBB,Ahmed Mansour #19,18-30,3,Barriera di Milano,PR_02,Frutta e Verdura,12.2,24,2026-11-04
+DIST_0066,BEN_F8FED3A84F,Chiara Gallo #14,31-45,6,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),6.4,13,2026-10-09
+DIST_0067,BEN_BA3909E671,Ahmed Mansour #33,31-45,6,Borgo San Paolo,PR_05,Prodotti da Forno,11.4,23,2026-11-03
+DIST_0068,BEN_3CB36DC657,Luca Ferri #96,65+,6,San Salvario,PR_04,Pasta e Cereali,5.2,10,2026-10-17
+DIST_0069,BEN_BC0FF658F7,Fatima Zahra #78,65+,2,Borgo San Paolo,PR_05,Latticini e Formaggi,6.1,12,2026-10-15
+DIST_0070,BEN_8FB3F8B06C,Nicola Russo #66,65+,4,Barriera di Milano,PR_02,Latticini e Formaggi,11.3,23,2026-09-30
+DIST_0071,BEN_39F56BC9D4,Ahmed Mansour #35,46-64,5,Borgo San Paolo,PR_05,Scatolame e Legumi,4.1,8,2026-10-17
+DIST_0072,BEN_529B233BE1,Luca Ferri #80,18-30,1,Aurora / Centro,PR_01,Prodotti Infanzia,10.7,21,2026-10-13
+DIST_0073,BEN_47C6C66A94,Giulia Conti #67,65+,5,Mirafiori Sud,PR_03,Pasta e Cereali,4.2,8,2026-11-02
+DIST_0074,BEN_306B527186,Luca Ferri #13,46-64,4,Aurora / Centro,PR_01,Frutta e Verdura,3.1,6,2026-10-15
+DIST_0075,BEN_F8F21A8B13,Luca Ferri #38,18-30,1,Barriera di Milano,PR_02,Prodotti da Forno,6.2,12,2026-11-07
+DIST_0076,BEN_71372141AF,Ahmed Mansour #14,65+,3,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),13.1,26,2026-11-03
+DIST_0077,BEN_DBC65E2BC4,Ibrahim Diallo #67,18-30,5,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),2.6,5,2026-09-28
+DIST_0078,BEN_75B1EF1CD3,Ahmed Mansour #80,65+,6,Aurora / Centro,PR_01,Latticini e Formaggi,9.5,19,2026-10-30
+DIST_0079,BEN_38301494A3,Fatima Zahra #48,65+,1,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),3.0,6,2026-10-25
+DIST_0080,BEN_FAB32FF095,Elena Bianchi #73,31-45,5,Borgo San Paolo,PR_05,Prodotti da Forno,8.7,17,2026-11-08
+DIST_0081,BEN_409A3E64B7,Mario Rossi #88,65+,3,Barriera di Milano,PR_02,Latticini e Formaggi,5.3,11,2026-10-16
+DIST_0082,BEN_99DE99883A,Elena Bianchi #77,18-30,3,Barriera di Milano,PR_02,Prodotti Infanzia,3.3,7,2026-10-01
+DIST_0083,BEN_532A8B39D1,Mario Rossi #91,46-64,4,San Salvario,PR_04,Beni Prima Necessità (Igiene),13.8,28,2026-10-13
+DIST_0084,BEN_22A9E41514,Luca Ferri #40,18-30,6,Aurora / Centro,PR_01,Latticini e Formaggi,10.1,20,2026-11-08
+DIST_0085,BEN_74A0F89EBA,Ahmed Mansour #15,31-45,3,Borgo San Paolo,PR_05,Prodotti Infanzia,8.8,18,2026-10-22
+DIST_0086,BEN_D9384BFD27,Ahmed Mansour #27,65+,1,San Salvario,PR_04,Prodotti Infanzia,10.7,21,2026-10-13
+DIST_0087,BEN_0DEECB73FB,Mario Rossi #35,46-64,1,Aurora / Centro,PR_01,Latticini e Formaggi,6.1,12,2026-10-31
+DIST_0088,BEN_3E50E4F7F6,Ibrahim Diallo #42,31-45,1,Borgo San Paolo,PR_05,Prodotti da Forno,11.2,22,2026-10-09
+DIST_0089,BEN_6AD12C1BFE,Luca Ferri #44,65+,1,Mirafiori Sud,PR_03,Latticini e Formaggi,11.7,23,2026-11-09
+DIST_0090,BEN_4A7814116B,Sofia Romano #53,65+,2,San Salvario,PR_04,Prodotti Infanzia,8.2,16,2026-10-15
+DIST_0091,BEN_362DEC6AA0,Giulia Conti #20,65+,6,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),7.4,15,2026-10-10
+DIST_0092,BEN_FBB05CF609,Chiara Gallo #47,46-64,3,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),3.7,7,2026-11-01
+DIST_0093,BEN_03FB370F13,Nicola Russo #64,46-64,2,Mirafiori Sud,PR_03,Latticini e Formaggi,10.4,21,2026-10-15
+DIST_0094,BEN_CEDE577E75,Nicola Russo #65,18-30,3,San Salvario,PR_04,Pasta e Cereali,9.9,20,2026-10-21
+DIST_0095,BEN_DD902AED27,Sofia Romano #56,31-45,5,Aurora / Centro,PR_01,Prodotti Infanzia,11.7,23,2026-10-03
+DIST_0096,BEN_DE6BDE0C63,Ibrahim Diallo #14,46-64,2,Aurora / Centro,PR_01,Frutta e Verdura,3.3,7,2026-10-05
+DIST_0097,BEN_20142AC707,Mario Rossi #87,46-64,2,Mirafiori Sud,PR_03,Prodotti da Forno,10.3,21,2026-10-07
+DIST_0098,BEN_29D39CAEB0,Nicola Russo #27,46-64,5,Mirafiori Sud,PR_03,Prodotti da Forno,6.7,13,2026-11-08
+DIST_0099,BEN_0BF58E40D5,Mario Rossi #33,18-30,4,Mirafiori Sud,PR_03,Frutta e Verdura,8.5,17,2026-11-05
+DIST_0100,BEN_5E50A1F1BD,Ibrahim Diallo #37,65+,5,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),5.8,12,2026-10-27
+DIST_0101,BEN_999881038C,Elena Bianchi #67,65+,2,Barriera di Milano,PR_02,Pasta e Cereali,12.8,26,2026-11-04
+DIST_0102,BEN_F8E3EF0C1B,Luca Ferri #95,46-64,3,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),10.7,21,2026-09-30
+DIST_0103,BEN_CCDE5A7999,Ahmed Mansour #56,31-45,5,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),5.1,10,2026-11-02
+DIST_0104,BEN_898C4C9E37,Mario Rossi #56,65+,5,Barriera di Milano,PR_02,Frutta e Verdura,9.1,18,2026-10-12
+DIST_0105,BEN_FC4AD30CE9,Elena Bianchi #18,65+,3,Borgo San Paolo,PR_05,Frutta e Verdura,7.1,14,2026-10-04
+DIST_0106,BEN_E429CB8DF4,Nicola Russo #19,18-30,2,Borgo San Paolo,PR_05,Prodotti da Forno,13.7,27,2026-10-17
+DIST_0107,BEN_7FBEAE136A,Chiara Gallo #54,31-45,2,San Salvario,PR_04,Prodotti da Forno,12.6,25,2026-09-30
+DIST_0108,BEN_89EC472660,Mario Rossi #25,31-45,5,Barriera di Milano,PR_02,Prodotti da Forno,4.3,9,2026-10-11
+DIST_0109,BEN_29389043BE,Fatima Zahra #54,18-30,5,Barriera di Milano,PR_02,Latticini e Formaggi,12.8,26,2026-09-28
+DIST_0110,BEN_337C681758,Chiara Gallo #45,18-30,2,Mirafiori Sud,PR_03,Frutta e Verdura,9.7,19,2026-10-03
+DIST_0111,BEN_664A7CB3B0,Nicola Russo #84,46-64,2,Borgo San Paolo,PR_05,Prodotti Infanzia,4.5,9,2026-11-02
+DIST_0112,BEN_C6BBB2ADEC,Elena Bianchi #15,46-64,6,Borgo San Paolo,PR_05,Pasta e Cereali,11.4,23,2026-11-11
+DIST_0113,BEN_47CC8474AA,Sofia Romano #89,46-64,6,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),2.8,6,2026-10-07
+DIST_0114,BEN_14815F279F,Sofia Romano #48,18-30,4,Mirafiori Sud,PR_03,Prodotti da Forno,3.3,7,2026-10-28
+DIST_0115,BEN_127CD75266,Ibrahim Diallo #69,31-45,2,Barriera di Milano,PR_02,Prodotti da Forno,6.4,13,2026-10-17
+DIST_0116,BEN_E2FEB29925,Luca Ferri #54,46-64,4,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),4.0,8,2026-09-28
+DIST_0117,BEN_22A9E41514,Luca Ferri #40,65+,4,Borgo San Paolo,PR_05,Scatolame e Legumi,3.9,8,2026-11-06
+DIST_0118,BEN_698FB21A67,Mario Rossi #47,65+,4,Barriera di Milano,PR_02,Frutta e Verdura,12.4,25,2026-11-06
+DIST_0119,BEN_8817443106,Luca Ferri #83,31-45,6,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),6.1,12,2026-11-02
+DIST_0120,BEN_B3A3FF9C68,Ibrahim Diallo #49,65+,4,San Salvario,PR_04,Scatolame e Legumi,2.8,6,2026-10-14
+DIST_0121,BEN_FA8EED357A,Fatima Zahra #84,46-64,3,Borgo San Paolo,PR_05,Prodotti da Forno,3.1,6,2026-10-28
+DIST_0122,BEN_A53E423D94,Ibrahim Diallo #46,18-30,5,San Salvario,PR_04,Scatolame e Legumi,2.6,5,2026-10-02
+DIST_0123,BEN_A77928EB75,Luca Ferri #61,18-30,3,San Salvario,PR_04,Frutta e Verdura,3.0,6,2026-10-27
+DIST_0124,BEN_529B233BE1,Luca Ferri #80,65+,3,Borgo San Paolo,PR_05,Scatolame e Legumi,3.3,7,2026-10-31
+DIST_0125,BEN_F9FA9E8920,Nicola Russo #25,65+,2,Borgo San Paolo,PR_05,Latticini e Formaggi,13.7,27,2026-10-04
+DIST_0126,BEN_32B9F0637B,Chiara Gallo #56,65+,2,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),4.8,10,2026-10-22
+DIST_0127,BEN_940351D83A,Mario Rossi #27,65+,6,Borgo San Paolo,PR_05,Pasta e Cereali,6.3,13,2026-11-10
+DIST_0128,BEN_D8F17A2EF4,Nicola Russo #75,46-64,2,Borgo San Paolo,PR_05,Prodotti da Forno,6.3,13,2026-11-03
+DIST_0129,BEN_6F86333375,Giulia Conti #85,65+,3,Barriera di Milano,PR_02,Prodotti da Forno,8.3,17,2026-10-04
+DIST_0130,BEN_E84A48491E,Mario Rossi #57,65+,3,Borgo San Paolo,PR_05,Latticini e Formaggi,10.2,20,2026-10-13
+DIST_0131,BEN_9535B8F908,Mario Rossi #86,31-45,4,Borgo San Paolo,PR_05,Latticini e Formaggi,5.6,11,2026-09-29
+DIST_0132,BEN_C9068E4600,Ahmed Mansour #77,65+,6,Aurora / Centro,PR_01,Scatolame e Legumi,10.8,22,2026-10-13
+DIST_0133,BEN_1601C96AFC,Fatima Zahra #14,18-30,5,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),13.4,27,2026-09-30
+DIST_0134,BEN_6B7C6D5E11,Luca Ferri #63,31-45,2,Barriera di Milano,PR_02,Pasta e Cereali,7.2,14,2026-10-15
+DIST_0135,BEN_132654EA5E,Ibrahim Diallo #17,31-45,6,San Salvario,PR_04,Scatolame e Legumi,4.1,8,2026-10-04
+DIST_0136,BEN_687C448BEB,Ibrahim Diallo #77,31-45,4,Borgo San Paolo,PR_05,Latticini e Formaggi,6.1,12,2026-10-01
+DIST_0137,BEN_EFEB33906C,Chiara Gallo #55,46-64,6,San Salvario,PR_04,Scatolame e Legumi,11.4,23,2026-10-22
+DIST_0138,BEN_17480E32F5,Fatima Zahra #45,46-64,5,Borgo San Paolo,PR_05,Prodotti da Forno,5.9,12,2026-10-31
+DIST_0139,BEN_6D3C231CE9,Ibrahim Diallo #50,46-64,4,Mirafiori Sud,PR_03,Prodotti Infanzia,6.5,13,2026-10-30
+DIST_0140,BEN_8D16976F48,Chiara Gallo #58,31-45,4,Mirafiori Sud,PR_03,Pasta e Cereali,11.9,24,2026-10-07
+DIST_0141,BEN_3F7D904C22,Elena Bianchi #54,65+,4,Mirafiori Sud,PR_03,Pasta e Cereali,10.0,20,2026-10-25
+DIST_0142,BEN_B5F2AC9A8D,Giulia Conti #81,18-30,6,Barriera di Milano,PR_02,Frutta e Verdura,5.6,11,2026-10-09
+DIST_0143,BEN_16B1EA41AF,Fatima Zahra #41,31-45,1,Borgo San Paolo,PR_05,Prodotti Infanzia,10.2,20,2026-10-06
+DIST_0144,BEN_824C927A02,Sofia Romano #52,31-45,6,Barriera di Milano,PR_02,Pasta e Cereali,7.9,16,2026-11-06
+DIST_0145,BEN_773E53EDEE,Sofia Romano #93,31-45,4,Aurora / Centro,PR_01,Scatolame e Legumi,8.0,16,2026-11-02
+DIST_0146,BEN_1FA6D0949F,Mario Rossi #21,18-30,6,Mirafiori Sud,PR_03,Latticini e Formaggi,9.1,18,2026-10-25
+DIST_0147,BEN_72B10A8EA0,Mario Rossi #60,46-64,4,Barriera di Milano,PR_02,Prodotti da Forno,4.6,9,2026-11-01
+DIST_0148,BEN_A4384C4746,Nicola Russo #87,46-64,1,Aurora / Centro,PR_01,Pasta e Cereali,13.2,26,2026-10-24
+DIST_0149,BEN_30239AD10E,Chiara Gallo #77,31-45,4,Mirafiori Sud,PR_03,Prodotti da Forno,12.7,25,2026-10-02
+DIST_0150,BEN_5E2D53807A,Fatima Zahra #24,65+,3,Borgo San Paolo,PR_05,Prodotti da Forno,4.4,9,2026-10-26
+DIST_0151,BEN_ECC04580A1,Mario Rossi #53,31-45,3,Mirafiori Sud,PR_03,Prodotti Infanzia,9.0,18,2026-11-01
+DIST_0152,BEN_E64CF52DE7,Sofia Romano #64,65+,5,Barriera di Milano,PR_02,Scatolame e Legumi,6.3,13,2026-10-03
+DIST_0153,BEN_BF366EDE12,Ibrahim Diallo #51,65+,2,Aurora / Centro,PR_01,Frutta e Verdura,2.6,5,2026-11-04
+DIST_0154,BEN_7A3BFBAF97,Luca Ferri #48,18-30,5,Barriera di Milano,PR_02,Prodotti da Forno,10.8,22,2026-10-26
+DIST_0155,BEN_A94ADEA8C6,Fatima Zahra #17,46-64,6,Mirafiori Sud,PR_03,Prodotti Infanzia,3.9,8,2026-10-20
+DIST_0156,BEN_2F30299F1B,Chiara Gallo #49,46-64,6,Barriera di Milano,PR_02,Prodotti da Forno,3.9,8,2026-09-30
+DIST_0157,BEN_6A7466BDCB,Fatima Zahra #27,46-64,4,Mirafiori Sud,PR_03,Scatolame e Legumi,4.3,9,2026-10-29
+DIST_0158,BEN_F6AD6D9104,Ibrahim Diallo #78,31-45,6,San Salvario,PR_04,Prodotti Infanzia,12.0,24,2026-10-08
+DIST_0159,BEN_07F5998E19,Chiara Gallo #67,18-30,5,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),10.6,21,2026-11-07
+DIST_0160,BEN_5414873B88,Chiara Gallo #74,31-45,2,Borgo San Paolo,PR_05,Pasta e Cereali,9.1,18,2026-11-09
+DIST_0161,BEN_18E13E21AD,Ibrahim Diallo #24,65+,6,Barriera di Milano,PR_02,Latticini e Formaggi,4.9,10,2026-10-10
+DIST_0162,BEN_B3A864BE3F,Mario Rossi #68,65+,2,Aurora / Centro,PR_01,Scatolame e Legumi,8.4,17,2026-10-15
+DIST_0163,BEN_8B45E3865E,Ibrahim Diallo #96,65+,3,Borgo San Paolo,PR_05,Pasta e Cereali,10.8,22,2026-10-08
+DIST_0164,BEN_FA8EED357A,Fatima Zahra #84,46-64,1,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),3.0,6,2026-11-12
+DIST_0165,BEN_8D593785FE,Elena Bianchi #70,31-45,1,Aurora / Centro,PR_01,Scatolame e Legumi,5.8,12,2026-11-09
+DIST_0166,BEN_3646D0807E,Sofia Romano #57,65+,4,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),7.7,15,2026-10-02
+DIST_0167,BEN_6B3E793546,Chiara Gallo #27,18-30,6,San Salvario,PR_04,Pasta e Cereali,12.4,25,2026-09-30
+DIST_0168,BEN_20D5C3409C,Chiara Gallo #26,18-30,6,Barriera di Milano,PR_02,Scatolame e Legumi,13.8,28,2026-10-18
+DIST_0169,BEN_526707F659,Chiara Gallo #64,31-45,5,Aurora / Centro,PR_01,Latticini e Formaggi,6.9,14,2026-10-14
+DIST_0170,BEN_E04674DCF9,Ahmed Mansour #45,18-30,2,Barriera di Milano,PR_02,Prodotti da Forno,13.3,27,2026-10-21
+DIST_0171,BEN_259C97F298,Sofia Romano #88,18-30,1,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),5.3,11,2026-10-01
+DIST_0172,BEN_1C5A79CECB,Ibrahim Diallo #86,18-30,6,Aurora / Centro,PR_01,Scatolame e Legumi,10.6,21,2026-11-10
+DIST_0173,BEN_8293C101CD,Sofia Romano #66,18-30,2,Barriera di Milano,PR_02,Prodotti Infanzia,8.7,17,2026-11-10
+DIST_0174,BEN_CEBEE6CFA2,Fatima Zahra #83,46-64,3,Barriera di Milano,PR_02,Scatolame e Legumi,9.1,18,2026-10-25
+DIST_0175,BEN_0D5DE2103C,Chiara Gallo #38,18-30,4,Barriera di Milano,PR_02,Latticini e Formaggi,6.0,12,2026-11-03
+DIST_0176,BEN_1252737700,Sofia Romano #81,46-64,4,Borgo San Paolo,PR_05,Scatolame e Legumi,3.0,6,2026-11-01
+DIST_0177,BEN_38F9D6BDA1,Luca Ferri #99,46-64,4,San Salvario,PR_04,Beni Prima Necessità (Igiene),7.2,14,2026-10-10
+DIST_0178,BEN_33CF64859A,Ibrahim Diallo #40,31-45,2,San Salvario,PR_04,Frutta e Verdura,6.0,12,2026-10-09
+DIST_0179,BEN_CBA8BC6490,Sofia Romano #63,65+,5,San Salvario,PR_04,Pasta e Cereali,8.6,17,2026-10-08
+DIST_0180,BEN_C1B92F2F58,Luca Ferri #92,46-64,1,Barriera di Milano,PR_02,Latticini e Formaggi,13.1,26,2026-10-30
+DIST_0181,BEN_2D96B1AA0E,Mario Rossi #44,18-30,4,Aurora / Centro,PR_01,Scatolame e Legumi,10.2,20,2026-10-31
+DIST_0182,BEN_2B3FFB3EF9,Chiara Gallo #37,46-64,4,Aurora / Centro,PR_01,Frutta e Verdura,4.9,10,2026-10-06
+DIST_0183,BEN_8774973691,Fatima Zahra #25,65+,6,Mirafiori Sud,PR_03,Pasta e Cereali,14.0,28,2026-10-30
+DIST_0184,BEN_7D936B498C,Fatima Zahra #60,46-64,2,Barriera di Milano,PR_02,Prodotti Infanzia,8.8,18,2026-10-05
+DIST_0185,BEN_267BB526A3,Luca Ferri #49,65+,3,San Salvario,PR_04,Prodotti da Forno,6.6,13,2026-10-09
+DIST_0186,BEN_678C400418,Luca Ferri #36,18-30,3,San Salvario,PR_04,Pasta e Cereali,6.1,12,2026-10-13
+DIST_0187,BEN_B643EBD16D,Ahmed Mansour #12,65+,3,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),8.9,18,2026-10-29
+DIST_0188,BEN_51E20EC04B,Luca Ferri #39,31-45,4,Mirafiori Sud,PR_03,Frutta e Verdura,9.1,18,2026-10-31
+DIST_0189,BEN_8E77B5CE1C,Luca Ferri #42,65+,4,San Salvario,PR_04,Scatolame e Legumi,13.6,27,2026-10-02
+DIST_0190,BEN_D9384BFD27,Ahmed Mansour #27,31-45,6,San Salvario,PR_04,Frutta e Verdura,8.8,18,2026-10-21
+DIST_0191,BEN_F8FED3A84F,Chiara Gallo #14,18-30,1,Borgo San Paolo,PR_05,Prodotti Infanzia,13.4,27,2026-11-09
+DIST_0192,BEN_4E890BAEEB,Fatima Zahra #18,31-45,6,Aurora / Centro,PR_01,Prodotti da Forno,4.2,8,2026-11-04
+DIST_0193,BEN_4E5C39ED4D,Mario Rossi #89,65+,6,Borgo San Paolo,PR_05,Prodotti da Forno,10.2,20,2026-10-20
+DIST_0194,BEN_F07CA20C0C,Chiara Gallo #80,46-64,4,San Salvario,PR_04,Pasta e Cereali,2.6,5,2026-11-12
+DIST_0195,BEN_9143B459B1,Chiara Gallo #99,31-45,6,Borgo San Paolo,PR_05,Latticini e Formaggi,7.5,15,2026-11-11
+DIST_0196,BEN_52FFC0662D,Ahmed Mansour #40,46-64,2,Aurora / Centro,PR_01,Pasta e Cereali,9.6,19,2026-10-10
+DIST_0197,BEN_4EA01CA1D8,Elena Bianchi #57,31-45,4,Mirafiori Sud,PR_03,Latticini e Formaggi,7.8,16,2026-10-18
+DIST_0198,BEN_796EE1A556,Elena Bianchi #93,18-30,6,Barriera di Milano,PR_02,Latticini e Formaggi,11.2,22,2026-09-30
+DIST_0199,BEN_98CD264658,Chiara Gallo #70,31-45,1,San Salvario,PR_04,Prodotti da Forno,9.8,20,2026-10-19
+DIST_0200,BEN_A130EE7B1D,Luca Ferri #82,18-30,1,Aurora / Centro,PR_01,Prodotti da Forno,12.8,26,2026-10-16
+DIST_0201,BEN_86AE212CDE,Nicola Russo #70,18-30,3,Barriera di Milano,PR_02,Frutta e Verdura,3.0,6,2026-09-29
+DIST_0202,BEN_4BB95DCC26,Mario Rossi #32,31-45,3,Mirafiori Sud,PR_03,Scatolame e Legumi,2.7,5,2026-10-07
+DIST_0203,BEN_41B0A63CF8,Sofia Romano #19,31-45,3,Borgo San Paolo,PR_05,Frutta e Verdura,4.4,9,2026-09-28
+DIST_0204,BEN_77EE16C0D7,Chiara Gallo #52,31-45,4,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),11.2,22,2026-10-19
+DIST_0205,BEN_024C583B15,Mario Rossi #22,18-30,4,Aurora / Centro,PR_01,Scatolame e Legumi,5.2,10,2026-10-21
+DIST_0206,BEN_0B4D6520F5,Nicola Russo #60,46-64,3,Mirafiori Sud,PR_03,Scatolame e Legumi,2.8,6,2026-10-04
+DIST_0207,BEN_529B233BE1,Luca Ferri #80,65+,4,San Salvario,PR_04,Prodotti da Forno,7.5,15,2026-10-29
+DIST_0208,BEN_2A61BD022F,Giulia Conti #41,46-64,6,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),3.3,7,2026-10-04
+DIST_0209,BEN_2FC325E69A,Ahmed Mansour #59,18-30,3,Barriera di Milano,PR_02,Prodotti da Forno,6.6,13,2026-09-28
+DIST_0210,BEN_6AD12C1BFE,Luca Ferri #44,31-45,1,Aurora / Centro,PR_01,Latticini e Formaggi,4.0,8,2026-10-15
+DIST_0211,BEN_0AF89B2846,Chiara Gallo #75,18-30,4,San Salvario,PR_04,Prodotti da Forno,3.7,7,2026-10-08
+DIST_0212,BEN_49B4FA9A08,Nicola Russo #86,18-30,3,Mirafiori Sud,PR_03,Scatolame e Legumi,12.4,25,2026-11-07
+DIST_0213,BEN_22F815215A,Elena Bianchi #81,31-45,2,Mirafiori Sud,PR_03,Prodotti da Forno,9.1,18,2026-10-19
+DIST_0214,BEN_68A94C5CA8,Giulia Conti #48,18-30,3,San Salvario,PR_04,Frutta e Verdura,8.2,16,2026-11-04
+DIST_0215,BEN_14815F279F,Sofia Romano #48,46-64,4,Barriera di Milano,PR_02,Prodotti da Forno,11.5,23,2026-10-26
+DIST_0216,BEN_1C5A79CECB,Ibrahim Diallo #86,18-30,5,Mirafiori Sud,PR_03,Frutta e Verdura,4.7,9,2026-10-03
+DIST_0217,BEN_824C927A02,Sofia Romano #52,46-64,5,Barriera di Milano,PR_02,Latticini e Formaggi,6.9,14,2026-11-12
+DIST_0218,BEN_29D39CAEB0,Nicola Russo #27,31-45,3,San Salvario,PR_04,Latticini e Formaggi,6.2,12,2026-10-16
+DIST_0219,BEN_6C4ABC871D,Sofia Romano #50,65+,3,San Salvario,PR_04,Latticini e Formaggi,11.0,22,2026-11-01
+DIST_0220,BEN_6937B75EE4,Luca Ferri #58,65+,3,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),11.9,24,2026-10-28
+DIST_0221,BEN_D17BC71D73,Fatima Zahra #85,18-30,5,Mirafiori Sud,PR_03,Pasta e Cereali,4.6,9,2026-10-07
+DIST_0222,BEN_BAF40D49A8,Ibrahim Diallo #47,65+,6,San Salvario,PR_04,Prodotti Infanzia,3.3,7,2026-10-30
+DIST_0223,BEN_6F82488A13,Giulia Conti #40,65+,3,San Salvario,PR_04,Frutta e Verdura,10.1,20,2026-10-03
+DIST_0224,BEN_A0BDD5C9AD,Nicola Russo #71,65+,5,San Salvario,PR_04,Pasta e Cereali,7.1,14,2026-10-15
+DIST_0225,BEN_A63D4B6D65,Chiara Gallo #86,18-30,6,Borgo San Paolo,PR_05,Pasta e Cereali,13.0,26,2026-10-20
+DIST_0226,BEN_B1608B5A91,Luca Ferri #31,65+,6,Barriera di Milano,PR_02,Prodotti Infanzia,9.5,19,2026-10-01
+DIST_0227,BEN_E817D464CC,Elena Bianchi #11,31-45,1,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),5.5,11,2026-10-16
+DIST_0228,BEN_8B45E3865E,Ibrahim Diallo #96,31-45,5,San Salvario,PR_04,Latticini e Formaggi,10.4,21,2026-10-18
+DIST_0229,BEN_6CAC5C682A,Elena Bianchi #47,18-30,4,Mirafiori Sud,PR_03,Pasta e Cereali,13.1,26,2026-10-13
+DIST_0230,BEN_267BB526A3,Luca Ferri #49,31-45,3,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),7.7,15,2026-11-03
+DIST_0231,BEN_0D2FE61513,Ibrahim Diallo #22,65+,4,Borgo San Paolo,PR_05,Prodotti da Forno,10.8,22,2026-10-21
+DIST_0232,BEN_BADDBCC67C,Mario Rossi #24,18-30,1,Mirafiori Sud,PR_03,Pasta e Cereali,12.3,25,2026-10-24
+DIST_0233,BEN_45C48D8EA4,Chiara Gallo #32,65+,5,Barriera di Milano,PR_02,Prodotti Infanzia,4.3,9,2026-10-28
+DIST_0234,BEN_BA3909E671,Ahmed Mansour #33,65+,6,San Salvario,PR_04,Frutta e Verdura,10.1,20,2026-10-18
+DIST_0235,BEN_A89933C0CC,Fatima Zahra #67,18-30,5,Aurora / Centro,PR_01,Prodotti Infanzia,7.4,15,2026-10-04
+DIST_0236,BEN_F8991C4CCC,Elena Bianchi #83,31-45,1,Barriera di Milano,PR_02,Frutta e Verdura,11.7,23,2026-10-26
+DIST_0237,BEN_18E13E21AD,Ibrahim Diallo #24,65+,3,Mirafiori Sud,PR_03,Latticini e Formaggi,10.2,20,2026-10-31
+DIST_0238,BEN_4AFDE7FB79,Nicola Russo #59,18-30,5,Borgo San Paolo,PR_05,Prodotti Infanzia,7.0,14,2026-10-23
+DIST_0239,BEN_B9F28510C1,Nicola Russo #32,46-64,6,Mirafiori Sud,PR_03,Latticini e Formaggi,10.6,21,2026-10-14
+DIST_0240,BEN_70159DDFB2,Ahmed Mansour #50,18-30,1,Borgo San Paolo,PR_05,Scatolame e Legumi,5.2,10,2026-11-07
+DIST_0241,BEN_93171BD295,Ahmed Mansour #75,31-45,4,Barriera di Milano,PR_02,Latticini e Formaggi,7.3,15,2026-09-29
+DIST_0242,BEN_5FB24401EF,Ahmed Mansour #72,31-45,6,Borgo San Paolo,PR_05,Prodotti da Forno,8.7,17,2026-10-16
+DIST_0243,BEN_718FFAA33A,Giulia Conti #27,65+,2,Borgo San Paolo,PR_05,Frutta e Verdura,6.1,12,2026-10-12
+DIST_0244,BEN_15C5543A37,Mario Rossi #72,65+,2,Borgo San Paolo,PR_05,Pasta e Cereali,4.7,9,2026-10-21
+DIST_0245,BEN_47A28471B2,Ibrahim Diallo #62,65+,6,Borgo San Paolo,PR_05,Scatolame e Legumi,8.2,16,2026-10-02
+DIST_0246,BEN_EB8DFBF338,Nicola Russo #13,46-64,2,San Salvario,PR_04,Frutta e Verdura,5.9,12,2026-11-07
+DIST_0247,BEN_C75A47EB02,Ahmed Mansour #68,65+,5,Barriera di Milano,PR_02,Scatolame e Legumi,11.0,22,2026-10-25
+DIST_0248,BEN_0B0740CA46,Nicola Russo #24,46-64,3,Borgo San Paolo,PR_05,Scatolame e Legumi,11.4,23,2026-11-05
+DIST_0249,BEN_58431B7848,Ibrahim Diallo #79,18-30,2,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),13.9,28,2026-11-10
+DIST_0250,BEN_66F8D706D0,Ibrahim Diallo #43,18-30,3,Barriera di Milano,PR_02,Latticini e Formaggi,12.4,25,2026-11-10
+DIST_0251,BEN_9EF4A3BA45,Fatima Zahra #36,46-64,6,San Salvario,PR_04,Beni Prima Necessità (Igiene),9.3,19,2026-11-05
+DIST_0252,BEN_6947461792,Ahmed Mansour #88,31-45,2,Borgo San Paolo,PR_05,Prodotti Infanzia,11.5,23,2026-10-16
+DIST_0253,BEN_337C681758,Chiara Gallo #45,46-64,5,Aurora / Centro,PR_01,Scatolame e Legumi,8.7,17,2026-10-21
+DIST_0254,BEN_C86B0A6CB4,Giulia Conti #75,31-45,6,Mirafiori Sud,PR_03,Latticini e Formaggi,11.9,24,2026-10-07
+DIST_0255,BEN_E60737E966,Ahmed Mansour #99,46-64,2,San Salvario,PR_04,Pasta e Cereali,5.4,11,2026-10-26
+DIST_0256,BEN_D9BC2D36D6,Sofia Romano #72,46-64,2,Barriera di Milano,PR_02,Beni Prima Necessità (Igiene),9.1,18,2026-09-30
+DIST_0257,BEN_D5B444D6B7,Elena Bianchi #91,46-64,1,San Salvario,PR_04,Prodotti da Forno,7.1,14,2026-10-15
+DIST_0258,BEN_690C2E9A66,Luca Ferri #84,18-30,1,Mirafiori Sud,PR_03,Prodotti da Forno,12.5,25,2026-10-12
+DIST_0259,BEN_DE191B1E7F,Luca Ferri #18,65+,5,San Salvario,PR_04,Prodotti Infanzia,7.1,14,2026-10-01
+DIST_0260,BEN_CE8C704B33,Luca Ferri #46,31-45,3,Barriera di Milano,PR_02,Prodotti da Forno,8.8,18,2026-10-26
+DIST_0261,BEN_C1301DD0E9,Luca Ferri #97,65+,1,Borgo San Paolo,PR_05,Beni Prima Necessità (Igiene),3.0,6,2026-10-12
+DIST_0262,BEN_C448BA1103,Ibrahim Diallo #68,65+,1,Aurora / Centro,PR_01,Pasta e Cereali,13.9,28,2026-11-02
+DIST_0263,BEN_300DD817C0,Giulia Conti #30,46-64,3,Barriera di Milano,PR_02,Prodotti Infanzia,3.6,7,2026-11-04
+DIST_0264,BEN_9A3B2B59DA,Ahmed Mansour #16,31-45,4,Mirafiori Sud,PR_03,Pasta e Cereali,9.7,19,2026-10-20
+DIST_0265,BEN_B24ECAC3D0,Elena Bianchi #10,31-45,2,San Salvario,PR_04,Prodotti Infanzia,8.0,16,2026-11-07
+DIST_0266,BEN_476CF344E5,Ibrahim Diallo #11,18-30,1,Borgo San Paolo,PR_05,Frutta e Verdura,10.5,21,2026-10-10
+DIST_0267,BEN_05BAD0589D,Ibrahim Diallo #19,18-30,2,San Salvario,PR_04,Prodotti Infanzia,6.9,14,2026-11-04
+DIST_0268,BEN_718FFAA33A,Giulia Conti #27,31-45,4,Aurora / Centro,PR_01,Latticini e Formaggi,11.4,23,2026-10-20
+DIST_0269,BEN_6B50E0BF2B,Nicola Russo #11,65+,5,Barriera di Milano,PR_02,Pasta e Cereali,10.0,20,2026-10-10
+DIST_0270,BEN_A5CEE9D0B7,Ahmed Mansour #62,31-45,5,Mirafiori Sud,PR_03,Prodotti Infanzia,10.4,21,2026-10-30
+DIST_0271,BEN_07CE72497D,Elena Bianchi #85,65+,6,Aurora / Centro,PR_01,Pasta e Cereali,6.9,14,2026-11-04
+DIST_0272,BEN_17480E32F5,Fatima Zahra #45,46-64,6,Mirafiori Sud,PR_03,Beni Prima Necessità (Igiene),3.5,7,2026-11-04
+DIST_0273,BEN_0F5A2CC3BE,Giulia Conti #36,31-45,5,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),9.5,19,2026-10-01
+DIST_0274,BEN_9FB1018F4E,Mario Rossi #40,31-45,4,San Salvario,PR_04,Latticini e Formaggi,6.9,14,2026-10-02
+DIST_0275,BEN_99DE99883A,Elena Bianchi #77,46-64,1,San Salvario,PR_04,Prodotti Infanzia,13.8,28,2026-10-05
+DIST_0276,BEN_DD902AED27,Sofia Romano #56,65+,5,Barriera di Milano,PR_02,Prodotti da Forno,10.4,21,2026-10-07
+DIST_0277,BEN_E817D464CC,Elena Bianchi #11,18-30,3,Aurora / Centro,PR_01,Pasta e Cereali,5.0,10,2026-10-06
+DIST_0278,BEN_CCC2C937EC,Chiara Gallo #63,18-30,4,San Salvario,PR_04,Scatolame e Legumi,10.6,21,2026-10-25
+DIST_0279,BEN_E04674DCF9,Ahmed Mansour #45,31-45,1,Borgo San Paolo,PR_05,Scatolame e Legumi,6.1,12,2026-10-04
+DIST_0280,BEN_AAC66DFB7E,Sofia Romano #85,18-30,6,Barriera di Milano,PR_02,Scatolame e Legumi,11.3,23,2026-10-23
+DIST_0281,BEN_A94ADEA8C6,Fatima Zahra #17,65+,2,Mirafiori Sud,PR_03,Prodotti Infanzia,3.5,7,2026-10-16
+DIST_0282,BEN_CD1CD4B9FA,Nicola Russo #17,31-45,3,Aurora / Centro,PR_01,Prodotti da Forno,10.2,20,2026-10-04
+DIST_0283,BEN_E60737E966,Ahmed Mansour #99,46-64,1,Aurora / Centro,PR_01,Pasta e Cereali,4.4,9,2026-09-28
+DIST_0284,BEN_D88C7F1021,Ahmed Mansour #57,46-64,2,Borgo San Paolo,PR_05,Scatolame e Legumi,11.1,22,2026-10-27
+DIST_0285,BEN_0AB223A4C9,Luca Ferri #64,46-64,3,Aurora / Centro,PR_01,Beni Prima Necessità (Igiene),8.5,17,2026-11-11
+DIST_0286,BEN_C448BA1103,Ibrahim Diallo #68,65+,5,Borgo San Paolo,PR_05,Prodotti Infanzia,6.6,13,2026-11-08
+DIST_0287,BEN_5E2589E031,Ahmed Mansour #42,18-30,1,Borgo San Paolo,PR_05,Frutta e Verdura,12.8,26,2026-10-20
+DIST_0288,BEN_EAA8DAEB9D,Mario Rossi #15,65+,1,Barriera di Milano,PR_02,Prodotti Infanzia,5.3,11,2026-10-11
+DIST_0289,BEN_71372141AF,Ahmed Mansour #14,65+,5,Mirafiori Sud,PR_03,Prodotti da Forno,11.7,23,2026-11-03
+DIST_0290,BEN_6C4ABC871D,Sofia Romano #50,46-64,3,Barriera di Milano,PR_02,Latticini e Formaggi,12.0,24,2026-10-28
+DIST_0291,BEN_4BB95DCC26,Mario Rossi #32,18-30,2,Aurora / Centro,PR_01,Scatolame e Legumi,11.7,23,2026-09-30
+DIST_0292,BEN_2BB915D45B,Giulia Conti #49,65+,3,San Salvario,PR_04,Pasta e Cereali,3.5,7,2026-10-14
+DIST_0293,BEN_A09186E9D6,Giulia Conti #82,31-45,3,Aurora / Centro,PR_01,Latticini e Formaggi,11.0,22,2026-10-31
+DIST_0294,BEN_A4439637FF,Ibrahim Diallo #35,31-45,6,San Salvario,PR_04,Latticini e Formaggi,12.9,26,2026-10-06
+DIST_0295,BEN_09EA8A3DDC,Mario Rossi #39,18-30,5,Barriera di Milano,PR_02,Pasta e Cereali,6.5,13,2026-10-17
+DIST_0296,BEN_CC272200EC,Sofia Romano #49,31-45,1,Mirafiori Sud,PR_03,Pasta e Cereali,4.9,10,2026-10-01
+DIST_0297,BEN_E04674DCF9,Ahmed Mansour #45,31-45,1,San Salvario,PR_04,Prodotti da Forno,3.0,6,2026-11-09
+DIST_0298,BEN_2858F121A0,Luca Ferri #68,18-30,6,Borgo San Paolo,PR_05,Prodotti da Forno,3.5,7,2026-09-29
+DIST_0299,BEN_41B0A63CF8,Sofia Romano #19,65+,5,Borgo San Paolo,PR_05,Frutta e Verdura,9.0,18,2026-10-03
+DIST_0300,BEN_C6C74FC001,Giulia Conti #50,46-64,4,Barriera di Milano,PR_02,Frutta e Verdura,10.6,21,2026-10-25

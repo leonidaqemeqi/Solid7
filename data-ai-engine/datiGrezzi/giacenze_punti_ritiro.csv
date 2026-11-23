@@ -1,0 +1,36 @@
+id_giacenza,id_punto_ritiro,nome_punto_ritiro,quartiere,categoria_bene,quantita_disponibile_kg,soglia_minima_kg,kg_in_scadenza_48h,stato_scorte,ultimo_aggiornamento
+G_001,PR_01,Centro Solidale Porta Palazzo,Aurora / Centro,Pasta e Cereali,128.6,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_002,PR_01,Centro Solidale Porta Palazzo,Aurora / Centro,Frutta e Verdura,221.8,50.0,49.7,RISCHIO_SPRECO,2026-11-12 00:00
+G_003,PR_01,Centro Solidale Porta Palazzo,Aurora / Centro,Latticini e Formaggi,190.8,50.0,19.9,OTTIMALE,2026-11-12 00:00
+G_004,PR_01,Centro Solidale Porta Palazzo,Aurora / Centro,Prodotti da Forno,207.8,50.0,43.0,RISCHIO_SPRECO,2026-11-12 00:00
+G_005,PR_01,Centro Solidale Porta Palazzo,Aurora / Centro,Scatolame e Legumi,216.7,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_006,PR_01,Centro Solidale Porta Palazzo,Aurora / Centro,Prodotti Infanzia,288.7,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_007,PR_01,Centro Solidale Porta Palazzo,Aurora / Centro,Beni Prima Necessità (Igiene),154.2,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_008,PR_02,Emporio Barriera,Barriera di Milano,Pasta e Cereali,99.2,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_009,PR_02,Emporio Barriera,Barriera di Milano,Frutta e Verdura,179.4,50.0,6.0,OTTIMALE,2026-11-12 00:00
+G_010,PR_02,Emporio Barriera,Barriera di Milano,Latticini e Formaggi,303.0,50.0,134.7,RISCHIO_SPRECO,2026-11-12 00:00
+G_011,PR_02,Emporio Barriera,Barriera di Milano,Prodotti da Forno,102.7,50.0,44.5,RISCHIO_SPRECO,2026-11-12 00:00
+G_012,PR_02,Emporio Barriera,Barriera di Milano,Scatolame e Legumi,224.0,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_013,PR_02,Emporio Barriera,Barriera di Milano,Prodotti Infanzia,151.6,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_014,PR_02,Emporio Barriera,Barriera di Milano,Beni Prima Necessità (Igiene),103.7,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_015,PR_03,Punto Amico Mirafiori,Mirafiori Sud,Pasta e Cereali,319.8,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_016,PR_03,Punto Amico Mirafiori,Mirafiori Sud,Frutta e Verdura,274.5,50.0,13.2,OTTIMALE,2026-11-12 00:00
+G_017,PR_03,Punto Amico Mirafiori,Mirafiori Sud,Latticini e Formaggi,128.2,50.0,20.7,OTTIMALE,2026-11-12 00:00
+G_018,PR_03,Punto Amico Mirafiori,Mirafiori Sud,Prodotti da Forno,101.7,50.0,32.0,RISCHIO_SPRECO,2026-11-12 00:00
+G_019,PR_03,Punto Amico Mirafiori,Mirafiori Sud,Scatolame e Legumi,16.8,50.0,0.0,CARENZA,2026-11-12 00:00
+G_020,PR_03,Punto Amico Mirafiori,Mirafiori Sud,Prodotti Infanzia,267.3,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_021,PR_03,Punto Amico Mirafiori,Mirafiori Sud,Beni Prima Necessità (Igiene),132.7,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_022,PR_04,Rete San Salvario,San Salvario,Pasta e Cereali,12.5,50.0,0.0,CARENZA,2026-11-12 00:00
+G_023,PR_04,Rete San Salvario,San Salvario,Frutta e Verdura,278.2,50.0,97.4,RISCHIO_SPRECO,2026-11-12 00:00
+G_024,PR_04,Rete San Salvario,San Salvario,Latticini e Formaggi,311.8,50.0,127.8,RISCHIO_SPRECO,2026-11-12 00:00
+G_025,PR_04,Rete San Salvario,San Salvario,Prodotti da Forno,241.0,50.0,90.3,RISCHIO_SPRECO,2026-11-12 00:00
+G_026,PR_04,Rete San Salvario,San Salvario,Scatolame e Legumi,289.9,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_027,PR_04,Rete San Salvario,San Salvario,Prodotti Infanzia,250.5,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_028,PR_04,Rete San Salvario,San Salvario,Beni Prima Necessità (Igiene),81.3,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_029,PR_05,Hub San Paolo,Borgo San Paolo,Pasta e Cereali,258.6,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_030,PR_05,Hub San Paolo,Borgo San Paolo,Frutta e Verdura,77.9,50.0,6.7,OTTIMALE,2026-11-12 00:00
+G_031,PR_05,Hub San Paolo,Borgo San Paolo,Latticini e Formaggi,87.7,50.0,29.8,OTTIMALE,2026-11-12 00:00
+G_032,PR_05,Hub San Paolo,Borgo San Paolo,Prodotti da Forno,247.9,50.0,76.0,RISCHIO_SPRECO,2026-11-12 00:00
+G_033,PR_05,Hub San Paolo,Borgo San Paolo,Scatolame e Legumi,52.4,50.0,0.0,OTTIMALE,2026-11-12 00:00
+G_034,PR_05,Hub San Paolo,Borgo San Paolo,Prodotti Infanzia,40.1,50.0,0.0,CARENZA,2026-11-12 00:00
+G_035,PR_05,Hub San Paolo,Borgo San Paolo,Beni Prima Necessità (Igiene),204.5,50.0,0.0,OTTIMALE,2026-11-12 00:00

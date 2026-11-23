@@ -1,0 +1,34 @@
+[
+  {
+    "id_msg": "MSG_001",
+    "id_volontario": "VOL_102",
+    "timestamp": "2026-11-12T09:05:00",
+    "canale": "Chat Telegram",
+    "testo": "Ciao! Domani mattina (13 nov) sono libero dalle 8:30 alle 12:30, se serve una mano per guidare il furgone a Mirafiori ci sono!",
+    "nlp_intent": "DISPONIBILITA_TURNO"
+  },
+  {
+    "id_msg": "MSG_002",
+    "id_volontario": "VOL_105",
+    "timestamp": "2026-11-12T10:30:00",
+    "canale": "WhatsApp",
+    "testo": "Ragazzi scusate ma ho la febbre, devo disdire il mio turno di oggi pomeriggio dalle 14 alle 18 a Barriera di Milano. Qualcuno può sostituirmi?",
+    "nlp_intent": "DISDETTA_TURNO"
+  },
+  {
+    "id_msg": "MSG_003",
+    "id_volontario": "VOL_108",
+    "timestamp": "2026-11-11T18:20:00",
+    "canale": "App Mobile",
+    "testo": "Confermo disponibilità per sabato prossimo turno distribuzione a San Salvario, preferirei stare al banco accoglienza.",
+    "nlp_intent": "DISPONIBILITA_TURNO"
+  },
+  {
+    "id_msg": "MSG_004",
+    "id_volontario": "VOL_101",
+    "timestamp": "2026-11-12T12:15:00",
+    "canale": "Chat Telegram",
+    "testo": "Oggi arrivo con 20 minuti di ritardo al turno delle 14 a Porta Palazzo per traffico in centro.",
+    "nlp_intent": "SEGNALAZIONE_RITARDO"
+  }
+]
