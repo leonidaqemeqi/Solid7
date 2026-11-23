@@ -99,6 +99,9 @@ CREATE TABLE email_donatori (
     nlp_intent TEXT,
     urgenza TEXT CHECK(urgenza IN ('BASSA', 'MEDIA', 'ALTA', 'NORMALE')),
     nlp_extracted_json TEXT,
+    stato_validazione TEXT NOT NULL DEFAULT 'DA_VALIDARE' 
+        CHECK(stato_validazione IN ('DA_VALIDARE', 'APPROVATA', 'RIFIUTATA')),
+    data_validazione TEXT,
     FOREIGN KEY(id_donatore) REFERENCES donatori(id_donatore)
 );
 
@@ -108,6 +111,9 @@ CREATE TABLE messaggi_volontari (
     data_messaggio TEXT NOT NULL,
     testo_anonimizzato TEXT NOT NULL,
     nlp_intent TEXT,
+    stato_validazione TEXT NOT NULL DEFAULT 'DA_VALIDARE' 
+        CHECK(stato_validazione IN ('DA_VALIDARE', 'APPROVATA', 'RIFIUTATA')),
+    data_validazione TEXT,
     FOREIGN KEY(id_volontario) REFERENCES volontari(id_volontario)
 );
 
