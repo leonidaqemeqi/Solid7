@@ -1,0 +1,201 @@
+id_donazione,id_donatore,nome_donatore,tipologia_donatore,id_punto_ritiro,categoria_bene,deperibilita,quantita_kg,data_ricezione,data_scadenza,stato
+D_0001,DON_06,Coop Piemonte - Sede Nord,GDO,PR_01,Pasta e Cereali,Lunga Conservazione,67.5,2026-10-26,2027-04-29,Ritirata e Stoccata
+D_0002,DON_06,Coop Piemonte - Sede Nord,GDO,PR_05,Pasta e Cereali,Lunga Conservazione,114.2,2026-11-07,2027-11-04,Ritirata e Stoccata
+D_0003,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_02,Pasta e Cereali,Lunga Conservazione,156.5,2026-10-29,2027-09-12,Ritirata e Stoccata
+D_0004,DON_05,Caseificio Piemontese Srl,Produttore,PR_05,Frutta e Verdura,Alta (Fresco),120.6,2026-10-17,2026-10-20,Ritirata e Stoccata
+D_0005,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_01,Beni Prima Necessità (Igiene),Non Deperibile,114.3,2026-11-02,2029-10-16,Ritirata e Stoccata
+D_0006,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_02,Frutta e Verdura,Alta (Fresco),36.8,2026-10-22,2026-10-24,Ritirata e Stoccata
+D_0007,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_03,Latticini e Formaggi,Alta (Fresco),204.7,2026-10-05,2026-10-12,Ritirata e Stoccata
+D_0008,DON_06,Coop Piemonte - Sede Nord,GDO,PR_05,Prodotti da Forno,Immediata,33.5,2026-11-05,2026-11-07,Ritirata e Stoccata
+D_0009,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_05,Beni Prima Necessità (Igiene),Non Deperibile,60.2,2026-10-20,2029-06-02,Ritirata e Stoccata
+D_0010,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_02,Pasta e Cereali,Lunga Conservazione,216.0,2026-10-25,2027-02-02,Ritirata e Stoccata
+D_0011,DON_07,Farmacia Centrale Solidale,Farmacia,PR_04,Pasta e Cereali,Lunga Conservazione,164.4,2026-10-26,2027-08-14,Ritirata e Stoccata
+D_0012,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_03,Frutta e Verdura,Alta (Fresco),172.5,2026-10-21,2026-10-24,Ritirata e Stoccata
+D_0013,DON_06,Coop Piemonte - Sede Nord,GDO,PR_01,Prodotti Infanzia,Media Conservazione,140.5,2026-10-05,2026-12-17,Ritirata e Stoccata
+D_0014,DON_02,Panificio Artigianale Mole,Forno,PR_04,Frutta e Verdura,Alta (Fresco),247.5,2026-10-19,2026-10-23,Ritirata e Stoccata
+D_0015,DON_06,Coop Piemonte - Sede Nord,GDO,PR_05,Prodotti Infanzia,Media Conservazione,213.1,2026-10-29,2027-02-19,Ritirata e Stoccata
+D_0016,DON_07,Farmacia Centrale Solidale,Farmacia,PR_02,Pasta e Cereali,Lunga Conservazione,109.3,2026-11-10,2027-06-19,Ritirata e Stoccata
+D_0017,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_05,Frutta e Verdura,Alta (Fresco),65.0,2026-09-28,2026-10-02,Ritirata e Stoccata
+D_0018,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_04,Prodotti da Forno,Immediata,47.8,2026-11-03,2026-11-05,Ritirata e Stoccata
+D_0019,DON_06,Coop Piemonte - Sede Nord,GDO,PR_05,Scatolame e Legumi,Lunga Conservazione,115.7,2026-10-27,2028-10-14,Ritirata e Stoccata
+D_0020,DON_05,Caseificio Piemontese Srl,Produttore,PR_03,Prodotti da Forno,Immediata,134.7,2026-10-29,2026-10-30,Ritirata e Stoccata
+D_0021,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_01,Beni Prima Necessità (Igiene),Non Deperibile,162.4,2026-11-05,2028-04-09,Ritirata e Stoccata
+D_0022,DON_07,Farmacia Centrale Solidale,Farmacia,PR_04,Prodotti Infanzia,Media Conservazione,105.4,2026-10-05,2026-11-20,Ritirata e Stoccata
+D_0023,DON_05,Caseificio Piemontese Srl,Produttore,PR_05,Prodotti da Forno,Immediata,217.3,2026-10-27,2026-10-30,Ritirata e Stoccata
+D_0024,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_01,Prodotti Infanzia,Media Conservazione,191.5,2026-09-30,2027-03-16,Ritirata e Stoccata
+D_0025,DON_07,Farmacia Centrale Solidale,Farmacia,PR_03,Prodotti Infanzia,Media Conservazione,117.2,2026-11-05,2027-02-18,Ritirata e Stoccata
+D_0026,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_03,Pasta e Cereali,Lunga Conservazione,134.3,2026-10-11,2027-03-11,Ritirata e Stoccata
+D_0027,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_03,Beni Prima Necessità (Igiene),Non Deperibile,158.1,2026-10-03,2029-03-05,Ritirata e Stoccata
+D_0028,DON_02,Panificio Artigianale Mole,Forno,PR_02,Latticini e Formaggi,Alta (Fresco),231.8,2026-10-09,2026-10-24,Ritirata e Stoccata
+D_0029,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_03,Scatolame e Legumi,Lunga Conservazione,41.3,2026-10-12,2027-02-28,Ritirata e Stoccata
+D_0030,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_03,Beni Prima Necessità (Igiene),Non Deperibile,71.6,2026-10-28,2027-12-26,Ritirata e Stoccata
+D_0031,DON_05,Caseificio Piemontese Srl,Produttore,PR_01,Pasta e Cereali,Lunga Conservazione,244.8,2026-10-12,2027-01-15,Ritirata e Stoccata
+D_0032,DON_05,Caseificio Piemontese Srl,Produttore,PR_02,Beni Prima Necessità (Igiene),Non Deperibile,126.7,2026-11-04,2029-09-09,Ritirata e Stoccata
+D_0033,DON_05,Caseificio Piemontese Srl,Produttore,PR_03,Frutta e Verdura,Alta (Fresco),114.4,2026-10-10,2026-10-16,Ritirata e Stoccata
+D_0034,DON_02,Panificio Artigianale Mole,Forno,PR_02,Scatolame e Legumi,Lunga Conservazione,108.8,2026-09-28,2027-12-11,Ritirata e Stoccata
+D_0035,DON_06,Coop Piemonte - Sede Nord,GDO,PR_03,Prodotti Infanzia,Media Conservazione,121.1,2026-10-15,2027-03-26,Ritirata e Stoccata
+D_0036,DON_02,Panificio Artigianale Mole,Forno,PR_01,Frutta e Verdura,Alta (Fresco),153.3,2026-10-22,2026-10-24,Ritirata e Stoccata
+D_0037,DON_02,Panificio Artigianale Mole,Forno,PR_02,Scatolame e Legumi,Lunga Conservazione,181.3,2026-11-12,2027-05-23,In Attesa di Ritiro
+D_0038,DON_02,Panificio Artigianale Mole,Forno,PR_01,Pasta e Cereali,Lunga Conservazione,135.8,2026-10-22,2027-01-26,Ritirata e Stoccata
+D_0039,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_04,Prodotti Infanzia,Media Conservazione,46.1,2026-10-30,2027-04-16,Ritirata e Stoccata
+D_0040,DON_05,Caseificio Piemontese Srl,Produttore,PR_04,Scatolame e Legumi,Lunga Conservazione,204.8,2026-10-28,2028-06-23,Ritirata e Stoccata
+D_0041,DON_02,Panificio Artigianale Mole,Forno,PR_01,Pasta e Cereali,Lunga Conservazione,98.3,2026-10-01,2027-07-08,Ritirata e Stoccata
+D_0042,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_01,Prodotti da Forno,Immediata,246.3,2026-09-30,2026-10-03,Ritirata e Stoccata
+D_0043,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_04,Pasta e Cereali,Lunga Conservazione,73.4,2026-10-22,2027-02-14,Ritirata e Stoccata
+D_0044,DON_02,Panificio Artigianale Mole,Forno,PR_04,Scatolame e Legumi,Lunga Conservazione,58.1,2026-11-04,2028-05-09,Ritirata e Stoccata
+D_0045,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_01,Frutta e Verdura,Alta (Fresco),38.0,2026-10-15,2026-10-21,Ritirata e Stoccata
+D_0046,DON_06,Coop Piemonte - Sede Nord,GDO,PR_01,Scatolame e Legumi,Lunga Conservazione,54.1,2026-11-07,2027-11-04,Ritirata e Stoccata
+D_0047,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_02,Prodotti da Forno,Immediata,53.7,2026-10-18,2026-10-19,Ritirata e Stoccata
+D_0048,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_03,Prodotti da Forno,Immediata,114.4,2026-10-14,2026-10-16,Ritirata e Stoccata
+D_0049,DON_06,Coop Piemonte - Sede Nord,GDO,PR_05,Beni Prima Necessità (Igiene),Non Deperibile,51.4,2026-10-01,2029-02-10,Ritirata e Stoccata
+D_0050,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_01,Frutta e Verdura,Alta (Fresco),142.4,2026-10-06,2026-10-13,Ritirata e Stoccata
+D_0051,DON_06,Coop Piemonte - Sede Nord,GDO,PR_01,Latticini e Formaggi,Alta (Fresco),127.0,2026-11-09,2026-11-21,Ritirata e Stoccata
+D_0052,DON_07,Farmacia Centrale Solidale,Farmacia,PR_02,Scatolame e Legumi,Lunga Conservazione,33.8,2026-11-09,2028-08-10,Ritirata e Stoccata
+D_0053,DON_02,Panificio Artigianale Mole,Forno,PR_05,Pasta e Cereali,Lunga Conservazione,109.9,2026-11-08,2027-05-07,Ritirata e Stoccata
+D_0054,DON_05,Caseificio Piemontese Srl,Produttore,PR_05,Frutta e Verdura,Alta (Fresco),160.6,2026-10-05,2026-10-07,Ritirata e Stoccata
+D_0055,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_05,Prodotti Infanzia,Media Conservazione,89.3,2026-10-07,2027-03-19,Ritirata e Stoccata
+D_0056,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_03,Frutta e Verdura,Alta (Fresco),108.0,2026-10-28,2026-11-01,Ritirata e Stoccata
+D_0057,DON_06,Coop Piemonte - Sede Nord,GDO,PR_03,Prodotti Infanzia,Media Conservazione,233.3,2026-10-14,2027-02-01,Ritirata e Stoccata
+D_0058,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_04,Pasta e Cereali,Lunga Conservazione,249.1,2026-10-04,2027-09-17,Ritirata e Stoccata
+D_0059,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_02,Scatolame e Legumi,Lunga Conservazione,46.1,2026-10-11,2027-11-06,Ritirata e Stoccata
+D_0060,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_02,Pasta e Cereali,Lunga Conservazione,52.1,2026-10-20,2027-05-13,Ritirata e Stoccata
+D_0061,DON_07,Farmacia Centrale Solidale,Farmacia,PR_03,Scatolame e Legumi,Lunga Conservazione,16.8,2026-10-04,2028-07-26,Ritirata e Stoccata
+D_0062,DON_07,Farmacia Centrale Solidale,Farmacia,PR_03,Scatolame e Legumi,Lunga Conservazione,235.6,2026-10-01,2027-05-15,Ritirata e Stoccata
+D_0063,DON_02,Panificio Artigianale Mole,Forno,PR_01,Latticini e Formaggi,Alta (Fresco),145.0,2026-11-06,2026-11-20,Ritirata e Stoccata
+D_0064,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_05,Latticini e Formaggi,Alta (Fresco),95.6,2026-10-30,2026-11-13,Ritirata e Stoccata
+D_0065,DON_06,Coop Piemonte - Sede Nord,GDO,PR_03,Prodotti Infanzia,Media Conservazione,74.0,2026-10-11,2027-03-15,Ritirata e Stoccata
+D_0066,DON_07,Farmacia Centrale Solidale,Farmacia,PR_01,Pasta e Cereali,Lunga Conservazione,209.9,2026-10-03,2027-07-06,Ritirata e Stoccata
+D_0067,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_03,Pasta e Cereali,Lunga Conservazione,53.0,2026-11-04,2027-05-17,Ritirata e Stoccata
+D_0068,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_04,Scatolame e Legumi,Lunga Conservazione,41.3,2026-10-08,2027-02-14,Ritirata e Stoccata
+D_0069,DON_06,Coop Piemonte - Sede Nord,GDO,PR_05,Frutta e Verdura,Alta (Fresco),151.9,2026-11-10,2026-11-14,Ritirata e Stoccata
+D_0070,DON_02,Panificio Artigianale Mole,Forno,PR_02,Prodotti da Forno,Immediata,100.7,2026-11-10,2026-11-12,Ritirata e Stoccata
+D_0071,DON_07,Farmacia Centrale Solidale,Farmacia,PR_01,Beni Prima Necessità (Igiene),Non Deperibile,175.3,2026-10-21,2028-05-23,Ritirata e Stoccata
+D_0072,DON_06,Coop Piemonte - Sede Nord,GDO,PR_03,Pasta e Cereali,Lunga Conservazione,243.9,2026-10-08,2027-07-03,Ritirata e Stoccata
+D_0073,DON_06,Coop Piemonte - Sede Nord,GDO,PR_02,Frutta e Verdura,Alta (Fresco),222.1,2026-11-02,2026-11-05,Ritirata e Stoccata
+D_0074,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_03,Frutta e Verdura,Alta (Fresco),218.1,2026-10-17,2026-10-24,Ritirata e Stoccata
+D_0075,DON_07,Farmacia Centrale Solidale,Farmacia,PR_03,Frutta e Verdura,Alta (Fresco),40.4,2026-11-02,2026-11-09,Ritirata e Stoccata
+D_0076,DON_07,Farmacia Centrale Solidale,Farmacia,PR_04,Pasta e Cereali,Lunga Conservazione,206.9,2026-10-29,2027-04-09,Ritirata e Stoccata
+D_0077,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_03,Latticini e Formaggi,Alta (Fresco),20.6,2026-10-29,2026-11-04,Ritirata e Stoccata
+D_0078,DON_02,Panificio Artigianale Mole,Forno,PR_03,Prodotti da Forno,Immediata,242.2,2026-10-26,2026-10-27,Ritirata e Stoccata
+D_0079,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_05,Latticini e Formaggi,Alta (Fresco),245.6,2026-10-18,2026-10-31,Ritirata e Stoccata
+D_0080,DON_05,Caseificio Piemontese Srl,Produttore,PR_01,Latticini e Formaggi,Alta (Fresco),57.0,2026-11-05,2026-11-12,Ritirata e Stoccata
+D_0081,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_01,Pasta e Cereali,Lunga Conservazione,96.2,2026-10-05,2027-07-14,Ritirata e Stoccata
+D_0082,DON_07,Farmacia Centrale Solidale,Farmacia,PR_04,Latticini e Formaggi,Alta (Fresco),42.2,2026-10-05,2026-10-16,Ritirata e Stoccata
+D_0083,DON_05,Caseificio Piemontese Srl,Produttore,PR_03,Frutta e Verdura,Alta (Fresco),117.5,2026-11-10,2026-11-17,Ritirata e Stoccata
+D_0084,DON_05,Caseificio Piemontese Srl,Produttore,PR_05,Beni Prima Necessità (Igiene),Non Deperibile,61.3,2026-09-30,2029-08-16,Ritirata e Stoccata
+D_0085,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_03,Pasta e Cereali,Lunga Conservazione,170.9,2026-10-04,2027-05-12,Ritirata e Stoccata
+D_0086,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_03,Prodotti Infanzia,Media Conservazione,171.7,2026-10-11,2027-01-28,Ritirata e Stoccata
+D_0087,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_03,Prodotti da Forno,Immediata,60.1,2026-10-08,2026-10-09,Ritirata e Stoccata
+D_0088,DON_06,Coop Piemonte - Sede Nord,GDO,PR_02,Prodotti da Forno,Immediata,85.7,2026-10-04,2026-10-07,Ritirata e Stoccata
+D_0089,DON_05,Caseificio Piemontese Srl,Produttore,PR_01,Beni Prima Necessità (Igiene),Non Deperibile,64.4,2026-10-24,2028-08-12,Ritirata e Stoccata
+D_0090,DON_07,Farmacia Centrale Solidale,Farmacia,PR_05,Scatolame e Legumi,Lunga Conservazione,124.3,2026-10-02,2027-12-25,Ritirata e Stoccata
+D_0091,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_02,Prodotti Infanzia,Media Conservazione,201.5,2026-10-11,2027-03-11,Ritirata e Stoccata
+D_0092,DON_07,Farmacia Centrale Solidale,Farmacia,PR_02,Prodotti Infanzia,Media Conservazione,81.7,2026-10-01,2026-11-21,Ritirata e Stoccata
+D_0093,DON_06,Coop Piemonte - Sede Nord,GDO,PR_05,Prodotti Infanzia,Media Conservazione,207.3,2026-10-22,2026-12-14,Ritirata e Stoccata
+D_0094,DON_07,Farmacia Centrale Solidale,Farmacia,PR_03,Frutta e Verdura,Alta (Fresco),49.6,2026-10-29,2026-11-01,Ritirata e Stoccata
+D_0095,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_04,Frutta e Verdura,Alta (Fresco),122.0,2026-10-04,2026-10-06,Ritirata e Stoccata
+D_0096,DON_06,Coop Piemonte - Sede Nord,GDO,PR_02,Scatolame e Legumi,Lunga Conservazione,131.2,2026-09-28,2028-02-23,Ritirata e Stoccata
+D_0097,DON_02,Panificio Artigianale Mole,Forno,PR_01,Frutta e Verdura,Alta (Fresco),66.4,2026-11-06,2026-11-11,Ritirata e Stoccata
+D_0098,DON_07,Farmacia Centrale Solidale,Farmacia,PR_05,Prodotti Infanzia,Media Conservazione,146.0,2026-10-14,2026-11-25,Ritirata e Stoccata
+D_0099,DON_07,Farmacia Centrale Solidale,Farmacia,PR_04,Pasta e Cereali,Lunga Conservazione,171.9,2026-11-04,2027-08-28,Ritirata e Stoccata
+D_0100,DON_05,Caseificio Piemontese Srl,Produttore,PR_03,Scatolame e Legumi,Lunga Conservazione,115.3,2026-10-15,2028-07-12,Ritirata e Stoccata
+D_0101,DON_05,Caseificio Piemontese Srl,Produttore,PR_02,Prodotti da Forno,Immediata,75.9,2026-10-13,2026-10-15,Ritirata e Stoccata
+D_0102,DON_02,Panificio Artigianale Mole,Forno,PR_03,Beni Prima Necessità (Igiene),Non Deperibile,162.3,2026-10-10,2029-02-17,Ritirata e Stoccata
+D_0103,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_01,Prodotti da Forno,Immediata,70.1,2026-09-28,2026-09-30,Ritirata e Stoccata
+D_0104,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_05,Latticini e Formaggi,Alta (Fresco),50.4,2026-11-07,2026-11-12,Ritirata e Stoccata
+D_0105,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_02,Prodotti Infanzia,Media Conservazione,30.1,2026-09-28,2026-12-21,Ritirata e Stoccata
+D_0106,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_05,Latticini e Formaggi,Alta (Fresco),29.6,2026-10-14,2026-10-23,Ritirata e Stoccata
+D_0107,DON_07,Farmacia Centrale Solidale,Farmacia,PR_04,Prodotti da Forno,Immediata,19.6,2026-10-06,2026-10-09,Ritirata e Stoccata
+D_0108,DON_07,Farmacia Centrale Solidale,Farmacia,PR_04,Scatolame e Legumi,Lunga Conservazione,236.5,2026-10-13,2027-02-16,Ritirata e Stoccata
+D_0109,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_04,Beni Prima Necessità (Igiene),Non Deperibile,190.7,2026-10-17,2029-04-20,Ritirata e Stoccata
+D_0110,DON_05,Caseificio Piemontese Srl,Produttore,PR_05,Beni Prima Necessità (Igiene),Non Deperibile,66.6,2026-10-29,2029-03-11,Ritirata e Stoccata
+D_0111,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_01,Prodotti da Forno,Immediata,172.2,2026-10-19,2026-10-21,Ritirata e Stoccata
+D_0112,DON_07,Farmacia Centrale Solidale,Farmacia,PR_02,Prodotti da Forno,Immediata,245.5,2026-10-14,2026-10-15,Ritirata e Stoccata
+D_0113,DON_05,Caseificio Piemontese Srl,Produttore,PR_04,Pasta e Cereali,Lunga Conservazione,170.8,2026-10-06,2027-09-19,Ritirata e Stoccata
+D_0114,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_04,Prodotti Infanzia,Media Conservazione,57.7,2026-11-04,2027-04-01,Ritirata e Stoccata
+D_0115,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_03,Prodotti da Forno,Immediata,91.8,2026-10-30,2026-11-01,Ritirata e Stoccata
+D_0116,DON_07,Farmacia Centrale Solidale,Farmacia,PR_03,Prodotti da Forno,Immediata,211.2,2026-10-17,2026-10-19,Ritirata e Stoccata
+D_0117,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_05,Pasta e Cereali,Lunga Conservazione,67.7,2026-11-09,2027-07-06,Ritirata e Stoccata
+D_0118,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_01,Beni Prima Necessità (Igiene),Non Deperibile,61.8,2026-11-11,2028-07-21,In Attesa di Ritiro
+D_0119,DON_05,Caseificio Piemontese Srl,Produttore,PR_02,Frutta e Verdura,Alta (Fresco),172.3,2026-11-04,2026-11-09,Ritirata e Stoccata
+D_0120,DON_05,Caseificio Piemontese Srl,Produttore,PR_04,Frutta e Verdura,Alta (Fresco),195.2,2026-09-29,2026-10-03,Ritirata e Stoccata
+D_0121,DON_02,Panificio Artigianale Mole,Forno,PR_05,Scatolame e Legumi,Lunga Conservazione,197.8,2026-09-28,2027-05-23,Ritirata e Stoccata
+D_0122,DON_02,Panificio Artigianale Mole,Forno,PR_01,Latticini e Formaggi,Alta (Fresco),233.3,2026-10-06,2026-10-09,Ritirata e Stoccata
+D_0123,DON_05,Caseificio Piemontese Srl,Produttore,PR_04,Prodotti Infanzia,Media Conservazione,32.9,2026-10-18,2027-01-06,Ritirata e Stoccata
+D_0124,DON_06,Coop Piemonte - Sede Nord,GDO,PR_02,Beni Prima Necessità (Igiene),Non Deperibile,196.5,2026-11-06,2029-10-19,Ritirata e Stoccata
+D_0125,DON_07,Farmacia Centrale Solidale,Farmacia,PR_05,Prodotti Infanzia,Media Conservazione,198.9,2026-11-05,2027-04-28,Ritirata e Stoccata
+D_0126,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_04,Scatolame e Legumi,Lunga Conservazione,31.2,2026-10-01,2028-02-12,Ritirata e Stoccata
+D_0127,DON_06,Coop Piemonte - Sede Nord,GDO,PR_01,Latticini e Formaggi,Alta (Fresco),39.8,2026-10-17,2026-10-27,Ritirata e Stoccata
+D_0128,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_04,Prodotti Infanzia,Media Conservazione,117.3,2026-09-28,2026-12-06,Ritirata e Stoccata
+D_0129,DON_06,Coop Piemonte - Sede Nord,GDO,PR_03,Scatolame e Legumi,Lunga Conservazione,197.0,2026-10-04,2028-08-05,Ritirata e Stoccata
+D_0130,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_05,Prodotti da Forno,Immediata,215.2,2026-10-26,2026-10-28,Ritirata e Stoccata
+D_0131,DON_07,Farmacia Centrale Solidale,Farmacia,PR_03,Pasta e Cereali,Lunga Conservazione,191.4,2026-10-15,2027-04-17,Ritirata e Stoccata
+D_0132,DON_05,Caseificio Piemontese Srl,Produttore,PR_04,Scatolame e Legumi,Lunga Conservazione,131.2,2026-10-22,2027-03-20,Ritirata e Stoccata
+D_0133,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_04,Frutta e Verdura,Alta (Fresco),202.5,2026-10-30,2026-11-03,Ritirata e Stoccata
+D_0134,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_05,Latticini e Formaggi,Alta (Fresco),145.6,2026-09-29,2026-10-06,Ritirata e Stoccata
+D_0135,DON_05,Caseificio Piemontese Srl,Produttore,PR_01,Frutta e Verdura,Alta (Fresco),110.5,2026-10-28,2026-11-04,Ritirata e Stoccata
+D_0136,DON_05,Caseificio Piemontese Srl,Produttore,PR_02,Beni Prima Necessità (Igiene),Non Deperibile,166.8,2026-09-29,2029-01-28,Ritirata e Stoccata
+D_0137,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_01,Prodotti da Forno,Immediata,67.1,2026-11-07,2026-11-09,Ritirata e Stoccata
+D_0138,DON_06,Coop Piemonte - Sede Nord,GDO,PR_03,Frutta e Verdura,Alta (Fresco),101.7,2026-10-01,2026-10-07,Ritirata e Stoccata
+D_0139,DON_05,Caseificio Piemontese Srl,Produttore,PR_03,Scatolame e Legumi,Lunga Conservazione,92.7,2026-10-16,2028-08-29,Ritirata e Stoccata
+D_0140,DON_06,Coop Piemonte - Sede Nord,GDO,PR_03,Prodotti da Forno,Immediata,69.2,2026-10-24,2026-10-26,Ritirata e Stoccata
+D_0141,DON_06,Coop Piemonte - Sede Nord,GDO,PR_03,Frutta e Verdura,Alta (Fresco),140.9,2026-11-05,2026-11-12,Ritirata e Stoccata
+D_0142,DON_07,Farmacia Centrale Solidale,Farmacia,PR_02,Prodotti Infanzia,Media Conservazione,188.6,2026-10-31,2027-01-24,Ritirata e Stoccata
+D_0143,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_05,Prodotti Infanzia,Media Conservazione,245.4,2026-10-10,2027-01-20,Ritirata e Stoccata
+D_0144,DON_07,Farmacia Centrale Solidale,Farmacia,PR_03,Frutta e Verdura,Alta (Fresco),57.2,2026-10-29,2026-11-02,Ritirata e Stoccata
+D_0145,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_05,Prodotti Infanzia,Media Conservazione,25.7,2026-11-04,2027-02-12,Ritirata e Stoccata
+D_0146,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_03,Scatolame e Legumi,Lunga Conservazione,164.9,2026-09-29,2027-06-05,Ritirata e Stoccata
+D_0147,DON_07,Farmacia Centrale Solidale,Farmacia,PR_01,Prodotti da Forno,Immediata,81.8,2026-11-12,2026-11-15,Ritirata e Stoccata
+D_0148,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_02,Latticini e Formaggi,Alta (Fresco),236.1,2026-11-09,2026-11-16,Ritirata e Stoccata
+D_0149,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_01,Pasta e Cereali,Lunga Conservazione,32.4,2026-10-18,2027-08-25,Ritirata e Stoccata
+D_0150,DON_06,Coop Piemonte - Sede Nord,GDO,PR_01,Prodotti Infanzia,Media Conservazione,205.6,2026-11-03,2027-01-10,Ritirata e Stoccata
+D_0151,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_02,Pasta e Cereali,Lunga Conservazione,194.6,2026-11-05,2027-10-16,Ritirata e Stoccata
+D_0152,DON_05,Caseificio Piemontese Srl,Produttore,PR_05,Scatolame e Legumi,Lunga Conservazione,104.4,2026-10-29,2028-08-14,Ritirata e Stoccata
+D_0153,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_05,Latticini e Formaggi,Alta (Fresco),148.6,2026-10-16,2026-10-23,Ritirata e Stoccata
+D_0154,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_01,Scatolame e Legumi,Lunga Conservazione,77.2,2026-10-30,2027-10-01,Ritirata e Stoccata
+D_0155,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_02,Frutta e Verdura,Alta (Fresco),32.6,2026-11-01,2026-11-07,Ritirata e Stoccata
+D_0156,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_04,Prodotti da Forno,Immediata,125.4,2026-09-29,2026-10-02,Ritirata e Stoccata
+D_0157,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_03,Frutta e Verdura,Alta (Fresco),180.2,2026-09-28,2026-10-02,Ritirata e Stoccata
+D_0158,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_02,Pasta e Cereali,Lunga Conservazione,170.4,2026-10-27,2027-10-23,Ritirata e Stoccata
+D_0159,DON_02,Panificio Artigianale Mole,Forno,PR_01,Prodotti da Forno,Immediata,167.2,2026-10-09,2026-10-10,Ritirata e Stoccata
+D_0160,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_02,Beni Prima Necessità (Igiene),Non Deperibile,54.0,2026-11-08,2028-01-08,Ritirata e Stoccata
+D_0161,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_05,Scatolame e Legumi,Lunga Conservazione,44.2,2026-10-25,2028-05-16,Ritirata e Stoccata
+D_0162,DON_06,Coop Piemonte - Sede Nord,GDO,PR_04,Latticini e Formaggi,Alta (Fresco),141.9,2026-10-26,2026-11-06,Ritirata e Stoccata
+D_0163,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_05,Pasta e Cereali,Lunga Conservazione,187.6,2026-11-10,2027-08-18,Ritirata e Stoccata
+D_0164,DON_05,Caseificio Piemontese Srl,Produttore,PR_01,Latticini e Formaggi,Alta (Fresco),241.0,2026-11-07,2026-11-13,Ritirata e Stoccata
+D_0165,DON_07,Farmacia Centrale Solidale,Farmacia,PR_05,Beni Prima Necessità (Igiene),Non Deperibile,249.9,2026-10-06,2027-10-27,Ritirata e Stoccata
+D_0166,DON_06,Coop Piemonte - Sede Nord,GDO,PR_03,Beni Prima Necessità (Igiene),Non Deperibile,194.3,2026-10-07,2027-11-17,Ritirata e Stoccata
+D_0167,DON_02,Panificio Artigianale Mole,Forno,PR_05,Prodotti da Forno,Immediata,230.3,2026-10-02,2026-10-04,Ritirata e Stoccata
+D_0168,DON_02,Panificio Artigianale Mole,Forno,PR_04,Scatolame e Legumi,Lunga Conservazione,242.7,2026-10-03,2028-06-17,Ritirata e Stoccata
+D_0169,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_04,Latticini e Formaggi,Alta (Fresco),172.5,2026-10-22,2026-10-30,Ritirata e Stoccata
+D_0170,DON_07,Farmacia Centrale Solidale,Farmacia,PR_03,Frutta e Verdura,Alta (Fresco),131.4,2026-10-17,2026-10-24,Ritirata e Stoccata
+D_0171,DON_06,Coop Piemonte - Sede Nord,GDO,PR_05,Prodotti da Forno,Immediata,35.7,2026-11-10,2026-11-12,Ritirata e Stoccata
+D_0172,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_01,Latticini e Formaggi,Alta (Fresco),208.9,2026-10-18,2026-10-29,Ritirata e Stoccata
+D_0173,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_05,Prodotti Infanzia,Media Conservazione,27.7,2026-10-14,2027-02-26,Ritirata e Stoccata
+D_0174,DON_05,Caseificio Piemontese Srl,Produttore,PR_05,Latticini e Formaggi,Alta (Fresco),118.9,2026-10-12,2026-10-25,Ritirata e Stoccata
+D_0175,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_03,Frutta e Verdura,Alta (Fresco),233.0,2026-10-08,2026-10-11,Ritirata e Stoccata
+D_0176,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_04,Prodotti Infanzia,Media Conservazione,243.7,2026-11-05,2026-12-12,Ritirata e Stoccata
+D_0177,DON_05,Caseificio Piemontese Srl,Produttore,PR_02,Beni Prima Necessità (Igiene),Non Deperibile,88.0,2026-09-28,2028-03-08,Ritirata e Stoccata
+D_0178,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_04,Scatolame e Legumi,Lunga Conservazione,248.2,2026-11-07,2027-10-23,Ritirata e Stoccata
+D_0179,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_01,Prodotti da Forno,Immediata,132.1,2026-10-02,2026-10-03,Ritirata e Stoccata
+D_0180,DON_06,Coop Piemonte - Sede Nord,GDO,PR_05,Latticini e Formaggi,Alta (Fresco),112.6,2026-09-28,2026-10-05,Ritirata e Stoccata
+D_0181,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_02,Prodotti da Forno,Immediata,49.0,2026-10-14,2026-10-17,Ritirata e Stoccata
+D_0182,DON_02,Panificio Artigianale Mole,Forno,PR_05,Scatolame e Legumi,Lunga Conservazione,79.9,2026-11-04,2027-05-14,Ritirata e Stoccata
+D_0183,DON_07,Farmacia Centrale Solidale,Farmacia,PR_04,Beni Prima Necessità (Igiene),Non Deperibile,77.8,2026-10-22,2029-03-24,Ritirata e Stoccata
+D_0184,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_03,Latticini e Formaggi,Alta (Fresco),249.7,2026-10-06,2026-10-18,Ritirata e Stoccata
+D_0185,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_02,Beni Prima Necessità (Igiene),Non Deperibile,128.8,2026-10-15,2029-04-18,Ritirata e Stoccata
+D_0186,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_05,Scatolame e Legumi,Lunga Conservazione,234.2,2026-10-19,2028-05-27,Ritirata e Stoccata
+D_0187,DON_07,Farmacia Centrale Solidale,Farmacia,PR_02,Frutta e Verdura,Alta (Fresco),69.9,2026-10-07,2026-10-12,Ritirata e Stoccata
+D_0188,DON_07,Farmacia Centrale Solidale,Farmacia,PR_01,Prodotti da Forno,Immediata,126.1,2026-10-23,2026-10-26,Ritirata e Stoccata
+D_0189,DON_07,Farmacia Centrale Solidale,Farmacia,PR_04,Prodotti da Forno,Immediata,245.5,2026-10-01,2026-10-04,Ritirata e Stoccata
+D_0190,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_02,Pasta e Cereali,Lunga Conservazione,93.0,2026-10-11,2027-10-08,Ritirata e Stoccata
+D_0191,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_04,Beni Prima Necessità (Igiene),Non Deperibile,229.0,2026-11-06,2029-04-27,Ritirata e Stoccata
+D_0192,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_02,Prodotti Infanzia,Media Conservazione,32.6,2026-10-17,2026-12-25,Ritirata e Stoccata
+D_0193,DON_07,Farmacia Centrale Solidale,Farmacia,PR_03,Latticini e Formaggi,Alta (Fresco),108.4,2026-10-04,2026-10-18,Ritirata e Stoccata
+D_0194,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_03,Beni Prima Necessità (Igiene),Non Deperibile,104.3,2026-09-30,2029-03-29,Ritirata e Stoccata
+D_0195,DON_03,Mensa Aziendale Politecnico,Ristorazione,PR_04,Prodotti Infanzia,Media Conservazione,160.1,2026-10-09,2026-11-17,Ritirata e Stoccata
+D_0196,DON_02,Panificio Artigianale Mole,Forno,PR_03,Prodotti Infanzia,Media Conservazione,117.0,2026-10-29,2026-12-21,Ritirata e Stoccata
+D_0197,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_01,Beni Prima Necessità (Igiene),Non Deperibile,178.1,2026-10-15,2028-04-02,Ritirata e Stoccata
+D_0198,DON_01,Supermercato Esselunga Corso Traiano,GDO,PR_03,Pasta e Cereali,Lunga Conservazione,99.2,2026-11-09,2027-06-07,Ritirata e Stoccata
+D_0199,DON_04,Mercato Ortofrutticolo CAAT,Ingrosso Ortofrutta,PR_02,Frutta e Verdura,Alta (Fresco),148.0,2026-10-10,2026-10-15,Ritirata e Stoccata
+D_0200,DON_07,Farmacia Centrale Solidale,Farmacia,PR_02,Frutta e Verdura,Alta (Fresco),158.2,2026-11-01,2026-11-03,Ritirata e Stoccata

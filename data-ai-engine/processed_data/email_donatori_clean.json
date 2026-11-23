@@ -1,0 +1,89 @@
+[
+  {
+    "id_email": "EML_001",
+    "mittente": "logistica.traiano@esselunga-sim.it",
+    "data_invio": "2026-11-12T08:15:00",
+    "oggetto": "Eccedenza urgente latticini e freschi",
+    "corpo_testo": "Buongiorno, vi segnaliamo che presso il punto vendita di Corso Traiano abbiamo circa 45 kg di yogurt e mozzarelle in scadenza tra 48 ore (14 novembre). Possiamo consegnarli o potete mandarci un furgone oggi entro le 16:30? Fatemi sapere, grazie. [NOME_OSCURATO].",
+    "nlp_extracted": {
+      "kg_rilevati": 45,
+      "kg_dettaglio": [
+        45
+      ],
+      "urgenza": "ALTA",
+      "motivi_urgenza": [
+        "urgente",
+        "scadenza_ravvicinata",
+        "ritiro_in_giornata"
+      ]
+    }
+  },
+  {
+    "id_email": "EML_002",
+    "mittente": "forno.mole@artigiani-to.it",
+    "data_invio": "2026-11-12T13:40:00",
+    "oggetto": "Pane e focacce invendute",
+    "corpo_testo": "Ciao ragazzi, stasera alla chiusura alle 19:30 avremo 3 cassette di pane fresco e pizze al taglio invendute, saranno sui 22 kg totali. Riuscite a passare a prenderle per il centro di Porta Palazzo?",
+    "nlp_extracted": {
+      "kg_rilevati": 22,
+      "kg_dettaglio": [
+        22
+      ],
+      "urgenza": "ALTA",
+      "motivi_urgenza": [
+        "ritiro_in_giornata"
+      ]
+    }
+  },
+  {
+    "id_email": "EML_003",
+    "mittente": "cucine.poli@mensa-to.it",
+    "data_invio": "2026-11-11T15:10:00",
+    "oggetto": "Eccedenza pasta e legumi",
+    "corpo_testo": "Salve a tutti, abbiamo 80 kg di pasta di semola e 40 scatole di ceci in latta (circa 20 kg) che non useremo prima della chiusura per inventario. Scadenza lunga (2027). Disponibili per il ritiro domani mattina dalle 9 alle 12.",
+    "nlp_extracted": {
+      "kg_rilevati": 100,
+      "kg_dettaglio": [
+        80,
+        20
+      ],
+      "urgenza": "NORMALE",
+      "motivi_urgenza": []
+    }
+  },
+  {
+    "id_email": "EML_004",
+    "mittente": "box42@caat-ortofrutta.it",
+    "data_invio": "2026-11-12T06:50:00",
+    "oggetto": "Bancale mele e zucchine",
+    "corpo_testo": "Urgente: abbiamo un bancale da 180 kg di mele Golden e 60 kg di zucchine molto mature da smaltire entro domani sera altrimenti vanno al macero. Serve mezzo con sponda idraulica al CAAT.",
+    "nlp_extracted": {
+      "kg_rilevati": 240,
+      "kg_dettaglio": [
+        180,
+        60
+      ],
+      "urgenza": "ALTA",
+      "motivi_urgenza": [
+        "urgente",
+        "rischio_spreco",
+        "ritiro_in_giornata"
+      ]
+    }
+  },
+  {
+    "id_email": "EML_005",
+    "mittente": "info@farmaciasolidale-to.it",
+    "data_invio": "2026-11-10T11:20:00",
+    "oggetto": "Donazione prodotti prima infanzia",
+    "corpo_testo": "Buongiorno, mettiamo a disposizione 35 confezioni di latte in polvere per neonati (circa 28 kg) e 20 pacchi di pannolini. Scadenza tra 4 mesi. Ritiro libero in orario di negozio.",
+    "nlp_extracted": {
+      "kg_rilevati": 28,
+      "kg_dettaglio": [
+        28
+      ],
+      "urgenza": "NORMALE",
+      "motivi_urgenza": []
+    }
+  }
+]

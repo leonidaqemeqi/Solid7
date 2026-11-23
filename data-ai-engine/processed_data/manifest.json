@@ -1,0 +1,54 @@
+[
+  {
+    "file": "data_dictionary.md",
+    "byte": 6087,
+    "sha256": "d8d1fc676587c966fc93de3358d3222aeea295cf4a068b1088ddceeb7906a012"
+  },
+  {
+    "file": "distribuzioni_clean.csv",
+    "byte": 27967,
+    "sha256": "c4c8ed49b2d5f50b11a7c59d2311c12e3ad6adde809c5a9436fe83ebd2878c44",
+    "righe": 300
+  },
+  {
+    "file": "donazioni_clean.csv",
+    "byte": 28467,
+    "sha256": "2bc7d724f20c388ecec7de82679563307e5ffec324e006526c32ba5f6da51174",
+    "righe": 200
+  },
+  {
+    "file": "email_donatori_clean.json",
+    "byte": 3006,
+    "sha256": "3771b76699549f855c53025635b1487923cabffc9378a3837d7ab4fdb3f63b73",
+    "record": 5
+  },
+  {
+    "file": "giacenze_clean.csv",
+    "byte": 4142,
+    "sha256": "12b559e13bc245427cb7f4893607bd8a07224fabaaee90f7ac3163a7ea39b150",
+    "righe": 35
+  },
+  {
+    "file": "messaggi_volontari_clean.json",
+    "byte": 1247,
+    "sha256": "68b565be129985af34c873ad3688340c80eefabbeb2e426e217991c2dedaf032",
+    "record": 4
+  },
+  {
+    "file": "note_operatori_clean.json",
+    "byte": 1181,
+    "sha256": "ad9fc498ca622829813e65119ea4bb270cfca8abe94a75ecfa1d71ec2aeb9780",
+    "record": 3
+  },
+  {
+    "file": "report_qualita.md",
+    "byte": 2372,
+    "sha256": "4a069e0bf6be5cb57ef1e0b92d1bed43fb231bb7e0703dd877cf81231df0cdea"
+  },
+  {
+    "file": "turni_clean.csv",
+    "byte": 12532,
+    "sha256": "e024a3bc3e77e603c7e6b9e216b6c41d3c8b0936eb551018fe7268c40ad95c0d",
+    "righe": 120
+  }
+]
