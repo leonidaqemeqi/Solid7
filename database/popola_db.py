@@ -241,7 +241,7 @@ def main():
         cur.execute(
             """
             INSERT INTO donazioni (
-                id_donazione, id_donatore, id_punto_ritiro, categoria, deperibilita,
+                id_donazione, id_donatore, id_punto, categoria, deperibilita,
                 descrizione_prodotto, quantita_kg, data_ricezione, data_scadenza, stato
             ) VALUES (?, ?, ?, ?, ?, NULL, ?, ?, ?, ?)
             """,

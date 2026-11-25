@@ -71,7 +71,7 @@ CREATE TABLE giacenze (
 CREATE TABLE donazioni (
     id_donazione          TEXT PRIMARY KEY,
     id_donatore           TEXT NOT NULL,
-    id_punto_ritiro       TEXT,
+    id_punto              TEXT,
     categoria             TEXT NOT NULL CHECK (categoria IN (
                               'Pasta e Cereali',
                               'Frutta e Verdura',
@@ -96,9 +96,9 @@ CREATE TABLE donazioni (
                               'IN_ATTESA', 'RITIRATA_STOCCATA', 'DISTRIBUITA', 'SCADUTA'
                           )),
     FOREIGN KEY (id_donatore) REFERENCES donatori(id_donatore),
-    FOREIGN KEY (id_punto_ritiro) REFERENCES punti_ritiro(id_punto),
+    FOREIGN KEY (id_punto) REFERENCES punti_ritiro(id_punto),
     CHECK (stato NOT IN ('RITIRATA_STOCCATA', 'DISTRIBUITA')
-           OR id_punto_ritiro IS NOT NULL)
+           OR id_punto IS NOT NULL)
 );
 
 CREATE TABLE distribuzioni (

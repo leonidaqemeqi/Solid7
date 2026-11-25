@@ -1,4 +1,3 @@
-$contratto = @'
 # Contratto Dati – Progetto "Buby Solidale" (Solid7)
 **Versione:** 4.0 (SAL 1 – Allineata allo Schema SQLite Reale da 11 Tabelle)  
 **Data:** 2026-11-25  
@@ -75,7 +74,7 @@ Valide sulle tabelle `giacenze`, `donazioni` e `distribuzioni`:
 **Tabella 6: `donazioni`**
 - `id_donazione` (`TEXT`, PK): Identificativo univoco della donazione.
 - `id_donatore` (`TEXT`, NOT NULL, FK -> `donatori.id_donatore`): Donatore conferente.
-- `id_punto_ritiro` (`TEXT`, NULLABLE, FK -> `punti_ritiro.id_punto`): Punto assegnato al ritiro/stoccaggio (`NULL` consentito solo se `stato` è `'IN_ATTESA'` o `'SCADUTA'`).
+- `id_punto` (`TEXT`, NULLABLE, FK -> `punti_ritiro.id_punto`): Punto assegnato al ritiro/stoccaggio (`NULL` consentito solo se `stato` è `'IN_ATTESA'` o `'SCADUTA'`).
 - `categoria` (`TEXT`, NOT NULL, CHECK sulle 7 categorie ufficiali).
 - `deperibilita` (`TEXT`, NOT NULL, CHECK `deperibilita IN ('Alta (Fresco)', 'Immediata', 'Lunga Conservazione', 'Media Conservazione', 'Non Deperibile')`): Classe di conservazione del lotto.
 - `descrizione_prodotto` (`TEXT`, NULLABLE): Descrizione sintetica dei beni donati.
@@ -83,7 +82,7 @@ Valide sulle tabelle `giacenze`, `donazioni` e `distribuzioni`:
 - `data_ricezione` (`TEXT`, NOT NULL, DEFAULT `CURRENT_DATE`): Data di registrazione/ricezione (`YYYY-MM-DD`).
 - `data_scadenza` (`TEXT`, NULLABLE): Data di scadenza stimata o dichiarata (`YYYY-MM-DD`).
 - `stato` (`TEXT`, NOT NULL, DEFAULT `'IN_ATTESA'`, CHECK `stato IN ('IN_ATTESA', 'RITIRATA_STOCCATA', 'DISTRIBUITA', 'SCADUTA')`): Stato del ciclo di vita.
-- **Vincolo di coerenza:** `CHECK (stato NOT IN ('RITIRATA_STOCCATA', 'DISTRIBUITA') OR id_punto_ritiro IS NOT NULL)`.
+- **Vincolo di coerenza:** `CHECK (stato NOT IN ('RITIRATA_STOCCATA', 'DISTRIBUITA') OR id_punto IS NOT NULL)`.
 
 **Tabella 7: `distribuzioni`**
 - `id_distribuzione` (`TEXT`, PK): Identificativo univoco dell'erogazione.
@@ -92,7 +91,7 @@ Valide sulle tabelle `giacenze`, `donazioni` e `distribuzioni`:
 - `categoria` (`TEXT`, NOT NULL, CHECK sulle 7 categorie ufficiali).
 - `data_distribuzione` (`TEXT`, NOT NULL): Data di consegna (`YYYY-MM-DD`).
 - `kg_distribuiti` (`REAL`, NOT NULL, CHECK `kg_distribuiti > 0`): Peso netto consegnato (kg).
-- `pasti_equivalenti` (`INTEGER`, NOT NULL, CHECK `pasti_equivalenti >= 0`): Unità di supporto equivalente calcolata sulla consegna.
+- `pasti_equivalenti` (`INTEGER`, NOT NULL, CHECK `pasti_equivalenti >= 0`): Unità di supporto equivalente calcolata sulla consegna (vedi §5.2).
 
 **Tabella 8: `turni`**
 - `id_turno` (`TEXT`, PK): Identificativo univoco del turno.
@@ -104,7 +103,7 @@ Valide sulle tabelle `giacenze`, `donazioni` e `distribuzioni`:
 - `mansione` (`TEXT`, NOT NULL): Attività prevista (es. `"Ritiro Donazioni"`, `"Distribuzione"`, `"Smistamento Magazzino"`).
 - `stato` (`TEXT`, NOT NULL, DEFAULT `'SCOPERTO'`, CHECK `stato IN ('SCOPERTO', 'COPERTO', 'COMPLETATO', 'ANNULLATO')`): Stato operativo del turno.
 - **Vincoli di integrità:**
-  - `UNIQUE (id_volontario, data_turno, fascia_oraria)` (impedisce sovrapposizioni allo stesso volontario).
+  - `UNIQUE (id_volontario, data_turno, fascia_oraria)` (impedisce allo stesso volontario due turni con la stessa identica fascia; le sovrapposizioni parziali sono controllate dal backend, vedi §5.2).
   - `CHECK ((stato IN ('SCOPERTO', 'ANNULLATO') AND id_volontario IS NULL) OR (stato IN ('COPERTO', 'COMPLETATO') AND id_volontario IS NOT NULL))`.
 
 ---
@@ -181,3 +180,51 @@ Valide sulle tabelle `giacenze`, `donazioni` e `distribuzioni`:
     }
   ]
 }
+```
+
+---
+
+## 4. Elenco Endpoint API (MVP)
+
+Prefisso comune: `/api/v1`. Payload dettagliati da definire per ciascun endpoint prima dello sviluppo; qui sono fissati metodo, percorso e scopo.
+
+| Metodo | Percorso | Scopo | Attore | Caso d'uso |
+|---|---|---|---|---|
+| GET | `/kpi` | KPI di impatto e alert scorte (già definito al §3) | Coordinatore | UC1, UC2 |
+| GET | `/giacenze` | Giacenze per punto di ritiro e stato scorte | Coordinatore | UC2 |
+| POST | `/donazioni` | Inserire un'offerta di donazione | Donatore | UC8 |
+| GET | `/donazioni` | Storico donazioni e kg salvati (filtro per donatore) | Donatore | UC9 |
+| PATCH | `/donazioni/{id}/assegna` | Assegnare una donazione a un punto di ritiro | Coordinatore | UC3 |
+| POST | `/beneficiari` | Censire un beneficiario anonimizzato | Coordinatore | UC5 |
+| POST | `/distribuzioni` | Registrare una distribuzione e i pasti equivalenti | Coordinatore | UC4 |
+| GET | `/turni` | Consultare i turni (filtro per stato e data) | Volontario, Coordinatore | UC10, UC6 |
+| POST | `/turni` | Pianificare un nuovo turno | Coordinatore | UC6 |
+| POST | `/turni/{id}/prenota` | Prenotare un turno scoperto | Volontario | UC10 |
+| POST | `/turni/{id}/disdici` | Disdire un turno prenotato | Volontario | UC11 |
+| PATCH | `/turni/{id}/completa` | Segnare un turno come completato (rendicontazione) | Coordinatore | UC6 |
+
+Gli endpoint di Fase 2 (messaggi volontari, email donatori, note operatori, validazione AI / HITL) verranno definiti nella Fase 2.
+
+---
+
+## 5. Decisioni e Limiti Noti (SAL 1)
+
+### 5.1 Decisioni prese
+- **SQLite** come database: semplice, file singolo, adatto a un MVP con pochi utenti concorrenti.
+- **MVP prima, AI dopo**: 8 tabelle operative/anagrafiche ora, 3 tabelle NLP/AI in Fase 2.
+- **Human-in-the-loop** su tutto ciò che estrae l'AI: nessun dato estratto entra nel flusso operativo senza validazione di un operatore.
+- **Anonimizzazione** di beneficiari e volontari tramite identificativi non riconducibili alla persona.
+
+### 5.2 Semplificazioni accettate nell'MVP
+- **Autenticazione**: nessun login reale; i controlli di ruolo sono gestiti a livello di applicazione. Il campo `codice_accesso` dei volontari è predisposto per la Fase 2.
+- **Aggiornamento giacenze e stati**: `quantita_disponibile_kg`, `kg_in_scadenza_48h` e `stato_scorte` sono aggiornati dal backend quando una donazione diventa `RITIRATA_STOCCATA` o quando si registra una distribuzione. Non c'è FK diretta tra donazioni, giacenze e distribuzioni.
+- **Sovrapposizione turni**: il vincolo `UNIQUE` blocca solo fasce orarie identiche; le sovrapposizioni parziali sono controllate dal backend.
+- **Dati derivati** (`famiglie_assistite`, KPI aggregati): calcolati o aggiornati dal backend, non da trigger.
+- **Pasti equivalenti**: nel dataset attuale `pasti_equivalenti = 2 × kg_distribuiti`, uguale per tutte le 7 categorie. Regola da validare con il cliente, in particolare per le categorie non alimentari (Prodotti Infanzia, Beni Prima Necessità).
+
+### 5.3 Da rifinire in Fase 2
+- Uniformare i valori di `deperibilita` ("Alta (Fresco)" e "Immediata" si sovrappongono).
+- Aggiungere CHECK sui valori di `nlp_intent` anche in `email_donatori` e `note_operatori`.
+- Definire chi anonimizza i testi a runtime e come la pipeline AI scrive nel database (evitare doppi scrittori su SQLite).
+- Chiarire i canali esterni (Telegram, WhatsApp, SMS, email) nel diagramma C4.
+- Decidere il framework frontend definitivo (React).
