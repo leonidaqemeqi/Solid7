@@ -44,7 +44,7 @@ package "2. Operatività (MVP)" {
   class Donazioni {
     +id_donazione: TEXT <<PK>>
     +id_donatore: TEXT <<FK>>
-    +id_punto_ritiro: TEXT <<FK, nullable>>
+    +id_punto: TEXT <<FK, nullable>>
     +categoria: TEXT
     +deperibilita: TEXT
     +descrizione_prodotto: TEXT
