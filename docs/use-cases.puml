@@ -1,32 +1,107 @@
-@startuml use_cases_buby
+
+@startuml use_cases_buby_v4
 left to right direction
-title Use Case Diagram – Buby Solidale
+skinparam shadowing false
+skinparam roundcorner 14
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 12
+skinparam nodesep 14
+skinparam ranksep 65
+skinparam actorStyle awesome
 
-actor "Coordinatore" as Coord
-actor "Donatore / Azienda" as Don
-actor "Volontario" as Vol
-
-rectangle "Piattaforma Buby Solidale" {
-  usecase "UC1: Monitorare dashboard KPI" as UC1
-  usecase "UC2: Visualizzare giacenze e alert squilibri" as UC2
-  usecase "UC3: Analizzare email e note con AI" as UC3
-  usecase "UC4: Assegnare donazione a punto di ritiro" as UC4
-  usecase "UC5: Inserire offerta donazione" as UC5
-  usecase "UC6: Visualizzare donazioni e kg salvati" as UC6
-  usecase "UC7: Consultare e prenotare turni" as UC7
-  usecase "UC8: Disdire turno prenotato" as UC8
+skinparam actor {
+  BackgroundColor #F4F6F8
+  BorderColor #37474F
+  FontColor #1C2833
+  FontStyle bold
 }
 
+skinparam rectangle {
+  BorderColor #455A64
+  BackgroundColor #FAFAFA
+  FontStyle bold
+}
+
+skinparam usecase {
+  BackgroundColor #FFFFFF
+  BorderColor #2E7D32
+  FontColor #1C2833
+  ArrowColor #546E7A
+}
+
+skinparam usecase<<ai>> {
+  BackgroundColor #EEF2FF
+  BorderColor #3949AB
+  BorderStyle dashed
+  FontColor #1A237E
+}
+
+title **Use Case Diagram v4.0 – Buby Solidale**\n<size:11><color:#546E7A>Flussi Operativi per Attore (8 Tabelle MVP + 3 Tabelle Fase 2 AI/NLP)</color></size>
+
+actor "Coordinatore /\nOperatore" as Coord
+actor "Donatore /\nAzienda" as Don
+actor "Volontario" as Vol
+
+rectangle "Piattaforma Buby Solidale (v4.0)" {
+
+  ' Colonna Sinistra: Casi d'Uso Coordinatore (UC1 - UC7)
+  usecase "UC1: Monitorare dashboard\nKPI e impatto" as UC1
+  usecase "UC2: Visualizzare giacenze\ne alert scorte (48h)" as UC2
+  usecase "UC3: Assegnare donazione\na punto di ritiro" as UC3
+  usecase "UC4: Registrare distribuzione\ne pasti equivalenti" as UC4
+  usecase "UC5: Censire beneficiario\nanonimizzato" as UC5
+  usecase "UC6: Pianificare e\nrendicontare turni" as UC6
+  usecase "UC7: Validare o rifiutare\nestrazioni AI (HITL)" as UC7 <<ai>>
+
+  ' Colonna Destra: Casi d'Uso Donatore, Volontario e AI (UC8 - UC13)
+  usecase "UC8: Inserire offerta\ndi donazione" as UC8
+  usecase "UC9: Consultare donazioni\ne kg salvati" as UC9
+  usecase "UC10: Consultare e\nprenotare turni" as UC10
+  usecase "UC11: Disdire turno\nprenotato" as UC11
+  usecase "UC12: Inviare disponibilità o\nritardo via chat" as UC12 <<ai>>
+  usecase "UC13: Analizzare email,\nmessaggi e note con AI" as UC13 <<ai>>
+
+  ' Allineamento verticale rigoroso delle due colonne
+  UC1 -[hidden]down- UC2
+  UC2 -[hidden]down- UC3
+  UC3 -[hidden]down- UC4
+  UC4 -[hidden]down- UC5
+  UC5 -[hidden]down- UC6
+  UC6 -[hidden]down- UC7
+
+  UC8 -[hidden]down- UC9
+  UC9 -[hidden]down- UC10
+  UC10 -[hidden]down- UC11
+  UC11 -[hidden]down- UC12
+  UC12 -[hidden]down- UC13
+}
+
+' 1. Coordinatore (Sinistra)
 Coord --> UC1
 Coord --> UC2
 Coord --> UC3
 Coord --> UC4
+Coord --> UC6
+Coord --> UC7
 
-Don --> UC5
-Don --> UC6
+' 2. Donatore (Destra)
+UC8 <-- Don
+UC9 <-- Don
 
-Vol --> UC7
-Vol --> UC8
+' 3. Volontario (Destra)
+UC10 <-- Vol
+UC11 <-- Vol
+UC12 <-- Vol
 
-UC3 ..> UC4 : <<extend>>
+' Relazioni dirette senza incroci
+UC5 .up.> UC4 : <<extend>>
+UC7 .right.> UC13 : <<include>>
+UC12 .down.> UC13 : <<include>>
+
+legend bottom
+  |= Stile |= Modulo Architetturale |
+  | <back:#FFFFFF><color:#2E7D32> ── </color></back> | **Core Operativo – MVP (8 Tabelle)** |
+  | <back:#EEF2FF><color:#3949AB> - - </color></back> | **Comunicazioni & AI/NLP – Fase 2 (3 Tabelle)** |
+endlegend
+
 @enduml

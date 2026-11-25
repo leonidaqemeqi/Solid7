@@ -1,144 +1,183 @@
-# Contratto Dati – Progetto "Buby Solidale"
-**Versione:** 3.0 (Allineata al Modello Dati SQLite da 11 Tabelle)  
+$contratto = @'
+# Contratto Dati – Progetto "Buby Solidale" (Solid7)
+**Versione:** 4.0 (SAL 1 – Allineata allo Schema SQLite Reale da 11 Tabelle)  
+**Data:** 2026-11-25  
 **Database:** SQLite (`buby_solidale.db`) con `PRAGMA foreign_keys = ON`  
 **Formato scambio API:** JSON (UTF-8)  
 **Formato scambio Dataset:** CSV (separatore `,`, encoding UTF-8)  
-**Standard Date:** ISO 8601 (`YYYY-MM-DD`)
+**Standard Date:** ISO 8601 (`YYYY-MM-DD` / `YYYY-MM-DD HH:MM:SS`)
 
 ---
 
-## 1. Schema del Database (11 Tabelle)
-Tutti i CSV puliti prodotti dai Data Analyst e le tabelle create in SQLite devono rispettare esattamente questi nomi di colonna, tipi di dato e vincoli `CHECK`.
+## 1. Domini Condivisi e Vincoli Globali
 
-### 1.1 TABELLE ANAGRAFICHE
+### 1.1 Categorie Merceologiche Ufficiali (7 Valori)
+Valide sulle tabelle `giacenze`, `donazioni` e `distribuzioni`:
+1. `'Pasta e Cereali'`
+2. `'Frutta e Verdura'`
+3. `'Latticini e Formaggi'`
+4. `'Prodotti da Forno'`
+5. `'Scatolame e Legumi'`
+6. `'Prodotti Infanzia'`
+7. `'Beni Prima Necessità (Igiene)'`
+
+### 1.2 Indici Prestazionali Definizione Schema
+- `idx_donazioni_data` su `donazioni(data_ricezione)`
+- `idx_donazioni_stato_scad` su `donazioni(stato, data_scadenza)`
+- `idx_distribuzioni_punto` su `distribuzioni(id_punto, data_distribuzione)`
+- `idx_distribuzioni_benef` su `distribuzioni(id_beneficiario_anonimo)`
+- `idx_turni_data_stato` su `turni(data_turno, stato)`
+
+---
+
+## 2. Schema del Database (11 Tabelle)
+
+### 2.1 TABELLE ANAGRAFICHE (MVP)
+
 **Tabella 1: `punti_ritiro`**
 - `id_punto` (`TEXT`, PK): Identificativo univoco (es. `"PR_01"`).
-- `nome` (`TEXT`, NOT NULL): Nome del centro (es. `"Emporio Aurora"`).
-- `zona` (`TEXT`, NOT NULL): Quartiere o area geografica (es. `"Torino Nord"`).
-- `capacita_max_kg` (`REAL`, DEFAULT `1000.0`): Capacità massima del magazzino in kg.
-- `famiglie_assistite` (`INTEGER`, DEFAULT `0`): Numero nuclei familiari seguiti.
+- `nome` (`TEXT`, NOT NULL): Nome del punto di distribuzione/ritiro.
+- `quartiere` (`TEXT`, NOT NULL): Quartiere o area cittadina di riferimento.
+- `capacita_max_kg` (`REAL`, NOT NULL, DEFAULT `1000.0`, CHECK `capacita_max_kg > 0`): Capacità massima di stoccaggio in kg.
+- `famiglie_assistite` (`INTEGER`, NOT NULL, DEFAULT `0`, CHECK `famiglie_assistite >= 0`): Numero nuclei familiari seguiti dal punto.
 
 **Tabella 2: `donatori`**
 - `id_donatore` (`TEXT`, PK): Identificativo univoco anonimizzato (es. `"DN_001"`).
-- `nome_donatore` (`TEXT`, NOT NULL): Nome azienda o "Privato".
-- `tipologia_donatore` (`TEXT`, NULLABLE): Es. "Panificio", "Supermercato", "Privato".
+- `nome_donatore` (`TEXT`, NOT NULL): Ragione sociale o nominativo donatore.
+- `tipologia_donatore` (`TEXT`, NULLABLE): Tipologia attività (es. `"Panificio"`, `"Supermercato"`, `"Privato"`).
 
 **Tabella 3: `volontari`**
 - `id_volontario` (`TEXT`, PK): Identificativo univoco anonimizzato (es. `"VOL_01"`).
-- `data_registrazione` (`TEXT`, DEFAULT `CURRENT_DATE`): Data di ingresso.
+- `codice_accesso` (`TEXT`, NOT NULL, DEFAULT `'DA_ASSEGNARE'`): Credenziale personale per autenticazione volontario (`id_volontario` + `codice_accesso`). Nel dataset iniziale SAL 1 assume il valore predefinito `'DA_ASSEGNARE'`; la generazione dei codici individuali è pianificata in Fase 2.
+- `data_registrazione` (`TEXT`, NOT NULL, DEFAULT `CURRENT_DATE`): Data di registrazione del volontario (`YYYY-MM-DD`).
 
 **Tabella 4: `beneficiari`**
-- `id_beneficiario_anonimo` (`TEXT`, PK): Identificativo univoco nucleo familiare (es. `"BEN_001"`).
-- `quartiere_riferimento` (`TEXT`, NULLABLE): Zona di residenza per statistiche.
-
-### 1.2 TABELLE OPERATIVE
-**Tabella 5: `giacenze`**
-- `id_giacenza` (`TEXT`, PK): Identificativo univoco.
-- `id_punto` (`TEXT`, FK -> `punti_ritiro.id_punto`, NOT NULL).
-- `categoria` (`TEXT`, CHECK): `'ALIMENTARI_FRESCHI'`, `'ALIMENTARI_SECCHI'`, `'IGIENE'`, `'VESTIARIO'`.
-- `quantita_attuale_kg` (`REAL`, NOT NULL): Peso netto in magazzino.
-- `soglia_min_kg` (`REAL`, DEFAULT `50.0`): Soglia per alert CRITICO.
-
-**Tabella 6: `donazioni`**
-- `id_donazione` (`TEXT`, PK): Identificativo univoco.
-- `id_donatore` (`TEXT`, FK -> `donatori.id_donatore`, NOT NULL).
-- `id_punto_destinazione` (`TEXT`, FK -> `punti_ritiro.id_punto`, NULLABLE).
-- `categoria` (`TEXT`, CHECK): `'ALIMENTARI_FRESCHI'`, `'ALIMENTARI_SECCHI'`, `'IGIENE'`, `'VESTIARIO'`.
-- `descrizione_prodotto` (`TEXT`, NOT NULL): Es. "Pane e focacce".
-- `quantita_kg` (`REAL`, NOT NULL): Peso netto in kg.
-- `data_scadenza` (`TEXT`, NULLABLE): Formato `YYYY-MM-DD`.
-- `stato` (`TEXT`, CHECK): `'IN_ATTESA'`, `'RITIRATA_STOCCATA'`, `'DISTRIBUITA'`, `'SCADUTA'`.
-
-**Tabella 7: `distribuzioni`**
-- `id_distribuzione` (`TEXT`, PK): Identificativo univoco.
-- `id_punto` (`TEXT`, FK -> `punti_ritiro.id_punto`, NOT NULL).
-- `id_beneficiario_anonimo` (`TEXT`, FK -> `beneficiari.id_beneficiario_anonimo`, NOT NULL).
-- `data_distribuzione` (`TEXT`, NOT NULL): Data di consegna.
-- `kg_consegnati` (`REAL`, NOT NULL): Quantità erogata al beneficiario.
-
-**Tabella 8: `turni`**
-- `id_turno` (`TEXT`, PK): Identificativo univoco.
-- `id_punto` (`TEXT`, FK -> `punti_ritiro.id_punto`, NOT NULL).
-- `id_volontario` (`TEXT`, FK -> `volontari.id_volontario`, NULLABLE): `NULL` se scoperto.
-- `data_turno` (`TEXT`, NOT NULL): Giorno del turno (`YYYY-MM-DD`).
-- `fascia_oraria` (`TEXT`, NOT NULL): Es. `"17:00-19:00"`.
-- `ore_durata` (`REAL`, DEFAULT `2.0`).
-- `stato` (`TEXT`, CHECK): `'SCOPERTO'`, `'COPERTO'`, `'COMPLETATO'`.
-
-### 1.3 TABELLE COMUNICAZIONI E AI (NLP)
-**Tabella 9: `email_donatori`**
-- `id_email` (`TEXT`, PK).
-- `id_donatore` (`TEXT`, FK -> `donatori.id_donatore`, NULLABLE).
-- `data_ricezione` (`TEXT`, NOT NULL).
-- `testo_anonimizzato` (`TEXT`, NOT NULL).
-- `nlp_intent` (`TEXT`, NULLABLE): Es. `'OFFERTA_DONAZIONE'`.
-- `urgenza` (`TEXT`, CHECK): `'BASSA'`, `'MEDIA'`, `'ALTA'`, `'NORMALE'`.
-- `nlp_extracted_json` (`TEXT`, NULLABLE): Payload estratto (kg, prodotto, scadenza).
-
-**Tabella 10: `messaggi_volontari`**
-- `id_messaggio` (`TEXT`, PK).
-- `id_volontario` (`TEXT`, FK -> `volontari.id_volontario`, NOT NULL).
-- `data_messaggio` (`TEXT`, NOT NULL).
-- `testo_anonimizzato` (`TEXT`, NOT NULL).
-- `nlp_intent` (`TEXT`, NULLABLE): Es. `'DISPONIBILITA'`, `'DISDETTA'`.
-
-**Tabella 11: `note_operatori`**
-- `id_nota` (`TEXT`, PK).
-- `id_punto` (`TEXT`, FK -> `punti_ritiro.id_punto`, NOT NULL).
-- `data_nota` (`TEXT`, NOT NULL).
-- `testo_anonimizzato` (`TEXT`, NOT NULL).
-- `nlp_intent` (`TEXT`, NULLABLE).
-- `nlp_extracted_json` (`TEXT`, NULLABLE).
+- `id_beneficiario_anonimo` (`TEXT`, PK): Identificativo univoco anonimizzato del nucleo familiare (es. `"BEN_001"`).
+- `fascia_eta` (`TEXT`, NULLABLE, CHECK `fascia_eta IN ('18-30', '31-45', '46-64', '65+')`): Fascia anagrafica del referente del nucleo.
+- `componenti_nucleo` (`INTEGER`, NULLABLE, CHECK `componenti_nucleo > 0`): Numero componenti del nucleo familiare.
+- `quartiere_residenza` (`TEXT`, NULLABLE): Quartiere di residenza per analisi territoriali.
 
 ---
 
-## 2. Specifiche API ed Esempi JSON
+### 2.2 TABELLE OPERATIVE (MVP)
 
-### Endpoint 1: Dashboard KPI
+**Tabella 5: `giacenze`**
+- `id_giacenza` (`TEXT`, PK): Identificativo univoco della riga di giacenza.
+- `id_punto` (`TEXT`, NOT NULL, FK -> `punti_ritiro.id_punto`): Punto di ritiro proprietario dello stock.
+- `categoria` (`TEXT`, NOT NULL, CHECK sulle 7 categorie ufficiali).
+- `quantita_disponibile_kg` (`REAL`, NOT NULL, DEFAULT `0`, CHECK `quantita_disponibile_kg >= 0`): Quantità attualmente presente in magazzino (kg).
+- `soglia_minima_kg` (`REAL`, NOT NULL, DEFAULT `50.0`, CHECK `soglia_minima_kg >= 0`): Soglia minima di sicurezza (kg).
+- `kg_in_scadenza_48h` (`REAL`, NOT NULL, DEFAULT `0`, CHECK `kg_in_scadenza_48h >= 0`): Quantità prossima alla scadenza entro 48 ore (kg).
+- `stato_scorte` (`TEXT`, NOT NULL, DEFAULT `'OTTIMALE'`, CHECK `stato_scorte IN ('CARENZA', 'OTTIMALE', 'RISCHIO_SPRECO')`): Stato operativo delle scorte.
+- `ultimo_aggiornamento` (`TEXT`, NOT NULL, DEFAULT `CURRENT_TIMESTAMP`): Timestamp ultimo aggiornamento.
+- **Vincolo di unicità:** `UNIQUE (id_punto, categoria)`.
+
+**Tabella 6: `donazioni`**
+- `id_donazione` (`TEXT`, PK): Identificativo univoco della donazione.
+- `id_donatore` (`TEXT`, NOT NULL, FK -> `donatori.id_donatore`): Donatore conferente.
+- `id_punto_ritiro` (`TEXT`, NULLABLE, FK -> `punti_ritiro.id_punto`): Punto assegnato al ritiro/stoccaggio (`NULL` consentito solo se `stato` è `'IN_ATTESA'` o `'SCADUTA'`).
+- `categoria` (`TEXT`, NOT NULL, CHECK sulle 7 categorie ufficiali).
+- `deperibilita` (`TEXT`, NOT NULL, CHECK `deperibilita IN ('Alta (Fresco)', 'Immediata', 'Lunga Conservazione', 'Media Conservazione', 'Non Deperibile')`): Classe di conservazione del lotto.
+- `descrizione_prodotto` (`TEXT`, NULLABLE): Descrizione sintetica dei beni donati.
+- `quantita_kg` (`REAL`, NOT NULL, CHECK `quantita_kg > 0`): Peso netto conferito (kg).
+- `data_ricezione` (`TEXT`, NOT NULL, DEFAULT `CURRENT_DATE`): Data di registrazione/ricezione (`YYYY-MM-DD`).
+- `data_scadenza` (`TEXT`, NULLABLE): Data di scadenza stimata o dichiarata (`YYYY-MM-DD`).
+- `stato` (`TEXT`, NOT NULL, DEFAULT `'IN_ATTESA'`, CHECK `stato IN ('IN_ATTESA', 'RITIRATA_STOCCATA', 'DISTRIBUITA', 'SCADUTA')`): Stato del ciclo di vita.
+- **Vincolo di coerenza:** `CHECK (stato NOT IN ('RITIRATA_STOCCATA', 'DISTRIBUITA') OR id_punto_ritiro IS NOT NULL)`.
+
+**Tabella 7: `distribuzioni`**
+- `id_distribuzione` (`TEXT`, PK): Identificativo univoco dell'erogazione.
+- `id_punto` (`TEXT`, NOT NULL, FK -> `punti_ritiro.id_punto`): Punto erogatore.
+- `id_beneficiario_anonimo` (`TEXT`, NOT NULL, FK -> `beneficiari.id_beneficiario_anonimo`): Nucleo beneficiario.
+- `categoria` (`TEXT`, NOT NULL, CHECK sulle 7 categorie ufficiali).
+- `data_distribuzione` (`TEXT`, NOT NULL): Data di consegna (`YYYY-MM-DD`).
+- `kg_distribuiti` (`REAL`, NOT NULL, CHECK `kg_distribuiti > 0`): Peso netto consegnato (kg).
+- `pasti_equivalenti` (`INTEGER`, NOT NULL, CHECK `pasti_equivalenti >= 0`): Unità di supporto equivalente calcolata sulla consegna.
+
+**Tabella 8: `turni`**
+- `id_turno` (`TEXT`, PK): Identificativo univoco del turno.
+- `id_punto` (`TEXT`, NOT NULL, FK -> `punti_ritiro.id_punto`): Punto operativo del turno.
+- `id_volontario` (`TEXT`, NULLABLE, FK -> `volontari.id_volontario`): Volontario assegnato.
+- `data_turno` (`TEXT`, NOT NULL): Data del turno (`YYYY-MM-DD`).
+- `fascia_oraria` (`TEXT`, NOT NULL): Fascia oraria (es. `"09:00-13:00"`).
+- `ore_durata` (`REAL`, NOT NULL, CHECK `ore_durata > 0`): Durata in ore.
+- `mansione` (`TEXT`, NOT NULL): Attività prevista (es. `"Ritiro Donazioni"`, `"Distribuzione"`, `"Smistamento Magazzino"`).
+- `stato` (`TEXT`, NOT NULL, DEFAULT `'SCOPERTO'`, CHECK `stato IN ('SCOPERTO', 'COPERTO', 'COMPLETATO', 'ANNULLATO')`): Stato operativo del turno.
+- **Vincoli di integrità:**
+  - `UNIQUE (id_volontario, data_turno, fascia_oraria)` (impedisce sovrapposizioni allo stesso volontario).
+  - `CHECK ((stato IN ('SCOPERTO', 'ANNULLATO') AND id_volontario IS NULL) OR (stato IN ('COPERTO', 'COMPLETATO') AND id_volontario IS NOT NULL))`.
+
+---
+
+### 2.3 TABELLE COMUNICAZIONI E AI / NLP (Fase 2)
+
+**Tabella 9: `email_donatori`**
+- `id_email` (`TEXT`, PK): Identificativo univoco comunicazione.
+- `id_donatore` (`TEXT`, NULLABLE, FK -> `donatori.id_donatore`): Donatore associato (se riconosciuto).
+- `mittente` (`TEXT`, NULLABLE): Indirizzo o riferimento mittente anonimizzato.
+- `oggetto` (`TEXT`, NULLABLE): Oggetto dell'email.
+- `data_ricezione` (`TEXT`, NOT NULL): Timestamp/data di ricezione.
+- `testo_anonimizzato` (`TEXT`, NOT NULL): Corpo email ripulito da PII.
+- `nlp_intent` (`TEXT`, NULLABLE): Intento rilevato dal motore NLP (es. `'OFFERTA_DONAZIONE'`).
+- `urgenza` (`TEXT`, NOT NULL, DEFAULT `'NORMALE'`, CHECK `urgenza IN ('BASSA', 'NORMALE', 'MEDIA', 'ALTA')`): Priorità operativa.
+- `nlp_extracted_json` (`TEXT`, NULLABLE): Entità strutturate estratte in JSON (categoria, quantità, scadenza).
+- `stato_validazione` (`TEXT`, NOT NULL, DEFAULT `'DA_VALIDARE'`, CHECK `stato_validazione IN ('DA_VALIDARE', 'APPROVATA', 'RIFIUTATA')`): Stato revisione umana (Human-in-the-loop).
+- `data_validazione` (`TEXT`, NULLABLE): Data/ora della validazione da parte dell'operatore.
+
+**Tabella 10: `messaggi_volontari`**
+- `id_messaggio` (`TEXT`, PK): Identificativo univoco messaggio.
+- `id_volontario` (`TEXT`, NOT NULL, FK -> `volontari.id_volontario`): Volontario mittente.
+- `canale` (`TEXT`, NULLABLE): Canale di provenienza (es. `"Telegram"`, `"WhatsApp"`, `"SMS"`).
+- `data_messaggio` (`TEXT`, NOT NULL): Timestamp/data invio.
+- `testo_anonimizzato` (`TEXT`, NOT NULL): Contenuto anonimizzato.
+- `nlp_intent` (`TEXT`, NULLABLE, CHECK `nlp_intent IS NULL OR nlp_intent IN ('DISPONIBILITA_TURNO', 'DISDETTA_TURNO', 'SEGNALAZIONE_RITARDO', 'ALTRO')`): Intento classificato.
+- `stato_validazione` (`TEXT`, NOT NULL, DEFAULT `'DA_VALIDARE'`, CHECK `stato_validazione IN ('DA_VALIDARE', 'APPROVATA', 'RIFIUTATA')`): Stato revisione umana.
+- `data_validazione` (`TEXT`, NULLABLE): Data/ora validazione.
+
+**Tabella 11: `note_operatori`**
+- `id_nota` (`TEXT`, PK): Identificativo univoco nota.
+- `id_punto` (`TEXT`, NOT NULL, FK -> `punti_ritiro.id_punto`): Punto di ritiro oggetto della nota.
+- `operatore` (`TEXT`, NULLABLE): Identificativo operatore autore della nota.
+- `data_nota` (`TEXT`, NOT NULL): Data inserimento nota.
+- `testo_anonimizzato` (`TEXT`, NOT NULL): Testo operativo anonimizzato.
+- `nlp_intent` (`TEXT`, NULLABLE): Intento/categoria operativa estratta.
+- `nlp_extracted_json` (`TEXT`, NULLABLE): Dettagli strutturati estratti in JSON.
+- `stato_validazione` (`TEXT`, NOT NULL, DEFAULT `'DA_VALIDARE'`, CHECK `stato_validazione IN ('DA_VALIDARE', 'APPROVATA', 'RIFIUTATA')`): Stato revisione umana.
+- `data_validazione` (`TEXT`, NULLABLE): Data/ora validazione.
+
+---
+
+## 3. Specifiche API ed Esempi JSON
+
+### Endpoint 1: Dashboard KPI e Alert Scorte
 - **Metodo:** `GET /api/v1/kpi`
 - **Esempio Risposta (`200 OK`):**
+```json
 {
   "kpi_impatto": {
-    "kg_recuperati_totali": 1450.5,
-    "pasti_equivalenti_distribuiti": 2901,
-    "ore_volontariato_totali": 186.0
+    "kg_recuperati_totali": 2467.3,
+    "pasti_equivalenti_distribuiti": 4929,
+    "famiglie_beneficiarie_attive": 251,
+    "ore_volontariato_completate": 124.0
   },
-  "alert_squilibri": [
+  "alert_scorte": [
     {
+      "id_giacenza": "GIAC_003",
       "id_punto": "PR_01",
-      "categoria": "ALIMENTARI_FRESCHI",
-      "stato_alert": "CRITICO",
-      "quantita_attuale_kg": 8.5,
-      "soglia_min_kg": 50.0
+      "categoria": "Latticini e Formaggi",
+      "stato_scorte": "RISCHIO_SPRECO",
+      "quantita_disponibile_kg": 42.0,
+      "soglia_minima_kg": 20.0,
+      "kg_in_scadenza_48h": 18.5
+    },
+    {
+      "id_giacenza": "GIAC_011",
+      "id_punto": "PR_02",
+      "categoria": "Prodotti da Forno",
+      "stato_scorte": "CARENZA",
+      "quantita_disponibile_kg": 12.0,
+      "soglia_minima_kg": 30.0,
+      "kg_in_scadenza_48h": 0.0
     }
   ]
 }
-
-### Endpoint 2: Analisi NLP Email Donatore
-- **Metodo:** `POST /api/v1/ai/analizza-email`
-- **Request Body (JSON):**
-{
-  "id_donatore": "DN_001",
-  "testo_grezzo": "Oggi abbiamo 15 kg di pane invenduto da ritirare subito."
-}
-- **Esempio Risposta (`200 OK`):**
-{
-  "nlp_intent": "OFFERTA_DONAZIONE",
-  "urgenza": "ALTA",
-  "nlp_extracted_json": {
-    "categoria": "ALIMENTARI_FRESCHI",
-    "descrizione_prodotto": "Pane",
-    "quantita_kg": 15.0
-  }
-}
-
----
-
-## 3. Regole di Calcolo KPI e Normalizzazione
-1. **Normalizzazione Pesi:** Tutte le unità di misura (casse, pacchi, litri) vengono convertite in **kg** (`1 litro = 1.0 kg`) prima dell'inserimento.
-2. **Kg Recuperati:** Somma di `quantita_kg` nella tabella `donazioni` dove `stato IN ('RITIRATA_STOCCATA', 'DISTRIBUITA')`.
-3. **Pasti Equivalenti Distribuiti:** Somma di `kg_consegnati` nella tabella `distribuzioni`, divisa per `0.5` (`1 pasto = 500g`).
-4. **Ore di Volontariato:** Somma di `ore_durata` nella tabella `turni` dove `stato = 'COMPLETATO'`.
-5. **Logica Alert Giacenze:**
-  - Se `quantita_attuale_kg < soglia_min_kg` in `giacenze` -> **`CRITICO`** (Badge Rosso).
-  - Se la somma delle `quantita_attuale_kg` in un punto supera l'`85%` di `capacita_max_kg` del `punti_ritiro` -> **`ECCEDENZA`** (Badge Giallo).

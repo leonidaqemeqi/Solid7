@@ -1,13 +1,14 @@
-@startuml modello_dati_buby_v3
-title Modello Dati SQLite (11 Tabelle Normalizzate) – Buby Solidale
+
+@startuml modello_dati_buby_v4
+title Modello Dati SQLite v4.0 (11 Tabelle Normalizzate) – Buby Solidale
 
 skinparam packageStyle rectangle
 
-package "1. Anagrafiche" {
+package "1. Anagrafiche (MVP)" {
   class PuntiRitiro {
     +id_punto: TEXT <<PK>>
     +nome: TEXT
-    +zona: TEXT
+    +quartiere: TEXT
     +capacita_max_kg: REAL
     +famiglie_assistite: INTEGER
   }
@@ -18,35 +19,48 @@ package "1. Anagrafiche" {
   }
   class Volontari {
     +id_volontario: TEXT <<PK, HMAC>>
+    +codice_accesso: TEXT
     +data_registrazione: TEXT
   }
   class Beneficiari {
     +id_beneficiario_anonimo: TEXT <<PK, HMAC>>
-    +quartiere_riferimento: TEXT
+    +fascia_eta: TEXT
+    +componenti_nucleo: INTEGER
+    +quartiere_residenza: TEXT
   }
 }
 
-package "2. Operatività" {
+package "2. Operatività (MVP)" {
   class Giacenze {
     +id_giacenza: TEXT <<PK>>
-    +id_punto: TEXT <<FK>>
-    +categoria: TEXT
-    +quantita_attuale_kg: REAL
-    +soglia_min_kg: REAL
+    +id_punto: TEXT <<FK, UQ>>
+    +categoria: TEXT <<UQ>>
+    +quantita_disponibile_kg: REAL
+    +soglia_minima_kg: REAL
+    +kg_in_scadenza_48h: REAL
+    +stato_scorte: TEXT
+    +ultimo_aggiornamento: TEXT
   }
   class Donazioni {
     +id_donazione: TEXT <<PK>>
     +id_donatore: TEXT <<FK>>
-    +id_punto_destinazione: TEXT <<FK>>
+    +id_punto_ritiro: TEXT <<FK, nullable>>
     +categoria: TEXT
+    +deperibilita: TEXT
+    +descrizione_prodotto: TEXT
     +quantita_kg: REAL
+    +data_ricezione: TEXT
+    +data_scadenza: TEXT
     +stato: TEXT
   }
   class Distribuzioni {
     +id_distribuzione: TEXT <<PK>>
     +id_punto: TEXT <<FK>>
     +id_beneficiario_anonimo: TEXT <<FK>>
-    +kg_consegnati: REAL
+    +categoria: TEXT
+    +data_distribuzione: TEXT
+    +kg_distribuiti: REAL
+    +pasti_equivalenti: INTEGER
   }
   class Turni {
     +id_turno: TEXT <<PK>>
@@ -54,41 +68,61 @@ package "2. Operatività" {
     +id_volontario: TEXT <<FK, nullable>>
     +data_turno: TEXT
     +fascia_oraria: TEXT
+    +ore_durata: REAL
+    +mansione: TEXT
     +stato: TEXT
   }
 }
 
-package "3. Comunicazioni AI" {
+package "3. Comunicazioni e AI/NLP (Fase 2)" {
   class EmailDonatori {
     +id_email: TEXT <<PK>>
-    +id_donatore: TEXT <<FK>>
-    +urgenza: TEXT
+    +id_donatore: TEXT <<FK, nullable>>
+    +mittente: TEXT
+    +oggetto: TEXT
+    +data_ricezione: TEXT
+    +testo_anonimizzato: TEXT
     +nlp_intent: TEXT
+    +urgenza: TEXT
+    +nlp_extracted_json: TEXT
+    +stato_validazione: TEXT
+    +data_validazione: TEXT
   }
   class MessaggiVolontari {
     +id_messaggio: TEXT <<PK>>
     +id_volontario: TEXT <<FK>>
+    +canale: TEXT
+    +data_messaggio: TEXT
+    +testo_anonimizzato: TEXT
     +nlp_intent: TEXT
+    +stato_validazione: TEXT
+    +data_validazione: TEXT
   }
   class NoteOperatori {
     +id_nota: TEXT <<PK>>
     +id_punto: TEXT <<FK>>
+    +operatore: TEXT
+    +data_nota: TEXT
+    +testo_anonimizzato: TEXT
     +nlp_intent: TEXT
+    +nlp_extracted_json: TEXT
+    +stato_validazione: TEXT
+    +data_validazione: TEXT
   }
 }
 
 ' Relazioni Anagrafiche -> Operatività
 PuntiRitiro "1" -- "0..*" Giacenze
-PuntiRitiro "1" -- "0..*" Donazioni
+PuntiRitiro "0..1" -- "0..*" Donazioni
 PuntiRitiro "1" -- "0..*" Distribuzioni
 PuntiRitiro "1" -- "0..*" Turni
 
 Donatori "1" -- "0..*" Donazioni
-Volontari "1" -- "0..*" Turni
+Volontari "0..1" -- "0..*" Turni
 Beneficiari "1" -- "0..*" Distribuzioni
 
 ' Relazioni Anagrafiche -> Comunicazioni
-Donatori "1" -- "0..*" EmailDonatori
+Donatori "0..1" -- "0..*" EmailDonatori
 Volontari "1" -- "0..*" MessaggiVolontari
 PuntiRitiro "1" -- "0..*" NoteOperatori
 

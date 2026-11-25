@@ -1,26 +1,27 @@
-@startuml architettura_buby
+
+@startuml architettura_buby_v4
 !include <C4/C4_Container>
 
-title C4 Container Diagram – Piattaforma Buby Solidale
+title C4 Container Diagram v4.0 – Piattaforma Buby Solidale
 
-Person(coordinatore, "Coordinatore", "Monitora KPI, gestisce squilibri, assegna donazioni e verifica testi AI")
-Person(donatore, "Donatore / Azienda", "Segnala eccedenze alimentari e beni di prima necessità")
-Person(volontario, "Volontario", "Consulta i turni scoperti e prenota ritiri/consegne")
+Person(coordinatore, "Coordinatore / Operatore", "Monitora KPI, scorte 48h, distribuzioni, turni e valida estrazioni AI (HITL)")
+Person(donatore, "Donatore / Azienda", "Inserisce offerte di donazione (7 categorie) e consulta i kg salvati")
+Person(volontario, "Volontario", "Consulta/prenota turni e segnala disponibilità o ritardi via chat")
 
-System_Boundary(buby, "Sistema Buby Solidale") {
-    Container(webapp, "Frontend Web App", "React / HTML-JS", "Dashboard KPI, form donazioni, calendario turni e pannello AI")
-    Container(api, "Backend API", "Python FastAPI / Node", "Gestisce logica operativa, autenticazione ruoli e chiamate AI")
-    Container(ai_engine, "Motore Data & AI", "Python (Pandas, NLP/LLM)", "Anonimizzazione GDPR, estrazione dati da email/note e calcolo fabbisogni")
-    ContainerDb(db, "Database SQLite", "SQLite (buby_solidale.db)", "Archivia punti ritiro, giacenze, donazioni, distribuzioni e turni")
+System_Boundary(buby, "Sistema Buby Solidale (v4.0)") {
+    Container(webapp, "Frontend Web App", "React / HTML-JS", "Dashboard KPI, alert scorte 48h, form donazioni/distribuzioni, calendario turni e coda validazione AI")
+    Container(api, "Backend API", "Python FastAPI", "Gestisce logica operativa MVP, autenticazione ruoli, regole di business e orchestrazione AI")
+    Container(ai_engine, "Pipeline ETL & Motore AI/NLP", "Python (Pandas, NLP/LLM)", "Anonimizzazione GDPR, caricamento dataset normalizzati (popola_db.py) ed estrazione entità da testi (Fase 2)")
+    ContainerDb(db, "Database SQLite v4.0", "SQLite (buby_solidale.db)", "11 tabelle normalizzate (8 MVP + 3 Fase 2) con vincoli CHECK, UNIQUE e FK attive")
 }
 
-Rel(coordinatore, webapp, "Visualizza KPI, assegna donazioni, analizza testi", "HTTPS")
-Rel(donatore, webapp, "Inserisce offerte di donazione", "HTTPS")
-Rel(volontario, webapp, "Prenota e gestisce turni", "HTTPS")
+Rel(coordinatore, webapp, "Monitora KPI, registra distribuzioni, gestisce turni e valida AI", "HTTPS")
+Rel(donatore, webapp, "Inserisce offerte e consulta storico donazioni", "HTTPS")
+Rel(volontario, webapp, "Prenota/disdice turni e invia messaggi chat", "HTTPS")
 
-Rel(webapp, api, "Scambia dati in formato JSON (Contratto Dati)", "REST API")
-Rel(api, db, "Legge e scrive dati strutturati", "SQL")
-Rel(api, ai_engine, "Invia testi grezzi per classificazione ed estrazione", "HTTP / JSON")
-Rel(ai_engine, db, "Carica dataset puliti e normalizzati", "Python sqlite3")
+Rel(webapp, api, "Scambia payload JSON (Contratto Dati v4.0)", "REST API / HTTPS")
+Rel(api, db, "Esegue query transazionali e controlli di integrità", "SQL / sqlite3")
+Rel(api, ai_engine, "Invia testi anonimizzati per classificazione NLP (Fase 2)", "HTTP / JSON")
+Rel(ai_engine, db, "Popola e aggiorna dataset puliti e normalizzati", "Python sqlite3")
 
 @enduml
